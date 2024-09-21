@@ -1,0 +1,105 @@
+{
+    "companies": "Empresas",
+    "entrepreneurship": "Emprendimientos",
+    "individuals": "Individuos",
+    "home": "INICIO",
+  "services": "SERVICIOS",
+  "about": "SOBRE NOSOTROS",
+  "contact": "CONTACTO",
+  "webDevelopment": "Desarrollo Web",
+  "mobileApp": "Aplicaciones Móviles",
+  "technicalConsulting": "Consultoría Técnica",
+  "digitalMarketing": "Marketing Digital",
+  "webDevelopmentDescription": "Creamos sitios web personalizados y optimizados para todas las plataformas.",
+  "mobileAppDescription": "Desarrollamos aplicaciones móviles nativas y multiplataforma.",
+  "technicalConsultingDescription": "Ofrecemos consultoría técnica para ayudarte a llevar tu proyecto al siguiente nivel.",
+  "digitalMarketingDescription": "Estrategias de marketing digital para aumentar la visibilidad de tu marca.",
+  "contactUs": "¡Hablemos!",
+  "calendly.buttonText": "¡Reserva una reunión!",
+    "projects":"Proyectos",
+    "aboutme":"Sobre mi",
+
+  "experience": {
+    "title":"Experiencia",
+    "codingTemple": {
+      "company": "CODING TEMPLE",
+      "position": "Instructor de Ingeniería de Software",
+      "years": "2023 - Presente",
+      "location": "Remoto",
+      "description": "Facilita entornos de aprendizaje dinámicos, conduce sesiones instruccionales, desarrolla el currículo y colabora con los instructores. Enfatiza las prácticas de codificación ética y el trabajo en equipo."
+    },
+    "venusSd": {
+      "company": "VENUS SD",
+      "position": "Desarrollador Full Stack",
+      "years": "2021 - 2023",
+      "location": "Remoto",
+      "description": "Desarrolló APIs, sitios web y bases de datos. Proyectos clave incluyen la creación de una API RESTful para un álbum de pegatinas digital del Mundial, una página web minimalista e implementación de soluciones impulsadas por IA para optimizar estrategias de trading."
+    },
+    "alorica": {
+      "company": "ALORICA",
+      "position": "Moderador de Contenido",
+      "years": "2022 - 2023",
+      "location": "Remoto",
+      "description": "Moderó contenido multilingüe para garantizar la seguridad en línea y analizó redes sociales, implementando políticas para la seguridad del contenido."
+    },
+    "venusSdTeacher": {
+      "company": "VENUS SD",
+      "position": "Profesor de Programación",
+      "years": "2022 - 2023",
+      "location": "Híbrido",
+      "description": "Mentoró a individuos en programación y desarrollo web, creando materiales educativos y proyectos en varios temas de programación."
+    },
+    "kellerWilliams": {
+      "company": "KELLER WILLIAMS",
+      "position": "Soporte IT",
+      "years": "2023",
+      "location": "Híbrido",
+      "description": "Proporcionó soporte IT, resolución de problemas y gestión de redes para una agencia inmobiliaria."
+    },
+    "bigPawGames": {
+      "company": "BIG PAW GAMES",
+      "position": "Diseñador de Juegos",
+      "years": "2020 - 2021",
+      "location": "Híbrido",
+      "description": "Diseñó juegos usando RPG Maker y Unity, enfocándose en mecánicas de juego, narrativas y desarrollo de personajes."
+    }
+  },
+  "linkedinProfileAlt": "Perfil de LinkedIn",
+  "projectsData": {
+    "onix": {
+      "title": "ONIX Servicios Digitales",
+      "description": "Onix es una empresa de servicios digitales, desarrollada con características como selección de idioma y tema. Es minimalista y sofisticada."
+    },
+    "sunrise": {
+      "title": "Sunrise Bienes Raíces",
+      "description": "Sunrise es más que una plantilla; es una base para futuros proyectos en el sector inmobiliario. Nuestro objetivo es mejorar y expandir continuamente nuestra plataforma, integrando nuevas características y tecnologías para satisfacer las necesidades cambiantes de nuestros clientes."
+    },
+    "codingBot": {
+      "title": "Coding Bot",
+      "description": "Coding Bot es un poderoso asistente de programación diseñado para simplificar tus tareas de codificación. Solo envía una tarea detallada o declaración de problema, y Coding Bot generará el código correspondiente junto con una explicación clara. Ya seas un principiante aprendiendo a programar o un desarrollador experimentado, Coding Bot te ayuda a ahorrar tiempo y centrarte en refinar tus ideas."
+    },
+    "venusSd": {
+      "title": "Venus SD",
+      "description": "Venus SD es una Start Up dedicada al diseño y desarrollo de software para negocios. Este diseño simple y minimalista fue el primer prototipo para el cliente LATAM."
+    },
+    "qatarCollection": {
+      "title": "Colección Qatar",
+      "description": "La API de seguimiento de figuritas del Qatar es una herramienta poderosa para fanáticos del fútbol y coleccionistas de figuritas. Con su interfaz fácil de usar, es una opción ideal para cualquiera que quiera mantener un control completo de su colección de figuritas del Mundial."
+    },
+    "portfolioTemplate": {
+      "title": "Plantilla de Portafolio",
+      "description": "Esta plantilla de portafolio en React está diseñada para principiantes en desarrollo web. Proporciona un diseño limpio y personalizable que muestra tus habilidades y proyectos de manera efectiva. Con instrucciones fáciles de seguir y componentes reutilizables, puedes ajustar rápidamente la plantilla para adaptarla a tu estilo personal y contenido. Ideal para construir una presencia profesional en línea, esta plantilla incluye secciones para tu biografía, proyectos, habilidades e información de contacto."
+    }
+  },
+  "moreProjects": "< Haz clic aquí para más >",
+  "aboutMe": {
+    "title": "Sobre mí",
+    "fullStackDeveloper": "Desarrolladora Full Stack",
+    "passionForComputers": "Pasión por las computadoras desde la infancia",
+    "description": "Con más de 3 años de experiencia en la construcción y mantenimiento de aplicaciones web. Actualmente, estoy cursando una Licenciatura en Ciencias de la Computación en University of the People y siempre he tenido una gran fascinación por la tecnología desde una edad temprana.",
+    "journey": "Mi viaje con las computadoras comenzó cuando era niña, y desde entonces, he estado inmersa en explorar el vasto potencial de la tecnología. Hoy, me especializo en ser mentora para otros individuos, colaborando en conjunto para lograr grandes resultados, así como promover la educación y buenas prácticas en el ámbito de la ingeniería."
+
+  }
+
+  }
+  

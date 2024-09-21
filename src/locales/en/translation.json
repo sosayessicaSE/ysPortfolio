@@ -1,0 +1,104 @@
+{
+    "companies": "Companies",
+    "entrepreneurship": "Entrepreneurship",
+    "individuals": "Individuals",
+    "home": "HOME",
+    "services": "SERVICES",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "webDevelopment": "Web Development",
+    "mobileApp": "Mobile Applications",
+    "technicalConsulting": "Technical Consulting",
+    "digitalMarketing": "Digital Marketing",
+    "webDevelopmentDescription": "We create customized websites optimized for all platforms.",
+    "mobileAppDescription": "We develop native and cross-platform mobile applications.",
+    "technicalConsultingDescription": "We offer technical consulting to help take your project to the next level.",
+    "digitalMarketingDescription": "Digital marketing strategies to increase your brand's visibility.",
+    "contactUs": "Contact me!",
+    "calendly.buttonText": "Book a meeting with me!",
+    "projects":"Projects",
+    "aboutme":"About me",
+    "experience": {
+      "title": "Experience",
+      "codingTemple": {
+        "company": "CODING TEMPLE",
+        "position": "Software Engineering Instructor",
+        "years": "2023 - Present",
+        "location": "Remote",
+        "description": "Facilitates dynamic learning environments, conducts instructional sessions, develops curriculum, and collaborates with instructors. Emphasizes ethical coding practices and teamwork."
+      },
+      "venusSd": {
+        "company": "VENUS SD",
+        "position": "Full Stack Developer",
+        "years": "2021 - 2023",
+        "location": "Remote",
+        "description": "Developed APIs, websites, and databases. Key projects include creating a RESTful API for a digital World Cup sticker album, a minimalist web page, and implementing AI-driven solutions for optimizing trading strategies."
+      },
+      "alorica": {
+        "company": "ALORICA",
+        "position": "Content Moderator",
+        "years": "2022 - 2023",
+        "location": "Remote",
+        "description": "Moderated multilingual content to ensure online safety and analyzed social media, implementing policies for content safety."
+      },
+      "venusSdTeacher": {
+        "company": "VENUS SD",
+        "position": "Programming Teacher",
+        "years": "2022 - 2023",
+        "location": "Hybrid",
+        "description": "Mentored individuals in programming and web development, creating educational materials and projects in various programming subjects."
+      },
+      "kellerWilliams": {
+        "company": "KELLER WILLIAMS",
+        "position": "IT Support",
+        "years": "2023",
+        "location": "Hybrid",
+        "description": "Provided IT support, troubleshooting, and network management for a real estate agency."
+      },
+      "bigPawGames": {
+        "company": "BIG PAW GAMES",
+        "position": "Game Designer",
+        "years": "2020 - 2021",
+        "location": "Hybrid",
+        "description": "Designed games using RPG Maker and Unity, focusing on gameplay mechanics, narratives, and character development."
+      }
+    },
+    "linkedinProfileAlt": "LinkedIn Profile",
+    "projectsData": {
+      "onix": {
+        "title": "ONIX Digital Services",
+        "description": "Onix is a Digital Services Company, developed with features such as language and theme selection. It is minimalist and sophisticated."
+      },
+      "sunrise": {
+        "title": "Sunrise Real Estate",
+        "description": "Sunrise is more than just a template; it is a foundation for future projects in the real estate sector. Our goal is to continuously improve and expand our platform, integrating new features and technologies to meet the evolving needs of our clients."
+      },
+      "codingBot": {
+        "title": "Coding Bot",
+        "description": "Coding Bot is a powerful programming assistant designed to simplify your coding tasks. Just submit a detailed task or problem statement, and Coding Bot will generate the corresponding code along with a clear explanation. Whether you're a beginner learning to code or an experienced developer, Coding Bot helps you save time and focus on refining your ideas."
+      },
+      "venusSd": {
+        "title": "Venus SD",
+        "description": "Venus SD is a Start Up dedicated to designing and developing software for business. This simple and minimalist design was the first mockup for LATAM client."
+      },
+      "qatarCollection": {
+        "title": "Qatar Collection",
+        "description": "The Qatar sticker tracking API is a powerful tool for soccer fans and sticker collectors. With its easy-to-use interface, it is an ideal choice for anyone wanting to keep a complete track of their World Cup sticker collection."
+      },
+      "portfolioTemplate": {
+        "title": "Portfolio Template",
+        "description": "This React portfolio template is designed for beginners in web development. It provides a clean, customizable layout that showcases your skills and projects effectively. With easy-to-follow instructions and reusable components, you can quickly adjust the template to fit your personal style and content. Ideal for building a professional online presence, this template includes sections for your bio, projects, skills, and contact information."
+      }
+    },
+    "moreProjects": "< Click here for more >",
+    "aboutMe": {
+    "title": "About Me",
+    "fullStackDeveloper": "Full Stack Developer",
+    "passionForComputers": "Passion for Computers Since Childhood",
+    "description": "With over 3 years of experience in building and maintaining web applications...",
+    "description2":"I am currently pursuing a Bachelor's degree in Computer Science at University of the People and have always had a deep fascination with technology from a young age.",
+  "journey": "My journey with computers began when I was a child, and since then, I have been immersed in exploring the vast potential of technology.",
+  "journey2":"Today, I specialize in mentoring others, collaborating together to achieve great results, as well as promoting education and best practices in the field of engineering."
+}
+  }
+  

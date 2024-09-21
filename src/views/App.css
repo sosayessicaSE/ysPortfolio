@@ -1,0 +1,168 @@
+@font-face {
+	font-family: 'Dream Avenue';
+	src: url('../fonts/fonnts.com-Dream_Avenue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TT Drugs';
+	src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+:root {
+    --background-color-light: #f4f4f4;
+    --background-color-dark: #070707;
+    --property-background-color-light: #f4f4f4;
+    --property-background-color-dark: #070707;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  * {
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+  }
+  
+  .property.light-theme {
+    background-color: var(--property-background-color-light);
+  }
+  
+  .property.dark-theme {
+    background-color: var(--property-background-color-dark);
+  }
+  
+  
+  .property-container.light-theme{
+    background-color: var(--property-background-color-light);
+  }
+  .property-container.dark-theme {
+    background-color: var(--property-background-color-dark);
+  }
+  
+  .App.light-theme{
+    background-color: var(--background-color-light);
+  }
+  .App.dark-theme{
+    background-color: var(--background-color-dark);
+  }
+  
+  .header {
+  
+    background-color: var(--background-color-light);
+  }
+  
+  .header.dark-theme {
+    background-color: var(--background-color-dark);
+  }
+  
+  
+  .container--toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+  }
+  
+  .toggle--checkbox {
+    display: none;
+  }
+  
+  .toggle--label {
+    cursor: pointer;
+    display: block;
+    width: 60px;  
+    height: 30px;  
+    background-color: #ccc;
+    border-radius: 30px; 
+    position: relative;
+    transition: background-color 0.3s;
+  }
+/* Estilos para el contenedor del widget */
+
+/* App.css */
+.calendly-container {
+  position: fixed;
+  bottom: 10px;
+  right: 1.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1000;
+  bottom: 2.5%;
+}
+
+
+
+  .toggle--label-background {
+    display: block;
+    width: 26px;  
+    height: 26px;  
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label {
+    background-color: #333;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    transform: translateX(30px); 
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;  
+    transition: opacity 0.3s;
+  }
+  
+  .light-icon {
+    left: 4px;
+    opacity: 1;
+  }
+  
+  .dark-icon {
+    right: 4px;
+    opacity: 0;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .light-icon {
+    opacity: 0;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .dark-icon {
+    opacity: 1;
+  }
+  .App{
+    overflow-x: hidden;
+    
+  }
+  
+
+
+  .awssld__controls__arrow-left:before, .awssld__controls__arrow-left:after, .awssld__controls__arrow-right:before, .awssld__controls__arrow-right:after {
+    background-color: rgb(0, 0, 0) !important;
+    
+  }

@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Dream Avenue';
+  src: url('../fonts/fonts.com-Dream_Avenue.ttf') format('truetype'); /* Fixed typo in URL */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Drugs';
+  src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gallery {
+  padding: 2rem;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Dream Avenue';
+  font-size: 2.5rem;
+  color: #222; 
+  text-transform: uppercase;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto; 
+}
+
+.gallery-item-projects {
+  border: 1px solid #ddd; 
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #fff; 
+}
+
+.gallery-item-projects:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image-projects {
+  width: 100%;
+  height: auto; 
+  border-radius: 8px;
+  object-fit: cover; 
+}
+
+.gallery-item-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'TT Drugs';
+  font-size: 1.25rem;
+  color: #333; 
+  font-weight: bold;
+}
+
+.more-projects-link {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'TT Drugs';
+  font-size: 1.5rem;
+}
+
+.more-projects-link a {
+  text-decoration: none;
+  color: #8d7fa3; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.more-projects-link a:hover {
+  color: #644979; 
+}
+
+
+@media (max-width: 1200px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.modal-content {
+  background: var(--modal-bg-color, #fff);
+  border-radius: 16px; 
+  padding: 2rem;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  animation: fadeIn 0.4s ease, slideUp 0.4s ease;
+
+  max-width: 600px;
+  text-align: center;
+  box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto; 
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn, .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--modal-close-color, #333);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover, .modal-close:hover {
+  color: #ff3b3b;
+  transform: scale(1.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color, #ddd); 
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-title {
+  font-family: 'Dream Avenue';
+  font-size: 2rem; 
+  color: var(--modal-title-color, #222);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-body {
+  font-family: 'TT Drugs';
+  color: var(--modal-body-color, #666); 
+  line-height: 1.8;
+}
+
+.modal-body img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+:root {
+  --modal-bg-color: #ffffff; 
+  --border-color: #ddd; 
+  --modal-title-color: #222; 
+  --modal-close-color: #333;
+  --modal-body-color: #666; 
+}
+
+
+[data-theme="dark"] {
+  --modal-bg-color: #1e1e1e; 
+  --border-color: #333;
+  --modal-title-color: #e0e0e0;
+  --modal-close-color: #e0e0e0;
+  --modal-body-color: #aaa; 
+}
