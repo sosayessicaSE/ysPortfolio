@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./views/App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import { keepTheme, setTheme } from "./components/mode";
 import Toggle from "./components/toggle";
@@ -35,7 +35,7 @@ function App() {
       <div className={`App ${themeClass}`}>
         <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         <Toggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-        
+
         <Navbar themeClass={themeClass} />
         <Routes>
           <Route
@@ -54,7 +54,7 @@ function App() {
               <Projects isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
             }
           />
-        <Route
+          <Route
             path="/experience"
             element={
               <Experience isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
@@ -67,7 +67,7 @@ function App() {
             }
           />
         </Routes>
-      
+
       </div>
     </Router>
   );

@@ -1,8 +1,8 @@
 {
-    "companies": "Empresas",
-    "entrepreneurship": "Emprendimientos",
-    "individuals": "Individuos",
-    "home": "INICIO",
+  "companies": "Empresas",
+  "entrepreneurship": "Emprendimientos",
+  "individuals": "Individuos",
+  "home": "INICIO",
   "services": "SERVICIOS",
   "about": "SOBRE NOSOTROS",
   "contact": "CONTACTO",
@@ -16,11 +16,10 @@
   "digitalMarketingDescription": "Estrategias de marketing digital para aumentar la visibilidad de tu marca.",
   "contactUs": "¡Hablemos!",
   "calendly.buttonText": "¡Reserva una reunión!",
-    "projects":"Proyectos",
-    "aboutme":"Sobre mi",
-
+  "projects": "Proyectos",
+  "aboutme": "Sobre mi",
   "experience": {
-    "title":"Experiencia",
+    "title": "Experiencia",
     "codingTemple": {
       "company": "CODING TEMPLE",
       "position": "Instructor de Ingeniería de Software",
@@ -96,10 +95,9 @@
     "title": "Sobre mí",
     "fullStackDeveloper": "Desarrolladora Full Stack",
     "passionForComputers": "Pasión por las computadoras desde la infancia",
-    "description": "Con más de 3 años de experiencia en la construcción y mantenimiento de aplicaciones web. Actualmente, estoy cursando una Licenciatura en Ciencias de la Computación en University of the People y siempre he tenido una gran fascinación por la tecnología desde una edad temprana.",
-    "journey": "Mi viaje con las computadoras comenzó cuando era niña, y desde entonces, he estado inmersa en explorar el vasto potencial de la tecnología. Hoy, me especializo en ser mentora para otros individuos, colaborando en conjunto para lograr grandes resultados, así como promover la educación y buenas prácticas en el ámbito de la ingeniería."
-
+    "description": "Con más de 3 años de experiencia en la construcción y mantenimiento de aplicaciones web.",
+    "description2": "Actualmente, estoy cursando una Licenciatura en Ciencias de la Computación en University of the People y siempre he tenido una gran fascinación por la tecnología desde una edad temprana.",
+    "journey": "Mi viaje con las computadoras comenzó cuando era niña, y desde entonces, he estado inmersa en explorar el vasto potencial de la tecnología.",
+    "journey2": "Hoy, me especializo en ser mentora para otros individuos, colaborando en conjunto para lograr grandes resultados, así como promover la educación y buenas prácticas en el ámbito de la ingeniería."
   }
-
-  }
-  
+}

@@ -1,12 +1,12 @@
 {
-    "companies": "Empresas",
-    "entrepreneurship": "Empreendedorismo",
-    "individuals": "Indivíduos",
-    "home": "INÍCIO",
-    "services": "SERVIÇOS",
-    "about": "SOBRE NÓS",
-    "contact": "CONTATO",
-    "webDevelopment": "Desenvolvimento Web",
+  "companies": "Empresas",
+  "entrepreneurship": "Empreendedorismo",
+  "individuals": "Indivíduos",
+  "home": "INÍCIO",
+  "services": "SERVIÇOS",
+  "about": "SOBRE NÓS",
+  "contact": "CONTATO",
+  "webDevelopment": "Desenvolvimento Web",
   "mobileApp": "Aplicativos Móveis",
   "technicalConsulting": "Consultoria Técnica",
   "digitalMarketing": "Marketing Digital",
@@ -16,9 +16,8 @@
   "digitalMarketingDescription": "Estratégias de marketing digital para aumentar a visibilidade da sua marca.",
   "contactUs": "Contacte-me!",
   "calendly.buttonText": "Agende uma reunião!",
-    "projects":"Projetos",
-    "aboutme":"Sobre mim",
-
+  "projects": "Projetos",
+  "aboutme": "Sobre mim",
   "experience": {
     "title": "Experiência",
     "codingTemple": {
@@ -96,9 +95,9 @@
     "title": "Sobre mim",
     "fullStackDeveloper": "Desenvolvedor Full Stack",
     "passionForComputers": "Paixão por computadores desde a infância",
-    "description": "Com mais de 3 anos de experiência na construção e manutenção de aplicações web. Atualmente, estou cursando uma Licenciatura em Ciência da Computação na University of the People e sempre tive uma grande fascinação pela tecnologia desde a infância.",
-  
-    "journey": "Minha jornada com computadores começou quando eu era criança, e desde então, tenho estado imersa em explorar o vasto potencial da tecnologia. Hoje, me especializo em mentorar outros indivíduos, colaborando em conjunto para alcançar grandes resultados, além de promover a educação e boas práticas no campo da engenharia."
-    }
+    "description": "Com mais de 3 anos de experiência na construção e manutenção de aplicações web.",
+    "description2": "Atualmente, estou cursando uma Licenciatura em Ciência da Computação na University of the People e sempre tive uma grande fascinação pela tecnologia desde a infância.",
+    "journey2": "Hoje, me especializo em orientar outras pessoas, colaborando juntos para alcançar grandes resultados, assim como promovendo a educação e as melhores práticas no campo da engenharia.",
+    "journey": "Minha jornada com computadores começou quando eu era criança, e desde então, tenho estado imersa em explorar o vasto potencial da tecnologia."
   }
-  
+}
