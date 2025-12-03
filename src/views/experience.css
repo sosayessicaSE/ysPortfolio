@@ -21,87 +21,81 @@ body {
     padding: 0;
 }
 
-.timeline-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 40px auto;
-    padding: 0 20px;
-    max-width: 900px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+.titleexp {
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+    font-family: 'Dream Avenue';
+    font-size: 200%;
 }
 
-.timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    border-left: 2px solid #73568f;
-    padding-left: 20px;
+/* ===== PHOTO GALLERY SECTION ===== */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 10px;
+    column-gap: 2px;
+    row-gap: 2px;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+    padding: 0;
+}
+
+.gallery-item {
     position: relative;
+    overflow: hidden;
+    border-radius: 12px;
     opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease-out forwards;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInScale 0.6s ease-out forwards;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    height: auto;
+    line-height: 0;
 }
 
-.timeline-item:hover .timeline-content {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transition: filter 0.3s ease;
+}
+.gallery-item img:hover { 
+    transform: none !important;
 }
 
-.timeline-item:nth-child(1) {
-    animation-delay: 0.2s;
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 12px;
 }
 
-.timeline-item:nth-child(2) {
-    animation-delay: 0.4s;
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
 }
 
-.timeline-item:nth-child(3) {
-    animation-delay: 0.6s;
+.gallery-alt-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    font-family: 'TT Drugs', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
 }
 
-.timeline-item:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes scaleUp {
+@keyframes fadeInScale {
     from {
         opacity: 0;
         transform: scale(0.9);
@@ -112,125 +106,180 @@ body {
     }
 }
 
-@keyframes slideInFromBottom {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* ===== HORIZONTAL EXPERIENCE SLIDER ===== */
+.experience-slider-wrapper {
+    width: 100%;
+    overflow: visible;
+    padding: 40px 80px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.experience-slider {
+    display: flex;
+    gap: 30px;
+    padding: 20px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+    background: transparent;
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.experience-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navigation Buttons */
+.slider-nav-button {
+    background: linear-gradient(135deg, #7a7a7a, #000000);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(115, 86, 143, 0.3);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.slider-nav-button:hover:not(.disabled) {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(115, 86, 143, 0.5);
+}
+
+.slider-nav-button:active:not(.disabled) {
+    transform: scale(0.95);
+}
+
+.slider-nav-button.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #ccc, #999);
+}
+
+.slider-nav-button.dark-mode {
+    background: linear-gradient(135deg, #73568f, #591996);
+}
+
+.slider-nav-button.dark-mode:hover:not(.disabled) {
+    background: linear-gradient(135deg, #996ac6, #73568f);
+}
+
+.experience-card {
+    min-width: 350px;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(115, 86, 143, 0.3);
+}
+
+.experience-card.dark-mode {
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #181818;
+    margin-bottom: 10px;
+    animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
-    0% {
+    0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-10px);
     }
-    100% {
-        transform: translateY(0);
-    }
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
-    animation: fadeInLeft 0.8s ease-out forwards;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    animation: fadeInRight 0.8s ease-out forwards;
-}
-
-.timeline-icon {
-    font-size: 2rem;
-    color: #591996;
-    margin-bottom: 10px;
-    opacity: 0;
-    transform: scale(0.5);
-    animation: scaleUp 0.6s ease-out forwards;
-    animation-delay: 0.4s;
-}
-
-.timeline-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideInFromBottom 0.8s ease-out forwards;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-}
-
-.dark-mode .timeline-content {
-    background-color: #333;
-    color: #eee;
-}
-
-.timeline-content:before {
-    content: '';
-    position: absolute;
-    left: -12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: #73568f;
-    border-radius: 50%;
-    border: 2px solid #fff;
-}
-
-.company-title {
+.card-company {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: 'Dream Avenue', sans-serif;
-    margin-bottom: 10px;
-    color: #996ac6;
+    color: #1f1f1f;
+    margin: 0;
 }
 
-.position, .location, .descriptionexp {
-    margin: 5px 0;
-}
-
-.position {
+.card-position {
     font-size: 1.2rem;
+    font-weight: 600;
     color: #444;
+    margin: 0;
 }
-.position.dark-mode {
+
+.card-position.dark-mode {
     color: #ffffff;
 }
-.link-icode {
-    display: inline-block;
-    width: 40%;
-    margin: 20px auto;
-    text-align: center;
-    opacity: 0;
-    transform: translateX(20px);
-    animation: fadeInUp 0.6s ease-out forwards;
-    animation-delay: 1s;
-    transition: transform 0.3s ease;
-    margin-right: 40%;
+
+.card-years {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin: 0;
 }
 
-.link-icode:hover {
-    transform: translateX(0) scale(1.05);
+.experience-card.dark-mode .card-years {
+    color: #aaa;
 }
+
+.card-location {
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0;
+}
+
+.experience-card.dark-mode .card-location {
+    color: #999;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0 0;
+}
+
+.experience-card.dark-mode .card-description {
+    color: #ccc;
+}
+
+
 
 .icode {
     display: block;
@@ -245,93 +294,218 @@ body {
     transform: scale(1.05);
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large tablets and smaller desktops */
+@media (max-width: 1200px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 10px;
+        column-gap: 2px;
+        row-gap: 2px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .experience-slider-wrapper {
+        padding: 40px 60px;
+        gap: 15px;
+    }
+
+    .experience-slider {
+        padding: 20px 5px;
+    }
+
+    .slider-nav-button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .experience-card {
+        min-width: 320px;
+        max-width: 320px;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
-    .timeline-container {
-        padding: 0 10px;
+    .titleexp {
+        font-size: 180%;
+        margin: 8% 3%;
     }
 
-    .timeline-item {
-        margin-bottom: 20px;
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: 8px;
+        column-gap: 2px;
+        row-gap: 2px;
+        padding: 0;
+        margin-bottom: 40px;
     }
 
-    .timeline-icon {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
+    .experience-slider-wrapper {
+        padding: 30px 50px;
+        gap: 10px;
     }
 
-    .timeline-content {
-        padding: 15px;
-        box-sizing: border-box; /* Include padding in width */
+    .experience-slider {
+        padding: 15px 5px;
+        gap: 20px;
     }
 
-    .timeline-content:before {
-        width: 18px;
-        height: 18px;
+    .slider-nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
     }
 
-    .company-title {
-        font-size: 1.25rem;
+    .experience-card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 25px;
     }
 
-    .position {
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    .card-company {
+        font-size: 1.4rem;
+    }
+
+    .card-position {
         font-size: 1.1rem;
     }
 
     .link-icode {
-        width: 50%;
-        margin-right: 25%;
-    }
-
-    .icode {
-        width: 90%;
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
-@media (max-width: 480px) {
-    .timeline-container {
-        padding: 0 5px;
+/* Mobile */
+@media (max-width: 560px) {
+    .titleexp {
+        font-size: 160%;
+        margin: 10% 3%;
     }
 
-    .timeline-item {
-        margin-bottom: 15px;
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 8px;
+        column-gap: 2px;
+        row-gap: 2px;
+        padding: 0;
+        margin-bottom: 30px;
     }
 
-    .timeline-icon {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
+    /* Center last item if odd number */
+    .gallery-item:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
     }
 
-    .timeline-content {
-        padding: 10px;
-        box-sizing: border-box; /* Include padding in width */
+    .experience-slider-wrapper {
+        padding: 30px 30px;
+        gap: 8px;
     }
 
-    .timeline-content:before {
-        width: 15px;
-        height: 15px;
+    .experience-slider {
+        padding: 15px 5px;
+        gap: 15px;
     }
 
-    .company-title {
+    .slider-nav-button {
+        width: 35px;
+        height: 35px;
         font-size: 1rem;
     }
 
-    .position {
-        font-size: 1rem;
+    .experience-card {
+        min-width: 260px;
+        max-width: 260px;
+        padding: 20px;
+    }
+
+    .card-icon {
+        font-size: 2.2rem;
+    }
+
+    .card-company {
+        font-size: 1.3rem;
+    }
+
+    .card-position {
+        font-size: 1.05rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
     }
 
     .link-icode {
-        width: 80%;
-        margin-right: 10%;
-    }
-
-    .icode {
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
     }
 }
-.titleexp{
-    justify-content: center;
-    text-align: center;
-    margin: 5%;
-    font-family: 'Dream Avenue';
-    font-size: 200%;
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 8px;
+        column-gap: 2px;
+        row-gap: 2px;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .experience-slider-wrapper {
+        padding: 30px 20px;
+        gap: 5px;
+    }
+
+    .slider-nav-button {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .experience-card {
+        min-width: 240px;
+        max-width: 240px;
+        padding: 18px;
+    }
+
+    .card-icon {
+        font-size: 2rem;
+    }
+
+    .card-company {
+        font-size: 1.2rem;
+    }
+
+    .card-position {
+        font-size: 1rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
+
+    .link-icode {
+        width: 85%;
+        margin-left: 7.5%;
+    }
 }

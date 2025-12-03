@@ -5,7 +5,7 @@
   "home": "INICIO",
   "services": "SERVICIOS",
   "about": "SOBRE NOSOTROS",
-  "contact": "CONTACTO",
+  "contactNav": "CONTACTO",
   "webDevelopment": "Desarrollo Web",
   "mobileApp": "Aplicaciones Móviles",
   "technicalConsulting": "Consultoría Técnica",
@@ -16,55 +16,91 @@
   "digitalMarketingDescription": "Estrategias de marketing digital para aumentar la visibilidad de tu marca.",
   "contactUs": "¡Hablemos!",
   "calendly.buttonText": "¡Reserva una reunión!",
-  "projects": "Proyectos",
-  "aboutme": "Sobre mi",
+  "projects": "PROYECTOS",
+  "experienceNav": "EXPERIENCIA",
+  "aboutme": "SOBRE MÍ",
+  "contact": {
+    "title": "¡Conectemos!",
+    "subtitle": "Siempre estoy abierta a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tu visión. No dudes en contactarme a través de cualquiera de los canales a continuación.",
+    "cta": "¡Espero tener noticias tuyas! Construyamos algo increíble juntos."
+  },
   "experience": {
     "title": "Experiencia",
+    "applicaCorp": {
+      "company": "APPLICA CORP",
+      "position": "Ingeniero Full Stack",
+      "years": "Ene 2025 - Nov 2025",
+      "location": "Remoto",
+      "description": "Desarrolló y mantuvo aplicaciones web full-stack usando Next.js, TypeScript y Node.js siguiendo principios de Atomic Design. Diseñó APIs REST y GraphQL escalables, implementó pipelines CI/CD, reduciendo el tiempo de despliegue en un 40%."
+    },
+    "sup": {
+      "company": "SUP",
+      "position": "Ingeniero de Soporte de Partners",
+      "years": "Jul 2024 - Feb 2025",
+      "location": "Remoto",
+      "description": "Proporcionó asistencia técnica a partners, asegurando integración fluida y optimización del rendimiento. Depuró problemas de API, base de datos y servicios en la nube para optimizar las operaciones de los partners."
+    },
     "codingTemple": {
       "company": "CODING TEMPLE",
-      "position": "Instructor de Ingeniería de Software",
-      "years": "2023 - Presente",
+      "position": "Líder de Ingeniería de Software",
+      "years": "Nov 2023 - Presente",
       "location": "Remoto",
-      "description": "Facilita entornos de aprendizaje dinámicos, conduce sesiones instruccionales, desarrolla el currículo y colabora con los instructores. Enfatiza las prácticas de codificación ética y el trabajo en equipo."
+      "description": "Instructor líder fomentando un entorno de aprendizaje dinámico para estudiantes de ingeniería de software. Desarrolló y refinó el currículo alineado con las prácticas actuales de la industria. Guió a los estudiantes a través de proyectos de codificación, desafíos de depuración y ejercicios colaborativos."
     },
-    "venusSd": {
-      "company": "VENUS SD",
+    "onix": {
+      "company": "ONIX",
       "position": "Desarrollador Full Stack",
-      "years": "2021 - 2023",
+      "years": "Abr 2021 - Sep 2023",
       "location": "Remoto",
-      "description": "Desarrolló APIs, sitios web y bases de datos. Proyectos clave incluyen la creación de una API RESTful para un álbum de pegatinas digital del Mundial, una página web minimalista e implementación de soluciones impulsadas por IA para optimizar estrategias de trading."
+      "description": "Diseñó y desarrolló APIs, aplicaciones web y bases de datos para diversos clientes. Integró APIs de trading (MetaTrader, Binance) e implementó componentes de machine learning usando TensorFlow para mejorar la automatización y el análisis de datos."
     },
     "alorica": {
       "company": "ALORICA",
       "position": "Moderador de Contenido",
-      "years": "2022 - 2023",
+      "years": "Ago 2022 - Dic 2023",
       "location": "Remoto",
-      "description": "Moderó contenido multilingüe para garantizar la seguridad en línea y analizó redes sociales, implementando políticas para la seguridad del contenido."
+      "description": "Moderó contenido en línea multilingüe en inglés, español y portugués para mantener un entorno digital seguro y conforme. Apoyó el desarrollo de políticas e implementó pautas de moderación que mejoraron la calidad del contenido."
     },
     "venusSdTeacher": {
       "company": "VENUS SD",
       "position": "Profesor de Programación",
-      "years": "2022 - 2023",
+      "years": "Jun 2022 - Ago 2023",
       "location": "Híbrido",
-      "description": "Mentoró a individuos en programación y desarrollo web, creando materiales educativos y proyectos en varios temas de programación."
+      "description": "Enseñó fundamentos de programación y desarrollo web a estudiantes de diversos niveles. Diseñó materiales de curso atractivos incluyendo Introducción a la Programación, Desarrollo Web, Bases de Datos e Introducción al Machine Learning."
     },
     "kellerWilliams": {
       "company": "KELLER WILLIAMS",
-      "position": "Soporte IT",
-      "years": "2023",
+      "position": "Especialista en Soporte IT",
+      "years": "Mar 2023 - Jul 2023",
       "location": "Híbrido",
-      "description": "Proporcionó soporte IT, resolución de problemas y gestión de redes para una agencia inmobiliaria."
+      "description": "Proporcionó soporte técnico y gestión de red para una agencia inmobiliaria, asegurando confiabilidad del sistema y seguridad de datos. Resolvió problemas de hardware, software y conectividad de manera eficiente, reduciendo el tiempo de inactividad."
     },
     "bigPawGames": {
       "company": "BIG PAW GAMES",
       "position": "Diseñador de Juegos",
-      "years": "2020 - 2021",
+      "years": "Abr 2020 - Ago 2021",
       "location": "Híbrido",
-      "description": "Diseñó juegos usando RPG Maker y Unity, enfocándose en mecánicas de juego, narrativas y desarrollo de personajes."
+      "description": "Diseñó mecánicas de juego inmersivas, narrativas y sistemas de personajes para proyectos de RPG Maker y Unity. Implementó lógica de juego y sistemas de progresión, mejorando la participación del jugador y la experiencia general."
     }
   },
   "linkedinProfileAlt": "Perfil de LinkedIn",
   "projectsData": {
+    "globalpassport": {
+      "title": "GlobalPassport",
+      "description": "GlobalPassport es una plataforma para planificar residencias y ciudadanías globales. Ayuda a explorar qué países puedes ser elegibles, compara opciones de residencia y ciudadanía entre países, estima costos y plazos, y conecta con profesionales certificados para ayudar con aplicaciones."
+    },
+    "codingtemple": {
+      "title": "Coding Temple",
+      "description": "Coding Temple es un bootcamp intensivo de ingeniería de software que transforma aprendices motivados en desarrolladores listos para el mercado laboral. A través de cursos prácticos y guiados en desarrollo web full stack, ofrece instrucción inmersiva, mentoría一对一, servicios de carrera y soporte para la inserción laboral para ayudar a los graduados a iniciar carreras técnicas."
+    },
+    "yr": {
+      "title": "YouRewards",
+      "description": "YouRewards es una plataforma personalizada de recompensas y lealtad que ayuda a los usuarios a ganar beneficios por sus acciones diarias. Permite a las empresas crear programas de recompensas personalizados mientras ofrece a los usuarios puntos, beneficios y incentivos exclusivos a través de una experiencia simple y atractiva."
+    },
+    "lavanderiadaserras": {
+      "title": "Lavanderia da Serras",
+      "description": "Lavanderia da Serras ofrece servicios de lavado y cuidado de textil de alta calidad en la región de Serra Gaúcha. Tratamos cada pieza con cuidado, desde ropas diarias hasta telas pesadas, ofreciendo lavado, secado, planchado y recogida/entrega con compromiso de excelencia y satisfacción del cliente."
+    },
     "onix": {
       "title": "ONIX Servicios Digitales",
       "description": "Onix es una empresa de servicios digitales, desarrollada con características como selección de idioma y tema. Es minimalista y sofisticada."
@@ -93,11 +129,65 @@
   "moreProjects": "< Haz clic aquí para más >",
   "aboutMe": {
     "title": "Sobre mí",
-    "fullStackDeveloper": "Desarrolladora Full Stack",
+    "fullStackDeveloper": "Desarrollador Full Stack",
     "passionForComputers": "Pasión por las computadoras desde la infancia",
-    "description": "Con más de 3 años de experiencia en la construcción y mantenimiento de aplicaciones web.",
-    "description2": "Actualmente, estoy cursando una Licenciatura en Ciencias de la Computación en University of the People y siempre he tenido una gran fascinación por la tecnología desde una edad temprana.",
-    "journey": "Mi viaje con las computadoras comenzó cuando era niña, y desde entonces, he estado inmersa en explorar el vasto potencial de la tecnología.",
-    "journey2": "Hoy, me especializo en ser mentora para otros individuos, colaborando en conjunto para lograr grandes resultados, así como promover la educación y buenas prácticas en el ámbito de la ingeniería."
+    "description": "Con más de 5 años de experiencia en Ingeniería de Software",
+    "description2": "Actualmente, estoy cursando una Licenciatura en Ciencias de la Computación y siempre he tenido una gran fascinación por la tecnología desde una edad temprana.",
+    "journey": "Mi viaje con las computadoras comenzó cuando era niño, y desde entonces, he estado inmerso en explorar el vasto potencial de la tecnología.",
+    "journey2": "Hoy, me especializo en ser mentor para otros, colaborando en conjunto para lograr grandes resultados, así como promover la educación y buenas prácticas en el ámbito de la ingeniería.",
+    "hero": {
+      "headlineStart": "¡Hola! Soy",
+      "headlineEnd": "Donde quiera que voy, siempre dejo huella. Ahora me pregunto cuál será mi próximo logro!"
+    },
+    "skills": {
+      "fullStackDev": "Desarrollador Full Stack",
+      "softwareEngineer": "Ingeniero de Software",
+      "years": "5+ Años"
+    },
+    "stats": {
+      "yearsExperience": "Años de Experiencia",
+      "projectsCompleted": "Proyectos Completados",
+      "happyClients": "Clientes Satisfechos"
+    },
+    "services": {
+      "webDev": {
+        "title": "Desarrollo Web",
+        "description": "Construcción de sitios web y aplicaciones web modernas y responsivas con tecnologías de vanguardia."
+      },
+      "fullStackDev": {
+        "title": "Desarrollo Full Stack",
+        "description": "Soluciones de desarrollo de principio a fin desde frontend hasta backend y gestión de bases de datos."
+      },
+      "aiEngineering": {
+        "title": "Ingeniería de IA y LLMs",
+        "description": "Construcción de sistemas inteligentes, agentes de IA y soluciones potenciadas por LLMs con ingeniería avanzada de prompts e integración de machine learning."
+      },
+      "mentoring": {
+        "title": "Mentoría Técnica",
+        "description": "Enseñanza y mentoría de desarrolladores aspirantes para alcanzar sus objetivos profesionales en tecnología."
+      },
+      "heading": "Qué Puedo Hacer Para Ayudar A Construir Tu Producto",
+      "text": "Con más de 5 años de experiencia en ingeniería de software, me especializo en crear soluciones escalables que impulsan el crecimiento empresarial. Desde aplicaciones web hasta consultoría técnica, aporto experiencia y dedicación a cada proyecto.",
+      "profileRole": "Ingeniera de Software Senior",
+      "projectsDelivered": "Proyectos Entregados",
+      "clientSatisfaction": "Satisfacción del Cliente"
+    },
+    "testimonial": {
+      "title": "Excelencia en Ingeniería de Software",
+      "role": "Desarrollador, Arquitecto y Mentor",
+      "text": "Dondequiera que vaya, siempre hago un impacto. Soy una persona resiliente y adaptable. Aprendo rápido y soy una jugadora de equipo. +160 CI. +30 proyectos entregados. 100% satisfacción del cliente. Siempre busco mi próximo desafío!"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portafolio",
+      "contact": "Contacto"
+    }
+  },
+  "footer": {
+    "name": "Yessica Sosa",
+    "title": "Ingeniera de Software",
+    "quote": "Dondequiera que vaya, siempre hago un impacto. ¡Siempre busco mi próximo desafío!",
+    "rights": "Todos los derechos reservados."
   }
 }

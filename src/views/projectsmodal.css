@@ -13,8 +13,9 @@
   }
   
 
+  /* Light mode styles */
   .modal-content2 {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
@@ -22,8 +23,15 @@
     max-height: 90%;
     overflow-y: auto; 
     position: relative;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Dark mode styles */
+  .modal-content2.dark-mode {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
   }
   
   .close-btn {
@@ -34,8 +42,13 @@
     border: none;
     font-size: 2rem;
     font-weight: bold;
-    color: #555;
+    color: #333333;
     cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .modal-content2.dark-mode .close-btn {
+    color: #ffffff;
   }
   
   .close-btn:hover {
@@ -44,15 +57,46 @@
   
   .imageProject {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+  }
+
+  /* Hide AwesomeSlider pagination dots */
+  .awssld__bullets {
+    display: none !important;
+  }
+
+  /* Remove AwesomeSlider background color */
+  .awssld,
+  .awssld__content,
+  .awssld__container {
+    background-color: transparent !important;
   }
   
+  /* Light mode description */
   .descriptionProject {
     font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 20px;
+    color: #333333;
+    line-height: 1.8;
+    margin: 30px auto 30px;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.01) 100%);
+    border-left: 4px solid var(--project-color, #007bff);
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
   }
-  
+
+  /* Dark mode description */
+  .descriptionProject.dark-mode {
+    color: #e0e0e0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+
   .list-inline {
     display: flex;
     justify-content: center;
@@ -68,15 +112,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #333333;
     transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .modal-content2.dark-mode .list-inline-item i {
+    color: #ffffff;
   }
   
   .list-inline-item i:hover {
     transform: scale(1.1);
     color: #007bff;
   }
-  
 
   @media (max-width: 768px) {
     .modal-content2 {
@@ -85,7 +132,10 @@
     }
   
     .descriptionProject {
-      font-size: 1rem;
+      font-size: 0.95rem;
+      padding: 20px 15px;
+      margin: 20px auto;
+      line-height: 1.6;
     }
   
     .list-inline-item i {

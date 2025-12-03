@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./views/App.css";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -10,6 +10,7 @@ import Projects from "./components/projects";
 import Navbar from "./components/Navbar";
 import Contact from "./components/contact";
 import AboutMe from "./components/aboutMe";
+import Footer from "./components/Footer";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -67,7 +68,7 @@ function App() {
             }
           />
         </Routes>
-
+        <Footer isDarkMode={isDarkMode} />
       </div>
     </Router>
   );

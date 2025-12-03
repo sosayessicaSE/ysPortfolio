@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import "../views/home.css";
-import empresa from "../images/empresa.png";
+import { Link } from "react-router-dom";
 import emprendimiento from "../images/emprendimiento.png";
+import empresa from "../images/empresa.png";
 import individuo from "../images/individuo.png";
+import "../views/home.css";
 
 const Home = ({ isDarkMode }) => {
   const { t } = useTranslation(); 
@@ -35,6 +35,10 @@ const Home = ({ isDarkMode }) => {
       </section>
     </div>
   );
+};
+
+Home.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Home;

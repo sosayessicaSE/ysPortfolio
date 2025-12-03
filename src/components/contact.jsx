@@ -1,11 +1,9 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import phoneIcon from '../images/phone.png';
+import chat from '../images/chat.gif';
 import emailIcon from '../images/email.png';
 import linkedinIcon from '../images/linkedin.png';
-import githubIcon from '../images/github.png';
-import contactme from '../images/contactme.png';
-import chat from '../images/chat.gif'
+import phoneIcon from '../images/phone.png';
 import "../views/contact.css";
 
 const contactDetails = {
@@ -22,7 +20,7 @@ const contactDetails = {
 };
 
 const socialLinks = {
-  linkedin: "https://www.linkedin.com/in/-yessicasosa-", 
+  linkedin: "https://www.linkedin.com/in/-jessica-sosa-", 
   github: "https://github.com/sosayessicase" 
 };
 
@@ -30,49 +28,77 @@ const Contact = ({ isDarkMode }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`contact ${isDarkMode ? 'dark-theme' : ''}`}>
+    <div className={`contact-section ${isDarkMode ? 'dark-theme' : ''}`}>
       <div className="contact-container">
-        <div className='imagecontact'>
-          <img src={contactme} alt="" />
-        </div>
-        <div className='chat'>
-          <img src={chat} alt="" />
-        </div>
-        <div className="contact-details">
-          <div className="contact-info">
-          <ContactDetail 
-  icon={contactDetails.office.phone.imageUrl} 
-  text={<a href={`tel:${contactDetails.office.phone.number}`} target="_blank" rel="noopener noreferrer">Whatsapp</a>}
-  altText="Phone"
-/>
-
-            <ContactDetail 
-              icon={contactDetails.office.email.imageUrl} 
-              text={<a href={`mailto:${contactDetails.office.email.address}`}>Email</a>} 
-              altText="Email"
-            />
-            <ContactDetail 
-              icon={linkedinIcon} 
-              text={<a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>} 
-              altText="LinkedIn"
-            />
-            <ContactDetail 
-              icon={githubIcon} 
-              text={<a href={socialLinks.github} target="_blank" rel="noopener noreferrer">GitHub</a>} 
-              altText="GitHub"
-            />
+        {/* Hero Header */}
+        <div className="contact-hero">
+          <h1 className="contact-title">{t('contact.title')}</h1>
+          <p className="contact-subtitle">{t('contact.subtitle')}</p>
+          <div className="chat-animation">
+            <img src={chat} alt="Chat Animation" />
           </div>
         </div>
+
+        {/* Contact Cards Grid */}
+        <div className="contact-cards-grid">
+          <ContactCard 
+            icon={contactDetails.office.phone.imageUrl}
+            title="WhatsApp"
+            link={contactDetails.office.phone.number}
+            linkText="+598 98 418 611"
+            external={true}
+          />
+          
+          <ContactCard 
+            icon={contactDetails.office.email.imageUrl}
+            title="Email"
+            link={`mailto:${contactDetails.office.email.address}`}
+            linkText="ysosamaitia@gmail.com"
+            external={false}
+          />
+          
+          <ContactCard 
+            icon={linkedinIcon}
+            title="LinkedIn"
+            link={socialLinks.linkedin}
+            linkText="Connect on LinkedIn"
+            external={true}
+          />
+          
+        
+        </div>
+
+     
       </div>
     </div>
   );
 };
 
-const ContactDetail = ({ icon, text, altText }) => (
-  <div className="contact-detail">
-    <img src={icon} alt={altText} />
-    <p>{text}</p> 
-  </div>
+const ContactCard = ({ icon, title, link, linkText, external }) => (
+  <a 
+    href={link} 
+    target={external ? "_blank" : undefined}
+    rel={external ? "noopener noreferrer" : undefined}
+    className="contact-card"
+  >
+    <div className="contact-card-icon">
+      <img src={icon} alt={title} />
+    </div>
+    <h3 className="contact-card-title">{title}</h3>
+    <p className="contact-card-link">{linkText}</p>
+  </a>
 );
+
+Contact.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired
+};
+
+ContactCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  external: PropTypes.bool.isRequired
+};
 
 export default Contact;

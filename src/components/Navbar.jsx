@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation
-import '../views/Navbar.css'; 
-import LanguageSelector from './languageSelector'; 
+import { Link } from 'react-router-dom';
+import '../views/Navbar.css';
 import Book from './book';
+import LanguageSelector from './languageSelector';
 
 const Navbar = ({ themeClass }) => {
   const { t } = useTranslation(); // Inicializa useTranslation
@@ -12,11 +12,20 @@ const Navbar = ({ themeClass }) => {
     <div className={`navbar ${themeClass}`}>
       <nav>
         <ul className="menuList">
-        <li>
-        <Link to="/">{t('home')}</Link>
-        </li>
           <li>
-            <Link to="/contact">{t('contact')}</Link>
+            <Link to="/">{t('home')}</Link>
+          </li>
+          <li>
+            <Link to="/aboutme">{t('aboutme')}</Link>
+          </li>
+          <li>
+            <Link to="/projects">{t('projects')}</Link>
+          </li>
+          <li>
+            <Link to="/experience">{t('experienceNav')}</Link>
+          </li>
+          <li>
+            <Link to="/contact">{t('contactNav')}</Link>
           </li> 
         </ul>
      
@@ -30,6 +39,10 @@ const Navbar = ({ themeClass }) => {
       </nav>
     </div>
   );
+};
+
+Navbar.propTypes = {
+  themeClass: PropTypes.string.isRequired
 };
 
 export default Navbar;

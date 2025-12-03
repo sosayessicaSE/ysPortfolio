@@ -2,11 +2,11 @@
     "companies": "Companies",
     "entrepreneurship": "Entrepreneurship",
     "individuals": "Individuals",
-    "home": "HOME",
-    "services": "SERVICES",
-    "about": "ABOUT US",
-    "contact": "CONTACT",
-    "webDevelopment": "Web Development",
+  "home": "HOME",
+  "services": "SERVICES",
+  "about": "ABOUT US",
+  "contactNav": "CONTACT",
+  "webDevelopment": "Web Development",
     "mobileApp": "Mobile Applications",
     "technicalConsulting": "Technical Consulting",
     "digitalMarketing": "Digital Marketing",
@@ -16,55 +16,93 @@
     "digitalMarketingDescription": "Digital marketing strategies to increase your brand's visibility.",
     "contactUs": "Contact me!",
     "calendly.buttonText": "Book a meeting with me!",
-    "projects":"Projects",
-    "aboutme":"About me",
-    "experience": {
-      "title": "Experience",
-      "codingTemple": {
-        "company": "CODING TEMPLE",
-        "position": "Software Engineering Instructor",
-        "years": "2023 - Present",
-        "location": "Remote",
-        "description": "Facilitates dynamic learning environments, conducts instructional sessions, develops curriculum, and collaborates with instructors. Emphasizes ethical coding practices and teamwork."
-      },
-      "venusSd": {
-        "company": "VENUS SD",
-        "position": "Full Stack Developer",
-        "years": "2021 - 2023",
-        "location": "Remote",
-        "description": "Developed APIs, websites, and databases. Key projects include creating a RESTful API for a digital World Cup sticker album, a minimalist web page, and implementing AI-driven solutions for optimizing trading strategies."
-      },
-      "alorica": {
-        "company": "ALORICA",
-        "position": "Content Moderator",
-        "years": "2022 - 2023",
-        "location": "Remote",
-        "description": "Moderated multilingual content to ensure online safety and analyzed social media, implementing policies for content safety."
-      },
-      "venusSdTeacher": {
-        "company": "VENUS SD",
-        "position": "Programming Teacher",
-        "years": "2022 - 2023",
-        "location": "Hybrid",
-        "description": "Mentored individuals in programming and web development, creating educational materials and projects in various programming subjects."
-      },
-      "kellerWilliams": {
-        "company": "KELLER WILLIAMS",
-        "position": "IT Support",
-        "years": "2023",
-        "location": "Hybrid",
-        "description": "Provided IT support, troubleshooting, and network management for a real estate agency."
-      },
-      "bigPawGames": {
-        "company": "BIG PAW GAMES",
-        "position": "Game Designer",
-        "years": "2020 - 2021",
-        "location": "Hybrid",
-        "description": "Designed games using RPG Maker and Unity, focusing on gameplay mechanics, narratives, and character development."
-      }
+    "projects":"PROJECTS",
+    "experienceNav":"EXPERIENCE",
+    "aboutme":"ABOUT ME",
+  "contact": {
+    "title": "Let's Connect!",
+    "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the channels below.",
+    "cta": "Looking forward to hearing from you! Let's build something amazing together."
+  },
+  "experience": {
+    "title": "Experience",
+    "applicaCorp": {
+      "company": "APPLICA CORP",
+      "position": "Full Stack Engineer",
+      "years": "Jan 2025 - Nov 2025",
+      "location": "Remote",
+      "description": "Developed and maintained full-stack web applications using Next.js, TypeScript, and Node.js following Atomic Design principles. Designed scalable REST and GraphQL APIs, implemented CI/CD pipelines, reducing deployment time by 40%."
     },
+    "sup": {
+      "company": "SUP",
+      "position": "Partner Support Engineer",
+      "years": "Jul 2024 - Feb 2025",
+      "location": "Remote",
+      "description": "Provided technical assistance to partners, ensuring seamless integration and performance optimization. Debugged API, database, and cloud service issues to streamline partner operations."
+    },
+    "codingTemple": {
+      "company": "CODING TEMPLE",
+      "position": "Software Engineering Lead",
+      "years": "Nov 2023 - Present",
+      "location": "Remote",
+      "description": "Lead instructor fostering a dynamic learning environment for software engineering students. Developed and refined curriculum aligned with current industry practices. Guided students through coding projects, debugging challenges, and collaborative exercises."
+    },
+    "onix": {
+      "company": "ONIX",
+      "position": "Full Stack Developer",
+      "years": "Apr 2021 - Sep 2023",
+      "location": "Remote",
+      "description": "Designed and developed APIs, web applications, and databases for diverse clients. Integrated trading APIs (MetaTrader, Binance) and implemented machine learning components using TensorFlow to enhance automation and data analysis."
+    },
+    "alorica": {
+      "company": "ALORICA",
+      "position": "Content Moderator",
+      "years": "Aug 2022 - Dec 2023",
+      "location": "Remote",
+      "description": "Moderated multilingual online content in English, Spanish, and Portuguese to maintain a safe and compliant digital environment. Supported policy development and implemented moderation guidelines that improved content quality."
+    },
+    "venusSdTeacher": {
+      "company": "VENUS SD",
+      "position": "Programming Teacher",
+      "years": "Jun 2022 - Aug 2023",
+      "location": "Hybrid",
+      "description": "Taught programming fundamentals and web development to students of varying skill levels. Designed engaging course materials including Introduction to Programming, Web Development, Databases, and Introduction to Machine Learning."
+    },
+    "kellerWilliams": {
+      "company": "KELLER WILLIAMS",
+      "position": "IT Support Specialist",
+      "years": "Mar 2023 - Jul 2023",
+      "location": "Hybrid",
+      "description": "Provided technical support and network management for a real estate agency, ensuring system reliability and data security. Resolved hardware, software, and connectivity issues efficiently, reducing downtime."
+    },
+    "bigPawGames": {
+      "company": "BIG PAW GAMES",
+      "position": "Game Designer",
+      "years": "Apr 2020 - Aug 2021",
+      "location": "Hybrid",
+      "description": "Designed immersive game mechanics, narratives, and character systems for RPG Maker and Unity projects. Implemented gameplay logic and progression systems, improving player engagement and overall experience."
+    }
+  },
     "linkedinProfileAlt": "LinkedIn Profile",
     "projectsData": {
+      "globalpassport": {
+  "title": "GlobalPassport",
+  "description": "GlobalPassport is a platform for planning global residency and citizenship paths. It helps you explore which countries you may be eligible for, compare residency and citizenship options across countries, estimate costs and timelines, and connect you with vetted professionals to help with applications."
+},
+"codingtemple": {
+  "title": "Coding Temple",
+  "description": "Coding Temple is an intensive software engineering bootcamp that turns motivated learners into job-ready developers. Through hands-on, project-driven courses in full stack web development, it offers immersive instruction, one-on-one mentorship, career services, and job placement support to help graduates launch technical careers."
+},
+"yr": {
+  "title": "YouRewards",
+  "description": "YouRewards is a personalized rewards and loyalty platform that helps users earn benefits for their everyday actions. It enables businesses to create custom reward programs while offering users points, perks, and exclusive incentives through a simple, engaging experience."
+},
+"lavanderiadaserras": {
+  "title": "Lavanderia da Serras",
+  "description": "Lavanderia da Serras provides high-quality laundry and textile care services across the Serra Gaúcha region. We treat each piece with care — from everyday clothes to heavy linens — offering washing, drying, ironing and home pickup/delivery with a commitment to excellence and customer satisfaction."
+},
+
+
       "onix": {
         "title": "ONIX Digital Services",
         "description": "Onix is a Digital Services Company, developed with features such as language and theme selection. It is minimalist and sophisticated."
@@ -90,15 +128,69 @@
         "description": "This React portfolio template is designed for beginners in web development. It provides a clean, customizable layout that showcases your skills and projects effectively. With easy-to-follow instructions and reusable components, you can quickly adjust the template to fit your personal style and content. Ideal for building a professional online presence, this template includes sections for your bio, projects, skills, and contact information."
       }
     },
-    "moreProjects": "< Click here for more >",
+    "moreProjects": "Click here for more",
     "aboutMe": {
     "title": "About Me",
     "fullStackDeveloper": "Full Stack Developer",
     "passionForComputers": "Passion for Computers Since Childhood",
-    "description": "With over 3 years of experience in building and maintaining web applications...",
-    "description2":"I am currently pursuing a Bachelor's degree in Computer Science at University of the People and have always had a deep fascination with technology from a young age.",
-  "journey": "My journey with computers began when I was a child, and since then, I have been immersed in exploring the vast potential of technology.",
-  "journey2":"Today, I specialize in mentoring others, collaborating together to achieve great results, as well as promoting education and best practices in the field of engineering."
-}
+    "description": "With over 5 years of experience in Software Engineering",
+    "description2":"I am currently pursuing a Bachelor's degree in Computer Science and have always had a deep fascination with technology from a young age.",
+    "journey": "My journey with computers began when I was a child, and since then, I have been immersed in exploring the vast potential of technology.",
+    "journey2":"Today, I specialize in mentoring others, collaborating together to achieve great results, as well as promoting education and best practices in the field of engineering.",
+    "hero": {
+      "headlineStart": "Hi! I'm",
+      "headlineEnd": "Everywhere I go, I always make an impact. Now I'm wondering what my next achievement will be!"
+    },
+    "skills": {
+      "fullStackDev": "Full Stack Developer",
+      "softwareEngineer": "Software Engineer",
+      "years": "5+ Years"
+    },
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projectsCompleted": "Projects Completed",
+      "happyClients": "Happy Clients"
+    },
+    "services": {
+      "webDev": {
+        "title": "Web Development",
+        "description": "Building modern, responsive websites and web applications with cutting-edge technologies."
+      },
+      "fullStackDev": {
+        "title": "Full Stack Development",
+        "description": "End-to-end development solutions from frontend to backend and database management."
+      },
+      "aiEngineering": {
+        "title": "AI & LLM Engineering",
+        "description": "Building intelligent systems, AI agents, and LLM-powered solutions with advanced prompt engineering and machine learning integration."
+      },
+      "mentoring": {
+        "title": "Technical Mentoring",
+        "description": "Teaching and mentoring aspiring developers to achieve their career goals in tech."
+      },
+      "heading": "What I Can Do To Help Build Your Product",
+      "text": "With over 5 years of experience in software engineering, I specialize in creating scalable solutions that drive business growth. From web applications to technical consulting, I bring expertise and dedication to every project.",
+      "profileRole": "Senior Software Engineer",
+      "projectsDelivered": "Projects Delivered",
+      "clientSatisfaction": "Client Satisfaction"
+    },
+    "testimonial": {
+      "title": "Software Engineering Excellence",
+      "role": "Developer, Architect and Mentor",
+      "text": "Everywhere I go, I always make an impact. I'm a resilient and adaptable person. A fast learner and a team player. +160 IQ. +30 projects delivered. 100% client satisfaction. Always looking for my next challenge!"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "name": "Yessica Sosa",
+    "title": "Software Engineer",
+    "quote": "Everywhere I go, I always make an impact. Always looking for my next challenge!",
+    "rights": "All rights reserved."
+  }
   }
   
