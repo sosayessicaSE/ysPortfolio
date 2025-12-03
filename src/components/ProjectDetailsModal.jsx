@@ -35,14 +35,15 @@ const ProjectDetailsModal = ({ show, onHide, data, isDarkMode }) => {
       <img
         src={elem}
         alt={`Slide ${i}`}
-        style={{ 
-          width: "100%", 
+        style={{
+          width: "100%",
           height: "auto",
-          objectFit: "cover",  // or "contain" depending on your needs
+          objectFit: "cover", // or "contain" depending on your needs
           display: "block",
-          maxHeight: "500px",  // adjust as needed
-          borderRadius: "8px",  // optional
-          boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
+          maxHeight: "500px", // adjust as needed
+          borderRadius: "8px", // optional
+          boxShadow:
+            "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
         }}
       />
     </div>
@@ -50,14 +51,17 @@ const ProjectDetailsModal = ({ show, onHide, data, isDarkMode }) => {
 
   return (
     <div className="modal-overlay" onClick={onHide}>
-      <div className={`modal-content2 ${isDarkMode ? "dark-mode" : ""}`} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={`modal-content2 ${isDarkMode ? "dark-mode" : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className="close-btn" onClick={onHide}>
           &times;
         </button>
 
         <AwesomeSlider className="imageProject">{img}</AwesomeSlider>
 
-        <p 
+        <p
           className={`descriptionProject ${isDarkMode ? "dark-mode" : ""}`}
           style={{ "--project-color": color }}
         >
