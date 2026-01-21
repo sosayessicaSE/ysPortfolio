@@ -4,12 +4,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'TT Drugs';
-	src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
 :root {
     --background-color-light: #f4f4f4;
     --background-color-dark: #070707;

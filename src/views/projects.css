@@ -1,13 +1,6 @@
 @font-face {
   font-family: 'Dream Avenue';
-  src: url('../fonts/fonts.com-Dream_Avenue.ttf') format('truetype'); /* Fixed typo in URL */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Drugs';
-  src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
+  src: url('../fonts/fonnts.com-Dream_Avenue.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -58,7 +51,7 @@
 .gallery-item-title {
   text-align: center;
   margin-top: 1rem;
-  font-family: 'TT Drugs';
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.25rem;
   color: #333; 
   font-weight: bold;
@@ -67,7 +60,7 @@
 .more-projects-link {
   text-align: center;
   margin-top: 2rem;
-  font-family: 'TT Drugs';
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -166,7 +159,7 @@
 }
 
 .modal-body {
-  font-family: 'TT Drugs';
+  font-family: 'Barlow Condensed', sans-serif;
   color: var(--modal-body-color, #666); 
   line-height: 1.8;
 }
