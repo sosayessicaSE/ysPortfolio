@@ -129,6 +129,14 @@ const Experience = ({ isDarkMode }) => {
   // Experience Data Array
   const experience = [
     {
+      company: t('experience.csg.company'),
+      position: t('experience.csg.position'),
+      years: t('experience.csg.years'),
+      location: t('experience.csg.location'),
+      description: t('experience.csg.description'),
+      icon: <FaTools />,
+    },
+    {
       company: t('experience.applicaCorp.company'),
       position: t('experience.applicaCorp.position'),
       years: t('experience.applicaCorp.years'),

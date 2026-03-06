@@ -26,6 +26,13 @@
   },
   "experience": {
     "title": "EXPERIENCIA",
+    "csg": {
+      "company": "CSG",
+      "position": "AI & Automation DevOps",
+      "years": "Out 2025 - Presente",
+      "location": "Remoto",
+      "description": "Projetando e implementando soluções de automação baseadas em IA e práticas DevOps. Construindo pipelines CI/CD, infraestrutura como código e fluxos de automação inteligente para melhorar a entrega e a eficiência operacional."
+    },
     "applicaCorp": {
       "company": "APPLICA CORP",
       "position": "Engenheiro Full Stack",

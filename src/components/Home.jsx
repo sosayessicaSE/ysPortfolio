@@ -1,37 +1,33 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
-import emprendimiento from "../images/emprendimiento.png";
-import empresa from "../images/empresa.png";
-import individuo from "../images/individuo.png";
+import { HiFolder, HiBriefcase, HiUser } from 'react-icons/hi';
 import "../views/home.css";
 
 const Home = ({ isDarkMode }) => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
+
+  const cards = [
+    { to: '/projects', label: t('projects'), icon: HiFolder },
+    { to: '/experience', label: t('experienceNav'), icon: HiBriefcase },
+    { to: '/aboutme', label: t('aboutme'), icon: HiUser },
+  ];
 
   return (
     <div className={`home ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-      
-      <section className={`gallery-section ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-        <div className={`gallery-item ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-          <Link to="/projects">
-            <img src={empresa} alt={t('projects')} />
-            <h2>{t('projects')}</h2>
+      <section className={`home-cards ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
+        {cards.map(({ to, label, icon: Icon }) => (
+          <Link
+            key={to}
+            to={to}
+            className={`home-card ${isDarkMode ? 'dark-theme' : 'light-theme'}`}
+          >
+            <span className="home-card-icon" aria-hidden>
+              <Icon />
+            </span>
+            <h2 className="home-card-title">{label}</h2>
           </Link>
-        </div>
-        
-        <div className={`gallery-item ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-          <Link to="/experience">
-            <img src={emprendimiento} alt={t('experience.title')} />
-            <h2>{t('experience.title')}</h2>
-          </Link>
-        </div>
-        <div className={`gallery-item ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-          <Link to="/aboutme">
-            <img src={individuo} alt={t('aboutme')} />
-            <h2>{t('aboutme')}</h2>
-          </Link>
-        </div>
+        ))}
       </section>
     </div>
   );
