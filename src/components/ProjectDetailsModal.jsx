@@ -11,7 +11,6 @@ const ProjectDetailsModal = ({ show, onHide, data, isDarkMode }) => {
     url = "",
     technologies = [],
     images = [],
-    color = "#007bff",
   } = data;
 
   const tech = technologies.map((icon, i) => (
@@ -61,10 +60,7 @@ const ProjectDetailsModal = ({ show, onHide, data, isDarkMode }) => {
 
         <AwesomeSlider className="imageProject">{img}</AwesomeSlider>
 
-        <p
-          className={`descriptionProject ${isDarkMode ? "dark-mode" : ""}`}
-          style={{ "--project-color": color }}
-        >
+        <p className={`descriptionProject ${isDarkMode ? "dark-mode" : ""}`}>
           {description}
         </p>
         <ul className="list-inline">{tech}</ul>

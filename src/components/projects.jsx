@@ -26,6 +26,14 @@ import gp5 from "../images/projects/gp_5.png";
 import onix1 from "../images/projects/onix1.png";
 import onix2 from "../images/projects/onix2.png";
 import onix3 from "../images/projects/onix3.png";
+import safehalt1 from "../images/projects/safehalt1.png";
+import safehalt2 from "../images/projects/safehalt2.png";
+import safehalt3 from "../images/projects/safehalt3.png";
+import splitsquids1 from "../images/projects/splitsquid1.png";
+import splitsquids2 from "../images/projects/splitsquid2.png";
+import splitsquids3 from "../images/projects/splitsquid3.png";
+import splitsquids4 from "../images/projects/splitsquid4.png";
+import splitsquids5 from "../images/projects/splitsquid5.png";
 import sunrise1 from "../images/projects/sunrise1.png";
 import sunrise2 from "../images/projects/sunrise2.png";
 import sunrise3 from "../images/projects/sunrise3.png";
@@ -33,12 +41,17 @@ import venus1 from "../images/projects/venus1.png";
 import venus2 from "../images/projects/venus2.png";
 import venus3 from "../images/projects/venus3.png";
 import venus4 from "../images/projects/venus4.png";
+import websitesprint1 from "../images/projects/websitesprint1.png";
+import websitesprint2 from "../images/projects/websitesprint2.png";
+import websitesprint3 from "../images/projects/websitesprint3.png";
 import yr1 from "../images/projects/yr_1.png";
 import yr2 from "../images/projects/yr_2.png";
 import yr3 from "../images/projects/yr_3.png";
 
 // Importing translations
 import { useTranslation } from "react-i18next";
+
+// Gallery order on Home should match: src/data/homeProjectGallerySlides.js
 
 // eslint-disable-next-line react/prop-types
 const Projects = ({ isDarkMode }) => {
@@ -47,6 +60,39 @@ const Projects = ({ isDarkMode }) => {
   const [selectedProject, setSelectedProject] = useState({});
 
   const projectsData = [
+    {
+      title: "Split Squid",
+      images: [
+        splitsquids1,
+        splitsquids2,
+        splitsquids3,
+        splitsquids4,
+        splitsquids5,
+      ],
+      startDate: "2026",
+      description: t("projectsData.splitSquids.description"),
+      color: "#00d4ff",
+      technologies: [{ class: "fab fa-react" }, { class: "fab fa-node" }],
+    },
+    {
+      title: "Website Sprint",
+      images: [websitesprint1, websitesprint2, websitesprint3],
+      startDate: "2026",
+      description: t("projectsData.websiteSprint.description"),
+      url: "https://tropicalyear.studio/",
+      color: "#00d4ff",
+      technologies: [{ class: "fab fa-react" }, { class: "fab fa-node" }],
+    },
+    {
+      title: "SafeHalt",
+      images: [safehalt1, safehalt2, safehalt3],
+      startDate: "2026",
+      description: t("projectsData.safeHalt.description"),
+      url: "https://www.safehalt.org/",
+      color: "#7c3aed",
+      technologies: [{ class: "fab fa-react" }, { class: "fab fa-node" }],
+    },
+
     {
       title: "Global Passport",
       images: [gp1, gp2, gp3, gp4, gp5],
@@ -188,6 +234,8 @@ const Projects = ({ isDarkMode }) => {
               src={project.images[0]}
               alt={`${project.title} image`}
               className="gallery-image-projects"
+              width={640}
+              height={400}
             />
             <p className="gallery-item-title">{project.title}</p>
           </div>
@@ -199,7 +247,6 @@ const Projects = ({ isDarkMode }) => {
         data={selectedProject}
         isDarkMode={isDarkMode}
       />
-     
     </section>
   );
 };

@@ -1,131 +1,90 @@
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import { FaBrain, FaChalkboardTeacher, FaLaptopCode, FaRocket } from 'react-icons/fa';
+import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
+import {
+  FaBrain,
+  FaChalkboardTeacher,
+  FaLaptopCode,
+  FaRocket,
+} from "react-icons/fa";
 import profile from "../images/profile.png";
-import '../views/AboutMe.css';
+import "../views/AboutMe.css";
 
 const AboutMe = ({ isDarkMode }) => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   const stats = [
     {
       number: "5+",
-      label: t('aboutMe.stats.yearsExperience'),
-      color: "#8b5cf6"
+      label: t("aboutMe.stats.yearsExperience"),
+      color: "#8b5cf6",
     },
     {
       number: "30+",
-      label: t('aboutMe.stats.projectsCompleted'),
-      color: "#a78bfa"
+      label: t("aboutMe.stats.projectsCompleted"),
+      color: "#a78bfa",
     },
     {
       number: "300+",
-      label: t('aboutMe.stats.happyClients'),
-      color: "#c4b5fd"
-    }
-  ];
-
-  const skills = [
-    {
-      title: t('aboutMe.skills.fullStackDev'),
-      years: t('aboutMe.skills.years'),
-      gradient: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)"
+      label: t("aboutMe.stats.happyClients"),
+      color: "#c4b5fd",
     },
-    {
-      title: t('aboutMe.skills.softwareEngineer'),
-      years: t('aboutMe.skills.years'),
-      gradient: "linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%)"
-    }
   ];
 
   const services = [
     {
-      title: t('aboutMe.services.webDev.title'),
-      description: t('aboutMe.services.webDev.description'),
-      icon: <FaLaptopCode />
+      title: t("aboutMe.services.webDev.title"),
+      description: t("aboutMe.services.webDev.description"),
+      icon: <FaLaptopCode />,
     },
     {
-      title: t('aboutMe.services.fullStackDev.title'),
-      description: t('aboutMe.services.fullStackDev.description'),
-      icon: <FaRocket />
+      title: t("aboutMe.services.fullStackDev.title"),
+      description: t("aboutMe.services.fullStackDev.description"),
+      icon: <FaRocket />,
     },
     {
-      title: t('aboutMe.services.aiEngineering.title'),
-      description: t('aboutMe.services.aiEngineering.description'),
-      icon: <FaBrain />
+      title: t("aboutMe.services.aiEngineering.title"),
+      description: t("aboutMe.services.aiEngineering.description"),
+      icon: <FaBrain />,
     },
     {
-      title: t('aboutMe.services.mentoring.title'),
-      description: t('aboutMe.services.mentoring.description'),
-      icon: <FaChalkboardTeacher />
-    }
+      title: t("aboutMe.services.mentoring.title"),
+      description: t("aboutMe.services.mentoring.description"),
+      icon: <FaChalkboardTeacher />,
+    },
   ];
 
   return (
-    <div className={`about-page ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
+    <div className={`about-page ${isDarkMode ? "dark-theme" : "light-theme"}`}>
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
           <h1 className="hero-headline">
-            {t('aboutMe.hero.headlineStart')} <span className="highlight-name">Yessica</span>.
+            {t("aboutMe.hero.headlineStart")}{" "}
+            <span className="highlight-name">Yessica</span>.
             <br />
-            <span className="hero-subtext">{t('aboutMe.hero.headlineEnd')}</span>
+            <span className="hero-subtext">
+              {t("aboutMe.hero.headlineEndLine1")}
+            </span>
+            <span className="hero-subtext hero-subtext--second">
+              {t("aboutMe.hero.headlineEndLine2")}
+            </span>
           </h1>
-            
-          <div className="hero-content">
-            <div className="skill-badge left-badge" style={{ background: skills[0].gradient }}>
-              <div className="skill-title">{skills[0].title}</div>
-              <div className="skill-years">{skills[0].years}</div>
-            </div>
-
-            <div className="profile-image-container">
-              <div className="profile-oval-frame">
-                <img src={profile} alt={t('aboutMe.fullStackDeveloper')} className="hero-profile-image" />
-              </div>
-            </div>
-
-            <div className="skill-badge right-badge" style={{ background: skills[1].gradient }}>
-              <div className="skill-title">{skills[1].title}</div>
-              <div className="skill-years">{skills[1].years}</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Links Bar */}
-      <section className="social-links-bar">
-        <div className="social-links-container">
-          <a href="https://github.com/sosayessicaSE" target="_blank" rel="noopener noreferrer">{t('aboutMe.social.github')}</a>
-          <a href="https://www.linkedin.com/in/-jessica-sosa-/" target="_blank" rel="noopener noreferrer">{t('aboutMe.social.linkedin')}</a>
-          <a href="#contact">{t('aboutMe.social.contact')}</a>
         </div>
       </section>
 
       {/* About Me Section with Stats */}
       <section className="about-section">
-        <div className="about-container">
-          <div className="about-header">
-            <h1 className="about-title">{t('aboutMe.title')}</h1>
-            <div className="about-description">
-              <p>{t('aboutMe.description')}</p>
-              <p>{t('aboutMe.description2')}</p>
-              <p>{t('aboutMe.journey')}</p>
-              <p>{t('aboutMe.journey2')}</p>
+        <div className="stats-container">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="stat-card"
+              style={{ "--card-color": stat.color }}
+            >
+              <div className="stat-number">{stat.number}</div>
+              <div className="stat-label">{stat.label}</div>
             </div>
-          </div>
-
-          <div className="stats-container">
-            {stats.map((stat, index) => (
-              <div 
-                key={index} 
-                className="stat-card"
-                style={{ '--card-color': stat.color }}
-              >
-                <div className="stat-number">{stat.number}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
       </section>
 
@@ -143,27 +102,37 @@ const AboutMe = ({ isDarkMode }) => {
           </div>
 
           <div className="services-info">
-            <h2 className="services-heading">{t('aboutMe.services.heading')}</h2>
-            <p className="services-text">
-              {t('aboutMe.services.text')}
-            </p>
-            
+            <h2 className="services-heading">
+              {t("aboutMe.services.heading")}
+            </h2>
+            <p className="services-text">{t("aboutMe.services.text")}</p>
+
             <div className="profile-mini">
-              <img src={profile} alt={t('aboutMe.fullStackDeveloper')} className="profile-mini-image" />
+              <img
+                src={profile}
+                alt={t("aboutMe.fullStackDeveloper")}
+                className="profile-mini-image"
+              />
               <div className="profile-mini-info">
-                <div className="profile-mini-name">Yessica Sosa</div>
-                <div className="profile-mini-role">{t('aboutMe.services.profileRole')}</div>
+                <div className="profile-mini-name">Yessica Maitia</div>
+                <div className="profile-mini-role">
+                  {t("aboutMe.services.profileRole")}
+                </div>
               </div>
             </div>
 
             <div className="achievements">
               <div className="achievement-item">
                 <div className="achievement-value">+30</div>
-                <div className="achievement-label">{t('aboutMe.services.projectsDelivered')}</div>
+                <div className="achievement-label">
+                  {t("aboutMe.services.projectsDelivered")}
+                </div>
               </div>
               <div className="achievement-item">
                 <div className="achievement-value">100%</div>
-                <div className="achievement-label">{t('aboutMe.services.clientSatisfaction')}</div>
+                <div className="achievement-label">
+                  {t("aboutMe.services.clientSatisfaction")}
+                </div>
               </div>
             </div>
           </div>
@@ -174,13 +143,15 @@ const AboutMe = ({ isDarkMode }) => {
       <section className="testimonial-section">
         <div className="testimonial-container">
           <div className="quote-icon">&ldquo;</div>
-          <h3 className="testimonial-name">{t('aboutMe.testimonial.title')}</h3>
-          <p className="testimonial-role">{t('aboutMe.testimonial.role')}</p>
-          <p className="testimonial-text">
-            {t('aboutMe.testimonial.text')}
-          </p>
+          <h3 className="testimonial-name">{t("aboutMe.testimonial.title")}</h3>
+          <p className="testimonial-role">{t("aboutMe.testimonial.role")}</p>
+          <p className="testimonial-text">{t("aboutMe.testimonial.text")}</p>
           <div className="testimonial-avatar">
-            <img src={profile} alt={t('aboutMe.testimonial.title')} className="testimonial-image" />
+            <img
+              src={profile}
+              alt={t("aboutMe.testimonial.title")}
+              className="testimonial-image"
+            />
           </div>
         </div>
       </section>

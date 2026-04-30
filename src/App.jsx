@@ -41,7 +41,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}
+            element={<Home isDarkMode={isDarkMode} />}
           />
           <Route
             path="/contact"

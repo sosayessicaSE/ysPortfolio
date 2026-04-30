@@ -1,1 +1,1 @@
-Yessica Sosa - Software Engineer
+Yessica Maitia - Software Engineer

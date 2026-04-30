@@ -1,200 +1,324 @@
 {
-  "companies": "Empresas",
-  "entrepreneurship": "Empreendedorismo",
-  "individuals": "Indivíduos",
-  "home": "INÍCIO",
-  "services": "SERVIÇOS",
-  "about": "SOBRE NÓS",
-  "contactNav": "CONTATO",
-  "webDevelopment": "Desenvolvimento Web",
-  "mobileApp": "Aplicativos Móveis",
-  "technicalConsulting": "Consultoria Técnica",
-  "digitalMarketing": "Marketing Digital",
-  "webDevelopmentDescription": "Criamos sites personalizados otimizados para todas as plataformas.",
-  "mobileAppDescription": "Desenvolvemos aplicativos móveis nativos e multiplataforma.",
-  "technicalConsultingDescription": "Oferecemos consultoria técnica para ajudar a levar seu projeto para o próximo nível.",
-  "digitalMarketingDescription": "Estratégias de marketing digital para aumentar a visibilidade da sua marca.",
-  "contactUs": "Contacte-me!",
-  "calendly.buttonText": "Agende uma reunião!",
-  "projects": "PROJETOS",
-  "experienceNav": "EXPERIÊNCIA",
-  "aboutme": "SOBRE MIM",
-  "contact": {
-    "title": "Vamos Conectar!",
-    "subtitle": "Estou sempre aberta para discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão. Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo.",
-    "cta": "Aguardo seu contato! Vamos construir algo incrível juntos."
-  },
-  "experience": {
-    "title": "EXPERIENCIA",
-    "csg": {
-      "company": "CSG",
-      "position": "AI & Automation DevOps",
-      "years": "Out 2025 - Presente",
-      "location": "Remoto",
-      "description": "Projetando e implementando soluções de automação baseadas em IA e práticas DevOps. Construindo pipelines CI/CD, infraestrutura como código e fluxos de automação inteligente para melhorar a entrega e a eficiência operacional."
+    "companies": "Empresas",
+    "entrepreneurship": "Empreendedorismo",
+    "individuals": "Indivíduos",
+    "home": "INÍCIO",
+    "services": "SERVIÇOS",
+    "about": "SOBRE NÓS",
+    "contactNav": "CONTATO",
+    "webDevelopment": "Desenvolvimento Web",
+    "mobileApp": "Aplicativos Móveis",
+    "technicalConsulting": "Consultoria Técnica",
+    "digitalMarketing": "Marketing Digital",
+    "webDevelopmentDescription": "Criamos sites personalizados otimizados para todas as plataformas.",
+    "mobileAppDescription": "Desenvolvemos aplicativos móveis nativos e multiplataforma.",
+    "technicalConsultingDescription": "Oferecemos consultoria técnica para ajudar a levar seu projeto para o próximo nível.",
+    "digitalMarketingDescription": "Estratégias de marketing digital para aumentar a visibilidade da sua marca.",
+    "contactUs": "Contacte-me!",
+    "projects": "PROJETOS",
+    "experienceNav": "EXPERIÊNCIA",
+    "aboutme": "SOBRE MIM",
+    "contact": {
+        "title": "Vamos Conectar!",
+        "subtitle": "Estou sempre aberta para discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão. Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo.",
+        "cta": "Aguardo seu contato! Vamos construir algo incrível juntos."
     },
-    "applicaCorp": {
-      "company": "APPLICA CORP",
-      "position": "Engenheiro Full Stack",
-      "years": "Jan 2025 - Nov 2025",
-      "location": "Remoto",
-      "description": "Desenvolveu e manteve aplicações web full-stack usando Next.js, TypeScript e Node.js seguindo princípios de Atomic Design. Projetou APIs REST e GraphQL escaláveis, implementou pipelines CI/CD, reduzindo o tempo de implantação em 40%."
+    "experience": {
+        "title": "EXPERIENCIA",
+        "csg": {
+            "company": "CSG",
+            "position": "AI & Automation DevOps",
+            "years": "Out 2025 - Presente",
+            "location": "Remoto",
+            "description": "Projetando e implementando soluções de automação baseadas em IA e práticas DevOps. Construindo pipelines CI/CD, infraestrutura como código e fluxos de automação inteligente para melhorar a entrega e a eficiência operacional."
+        },
+        "applicaCorp": {
+            "company": "APPLICA CORP",
+            "position": "Engenheiro Full Stack",
+            "years": "Jan 2025 - Nov 2025",
+            "location": "Remoto",
+            "description": "Desenvolveu e manteve aplicações web full-stack usando Next.js, TypeScript e Node.js seguindo princípios de Atomic Design. Projetou APIs REST e GraphQL escaláveis, implementou pipelines CI/CD, reduzindo o tempo de implantação em 40%."
+        },
+        "sup": {
+            "company": "SUP",
+            "position": "Engenheiro de Suporte de Parceiros",
+            "years": "Jul 2024 - Fev 2025",
+            "location": "Remoto",
+            "description": "Forneceu assistência técnica aos parceiros, garantindo integração perfeita e otimização de desempenho. Depurou problemas de API, banco de dados e serviços em nuvem para otimizar as operações dos parceiros."
+        },
+        "codingTemple": {
+            "company": "CODING TEMPLE",
+            "position": "Líder de Engenharia de Software",
+            "years": "Nov 2023 - Presente",
+            "location": "Remoto",
+            "description": "Instrutor líder promovendo um ambiente de aprendizado dinâmico para estudantes de engenharia de software. Desenvolveu e refinou o currículo alinhado com as práticas atuais da indústria. Orientou os alunos através de projetos de codificação, desafios de depuração e exercícios colaborativos."
+        },
+        "onix": {
+            "company": "ONIX",
+            "position": "Desenvolvedor Full Stack",
+            "years": "Abr 2021 - Set 2023",
+            "location": "Remoto",
+            "description": "Projetou e desenvolveu APIs, aplicações web e bancos de dados para diversos clientes. Integrou APIs de trading (MetaTrader, Binance) e implementou componentes de machine learning usando TensorFlow para melhorar a automação e análise de dados."
+        },
+        "alorica": {
+            "company": "ALORICA",
+            "position": "Moderador de Conteúdo",
+            "years": "Ago 2022 - Dez 2023",
+            "location": "Remoto",
+            "description": "Moderou conteúdo online multilíngue em inglês, espanhol e português para manter um ambiente digital seguro e em conformidade. Apoiou o desenvolvimento de políticas e implementou diretrizes de moderação que melhoraram a qualidade do conteúdo."
+        },
+        "venusSdTeacher": {
+            "company": "VENUS SD",
+            "position": "Professor de Programação",
+            "years": "Jun 2022 - Ago 2023",
+            "location": "Híbrido",
+            "description": "Ensinou fundamentos de programação e desenvolvimento web para alunos de diversos níveis. Projetou materiais de curso envolventes incluindo Introdução à Programação, Desenvolvimento Web, Bancos de Dados e Introdução ao Machine Learning."
+        },
+        "kellerWilliams": {
+            "company": "KELLER WILLIAMS",
+            "position": "Especialista em Suporte IT",
+            "years": "Mar 2023 - Jul 2023",
+            "location": "Híbrido",
+            "description": "Forneceu suporte técnico e gerenciamento de rede para uma agência imobiliária, garantindo confiabilidade do sistema e segurança de dados. Resolveu problemas de hardware, software e conectividade de forma eficiente, reduzindo o tempo de inatividade."
+        },
+        "bigPawGames": {
+            "company": "BIG PAW GAMES",
+            "position": "Designer de Jogos",
+            "years": "Abr 2020 - Ago 2021",
+            "location": "Híbrido",
+            "description": "Projetou mecânicas de jogo imersivas, narrativas e sistemas de personagens para projetos de RPG Maker e Unity. Implementou lógica de jogo e sistemas de progressão, melhorando o engajamento do jogador e a experiência geral."
+        }
     },
-    "sup": {
-      "company": "SUP",
-      "position": "Engenheiro de Suporte de Parceiros",
-      "years": "Jul 2024 - Fev 2025",
-      "location": "Remoto",
-      "description": "Forneceu assistência técnica aos parceiros, garantindo integração perfeita e otimização de desempenho. Depurou problemas de API, banco de dados e serviços em nuvem para otimizar as operações dos parceiros."
+    "linkedinProfileAlt": "Perfil do LinkedIn",
+    "projectsData": {
+        "splitSquids": {
+            "title": "Split Squid",
+            "headline": "Divida contas em grupo sem matemática coletiva.",
+            "heroBody": "Tire uma foto do recibo, marque quem pediu o quê e feche a conta rápido e de forma justa. O modo viagem agrupa recibos em várias noites para você aproveitar o momento e acertar o dinheiro depois.",
+            "microcopy": "Sem cartão de crédito. Convide o grupo com um link.",
+            "ctaDownload": "Baixar app",
+            "ctaHowItWorks": "Como funciona →",
+            "navAbout": "SOBRE",
+            "navContact": "CONTATO",
+            "navFeatures": "RECURSOS",
+            "navLogin": "ENTRAR",
+            "navSignUp": "Cadastrar",
+            "description": "Split Squid ajuda grupos a fechar contas compartilhadas sem planilhas: fotografe o recibo, marque quem pediu o quê e divida com justiça. O modo viagem agrupa recibos entre noites para você curtir a viagem e acertar depois. Sem cartão de crédito—convide o grupo com um link."
+        },
+        "websiteSprint": {
+            "title": "Website Sprint",
+            "description": "Website Sprint é o serviço focado da Tropical Year Studio para entregar um site de marketing refinado em um prazo definido—estrutura, mensagens, UI responsiva e publicação—para equipes terem presença web sólida sem ciclos longos de agência."
+        },
+        "safeHalt": {
+            "title": "SafeHalt",
+            "description": "O SafeHalt parece um aplicativo comum no seu celular, mas abre um espaço privado para planejamento de segurança e apoio. Sem pressão. Sem julgamentos. Apenas as suas opções."
+        },
+        "globalpassport": {
+            "title": "GlobalPassport",
+            "description": "GlobalPassport é uma plataforma para planejar residências e cidadania globais. Ajuda a explorar quais países você pode ser elegível, compara opções de residência e cidadania entre países, estima custos e prazos, e conecta com profissionais certificados para ajudar com aplicações."
+        },
+        "codingtemple": {
+            "title": "Coding Temple",
+            "description": "Coding Temple é um bootcamp intensivo de engenharia de software que transforma aprendizes motivados em desenvolvedores prontos para o mercado laboral. Através de cursos práticos e guiados em desenvolvimento web full stack, oferece instrução imersiva, mentorias一对一, serviços de carreira e suporte para inserção laboral para ajudar os graduados a iniciar carreiras técnicas."
+        },
+        "yr": {
+            "title": "YouRewards",
+            "description": "YouRewards é uma plataforma personalizada de recompensas e lealdade que ajuda os usuários a ganhar benefícios por suas ações diárias. Permite às empresas criar programas de recompensas personalizados enquanto oferece aos usuários pontos, benefícios e incentivos exclusivos através de uma experiência simples e atraente."
+        },
+        "lavanderiadaserras": {
+            "title": "Lavanderia da Serras",
+            "description": "Lavanderia da Serras oferece serviços de lavagem e cuidado de tecido de alta qualidade na região da Serra Gaúcha. Tratamos cada peça com cuidado, desde roupas diárias até tecidos pesados, oferecendo lavagem, secagem, planchamento e recolhimento/entrega com compromisso de excelência e satisfação do cliente."
+        },
+        "onix": {
+            "title": "ONIX Serviços Digitais",
+            "description": "Onix é uma empresa de serviços digitais, desenvolvida com recursos como seleção de idioma e tema. É minimalista e sofisticada."
+        },
+        "sunrise": {
+            "title": "Sunrise Imóveis",
+            "description": "Sunrise é mais do que apenas um modelo; é uma base para futuros projetos no setor imobiliário. Nosso objetivo é melhorar e expandir continuamente nossa plataforma, integrando novos recursos e tecnologias para atender às necessidades em evolução de nossos clientes."
+        },
+        "codingBot": {
+            "title": "Coding Bot",
+            "description": "Coding Bot é um poderoso assistente de programação projetado para simplificar suas tarefas de codificação. Basta enviar uma tarefa detalhada ou uma declaração de problema, e o Coding Bot gerará o código correspondente junto com uma explicação clara. Seja você um iniciante aprendendo a programar ou um desenvolvedor experiente, o Coding Bot ajuda você a economizar tempo e focar no aprimoramento de suas ideias."
+        },
+        "venusSd": {
+            "title": "Venus SD",
+            "description": "Venus SD é uma Start Up dedicada ao design e desenvolvimento de software para negócios. Este design simples e minimalista foi o primeiro mockup para cliente LATAM."
+        },
+        "qatarCollection": {
+            "title": "Coleção Qatar",
+            "description": "A API de rastreamento de figurinhas do Qatar é uma ferramenta poderosa para fãs de futebol e colecionadores de figurinhas. Com sua interface fácil de usar, é uma escolha ideal para quem deseja manter um controle completo de sua coleção de figurinhas da Copa do Mundo."
+        },
+        "portfolioTemplate": {
+            "title": "Modelo de Portfólio",
+            "description": "Este modelo de portfólio em React é projetado para iniciantes em desenvolvimento web. Ele fornece um layout limpo e personalizável que exibe suas habilidades e projetos de forma eficaz. Com instruções fáceis de seguir e componentes reutilizáveis, você pode ajustar rapidamente o modelo para se adequar ao seu estilo pessoal e conteúdo. Ideal para construir uma presença online profissional, este modelo inclui seções para sua biografia, projetos, habilidades e informações de contato."
+        }
     },
-    "codingTemple": {
-      "company": "CODING TEMPLE",
-      "position": "Líder de Engenharia de Software",
-      "years": "Nov 2023 - Presente",
-      "location": "Remoto",
-      "description": "Instrutor líder promovendo um ambiente de aprendizado dinâmico para estudantes de engenharia de software. Desenvolveu e refinou o currículo alinhado com as práticas atuais da indústria. Orientou os alunos através de projetos de codificação, desafios de depuração e exercícios colaborativos."
+    "moreProjects": "< Clique aqui para mais >",
+    "aboutMe": {
+        "title": "Sobre mim",
+        "fullStackDeveloper": "Desenvolvedor Full Stack",
+        "description": "Com mais de 5 anos de experiência em Engenharia de Software",
+        "description2": "Me especializo em criar aplicações web modernas e pixel-perfect, integrando funcionalidades impulsadas por IA que melhoram a experiência do usuário e os resultados do negócio.",
+        "journey": "Minha jornada combina uma sólida engenharia frontend com IA aplicada, transformando requisitos complexos em produtos digitais intuitivos e de alto desempenho.",
+        "journey2": "Hoje, me focando em criar experiências web escaláveis, colaborando entre equipes e entregando soluções de IA práticas alinhadas com os objetivos do produto.",
+        "hero": {
+            "headlineStart": "Oi! Sou",
+            "headlineEnd": "Onde quer que eu vá, sempre deixo minha marca. Agora estou me perguntando qual será minha próxima conquista!",
+            "headlineEndLine1": "Onde quer que eu vá, sempre deixo minha marca.",
+            "headlineEndLine2": "Agora estou me perguntando qual será minha próxima conquista!"
+        },
+        "skills": {
+            "fullStackDev": "Desenvolvedor Full Stack",
+            "softwareEngineer": "Engenheiro de Software",
+            "years": "5+ Anos"
+        },
+        "stats": {
+            "yearsExperience": "Anos de Experiência",
+            "projectsCompleted": "Projetos Concluídos",
+            "happyClients": "Clientes Satisfeitos"
+        },
+        "services": {
+            "webDev": {
+                "title": "Desenvolvimento Web",
+                "description": "Construção de sites e aplicações web modernas e responsivas com tecnologias de ponta."
+            },
+            "fullStackDev": {
+                "title": "Desenvolvimento Full Stack",
+                "description": "Soluções de desenvolvimento completas do frontend ao backend e gerenciamento de banco de dados."
+            },
+            "aiEngineering": {
+                "title": "Engenharia de IA e LLMs",
+                "description": "Construção de sistemas inteligentes, agentes de IA e soluções potencializadas por LLMs com engenharia avançada de prompts e integração de machine learning."
+            },
+            "mentoring": {
+                "title": "Mentoria Técnica",
+                "description": "Ensinando e orientando desenvolvedores aspirantes para alcançar seus objetivos de carreira em tecnologia."
+            },
+            "heading": "O Que Posso Fazer Para Ajudar A Construir Seu Produto",
+            "text": "Com mais de 5 anos de experiência em engenharia de software, me especializo em criar soluções escaláveis que impulsionam o crescimento dos negócios. De aplicações web a consultoria técnica, trago expertise e dedicação a cada projeto.",
+            "profileRole": "Engenheira de Software Senior",
+            "projectsDelivered": "Projetos Entregues",
+            "clientSatisfaction": "Satisfação do Cliente"
+        },
+        "testimonial": {
+            "title": "Excelência em Engenharia de Software",
+            "role": "Desenvolvedora, Arquiteta e Mentora",
+            "text": "Onde quer que eu vá, sempre deixo minha marca. Sou uma pessoa resiliente e adaptável. Aprendo rápido e sou uma jogadora de equipe. +160 CI. +30 projetos entregues. 100% satisfação do cliente. Sempre busco meu próximo desafio!"
+        },
+        "social": {
+            "github": "GitHub",
+            "linkedin": "LinkedIn",
+            "portfolio": "Portfólio",
+            "contact": "Contato"
+        }
     },
-    "onix": {
-      "company": "ONIX",
-      "position": "Desenvolvedor Full Stack",
-      "years": "Abr 2021 - Set 2023",
-      "location": "Remoto",
-      "description": "Projetou e desenvolveu APIs, aplicações web e bancos de dados para diversos clientes. Integrou APIs de trading (MetaTrader, Binance) e implementou componentes de machine learning usando TensorFlow para melhorar a automação e análise de dados."
+    "homePage": {
+        "hero": {
+            "title": "Vamos construir seu próximo produto",
+            "subtitle": "Como engenheira, construo sistemas de produção: confiabilidade mensurável, entregas previsíveis e desempenho sob carga real.",
+            "ctaPrimary": "Entrar em contato",
+            "ctaProjects": "Projetos",
+            "ctaExperience": "Experiência",
+            "galleryAria": "Capturas de tela do projeto",
+            "prevSlide": "Captura de tela do projeto anterior",
+            "nextSlide": "Captura de tela do projeto seguinte"
+        },
+        "quoteBand": {
+            "ariaLabel": "Citação em destaque",
+            "quote": "Minha abordagem vai além da implementação: penso em arquitetura de componentes, reutilização e desempenho.",
+            "attribution": ""
+        }
     },
-    "alorica": {
-      "company": "ALORICA",
-      "position": "Moderador de Conteúdo",
-      "years": "Ago 2022 - Dez 2023",
-      "location": "Remoto",
-      "description": "Moderou conteúdo online multilíngue em inglês, espanhol e português para manter um ambiente digital seguro e em conformidade. Apoiou o desenvolvimento de políticas e implementou diretrizes de moderação que melhoraram a qualidade do conteúdo."
+    "homeReviews": {
+        "title": "O Que Dizem",
+        "subtitle": "Feedback de clientes, gestores e colegas.",
+        "items": [
+            {
+                "firstName": "Austin",
+                "lastName": "Carlson",
+                "company": "Estudante, Coding Temple",
+                "message": "A Yessica foi verdadeiramente um dos pilares que tornaram minha experiência no bootcamp de engenharia de software na Coding Temple memorável e transformadora. É raro encontrar uma instrutora cuja dedicação, empatia e expertise se destaquem em um programa acelerado, mas desde o primeiro dia a Yessica fez a diferença.\n\nSua abordagem ia além de ensinar o currículo. A Yessica se investiu no meu sucesso e no de cada estudante com quem trabalhou. Ela corrigiu minhas tarefas com feedback profundo e acionável, nunca se contentando com comentários rasos. Em vez disso, apontou pontos fortes e áreas de melhoria, sempre com próximos passos claros e práticos. Isso deu significado ao aprendizado e me empoderou a ver erros como chances de crescer.\n\nO que realmente diferenciou a Yessica foi o suporte proativo. Ela não só respondia a problemas; antecipava-os. Por exemplo, quando publiquei sobre uma ferramenta gratuita (Perplexity AI) para ajudar colegas, alguns ficaram confusos. Em vez de deixar a confusão persistir, a Yessica entrou em contato diretamente para esclarecer e sugerir alternativas. Sua iniciativa ajudou a criar um ambiente de aprendizado acolhedor onde ninguém se sentia isolado.\n\nA Yessica virou um recurso confiável para trocar ideias, sempre incentivando diálogo aberto e inovação. Ela tem uma capacidade excepcional de ver onde precisamos melhorar e onde nossos pontos fortes podem ajudar outros. Vários marcos do projeto foram alcançados graças à sua visão, seja depurando código, entendendo frameworks ou lidando com o lado emocional de aprender material novo.\n\nEla encarna um espírito genuinamente colaborativo, tratando o aprendizado como uma jornada mútua. A disposição da Yessica para conversas sobre crescimento acadêmico e pessoal elevou não só minhas habilidades, mas também minha confiança. Sua mentoria definiu o padrão do que apoio educacional deveria ser, e sou melhor como desenvolvedor e pensador por ter trabalhado com ela.\n\nAlém disso, a influência da Yessica vai além da sala de aula. Ela contribui para a cultura de curiosidade e excelência da Coding Temple entre instrutores e estudantes. O apoio dela se sentiu não só durante o curso, mas ao me preparar para desafios do mundo real depois do bootcamp. O incentivo, os conselhos e o cuidado genuíno moldaram minha carreira e aspirações de forma profunda.\n\nSe você busca uma instrutora, mentora ou colaboradora com sabedoria técnica e um investimento real no sucesso dos outros, não poderia recomendar mais a Yessica. A combinação excepcional de maestria e sensibilidade humana vai elevar qualquer pessoa com a sorte de trabalhar com ela.",
+                "avatarSeed": "austinCarlson"
+            },
+            {
+                "firstName": "Ismael",
+                "lastName": "Moraes",
+                "company": "Gerente de projetos, Applica Corp",
+                "message": "Trabalhar com a Yessica na Applica foi excelente. Como o gestor de projetos dela, valorizei como ela transformava requisitos em planos claros, mantinha entregas previsíveis e colaborava abertamente com o time. Trouxe forte perfil full stack, atenção aos detalhes e mentalidade de soluções que deixou nossos lançamentos mais tranquilos.",
+                "avatarSeed": "ismaelMoraes",
+                "avatarParams": "beardProbability=100&hair=hat"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "Herron",
+                "company": "Colega, Coding Temple",
+                "message": "A Yessica é o tipo de pessoa com quem é simplesmente um prazer trabalhar! Tenho gostado de trabalhar com ela todos os dias na Coding Temple. Ela se destaca como uma das profissionais mais inteligentes e inspiradoras com quem já colaborei.\n\nSua excelência transparece na paixão por ensinar e orientar. Ela tem uma capacidade incrível de tornar conceitos técnicos complexos envolventes e acessíveis, garantindo que os alunos saiam com novos insights todos os dias. O entusiasmo dela por tecnologia e engenharia de software não só elevou os estudantes como também enriqueceu toda a nossa equipe. Caramba, ela me ensina algo novo toda semana!\n\nNo plano pessoal, ela é calorosa e amigável. Com certeza é um diferencial para qualquer equipe!",
+                "avatarSeed": "ryanHerron"
+            },
+            {
+                "firstName": "Maya",
+                "lastName": "Chen",
+                "company": "Diretora de Produto, Sunrise",
+                "message": "A Yessica combinou excelente visão técnica com foco em produto. Ela melhorou a experiência do usuário e elevou a qualidade do código em toda a equipe.",
+                "avatarSeed": "mayaChen"
+            },
+            {
+                "firstName": "Jessica",
+                "lastName": "Bundy",
+                "company": "Estudante, Coding Temple",
+                "message": "A Yessica é uma das minhas instrutoras favoritas na Coding Temple! Ela é super preparada, acolhedora e paciente, e cria um ambiente de aprendizado acolhedor e sem pretensão. Ela me ensinou tudo o que sei sobre React e TypeScript. Faz de tudo para ajudar cada estudante a entender um conceito e se dá ao tempo de explicar com clareza. A experiência dela transparece e me inspira sempre que tenho a chance de participar de um dos workshops dela!\n\nAlém de ser uma instrutora de excelência, é uma desenvolvedora incrível com uma mentalidade forte de trabalho em equipe: um verdadeiro diferencial para a indústria.",
+                "avatarSeed": "jessicaBundy"
+            },
+            {
+                "firstName": "Gabriel",
+                "lastName": "Logan Costa",
+                "company": "Estudante, Coding Temple",
+                "message": "Tive o prazer de trabalhar com a Yessica durante meu tempo na Coding Temple, e ela foi um apoio incrível em toda a minha jornada de estudos. Desde o primeiro dia até a formatura, a Yessica sempre esteve presente para oferecer orientação, incentivo e recursos para me ajudar a ter sucesso. O profissionalismo, o positivismo e o cuidado genuíno com os estudantes fizeram uma grande diferença na minha experiência. Sou muito grato por toda a ajuda dela, e recomendo fortemente a Yessica pela dedicação e compromisso com o sucesso dos estudantes.",
+                "avatarSeed": "gabrielLoganCosta"
+            },
+            {
+                "firstName": "Daniel",
+                "lastName": "Erazo",
+                "company": "Colega, Coding Temple",
+                "message": "Conheci a Yessica na Coding Temple; fomos parceiros no departamento de Student Success, onde conseguimos apoiar centenas de estudantes na jornada deles no programa. A Yessica sempre se mostrou uma grande profissional ao sugerir e implementar iniciativas para melhorar a experiência dos estudantes e oferecer o melhor serviço possível; sempre esteve disposta a ajudar estudantes e colegas de equipe.",
+                "avatarSeed": "danielErazo"
+            },
+            {
+                "firstName": "Laura",
+                "lastName": "Espinoza",
+                "company": "Diretora, Keller Williams",
+                "message": "A Yessica foi um suporte de TI excelente para a nossa equipe. Ela se dedicou a ensinar outras pessoas a usar a plataforma com clareza e paciência, e trabalhou cada erro até resolver. Sempre pudemos contar com ela para solucionar problemas a fundo: nada ficava de lado.",
+                "avatarSeed": "lauraEspinoza"
+            },
+            {
+                "firstName": "Estudante",
+                "lastName": "",
+                "company": "Coding Temple",
+                "message": "A Yessica, minha mentora no programa, sempre esteve presente para me ajudar em toda a minha experiência, e não poderia estar mais grato por ter uma mentora tão dedicada.",
+                "avatarSeed": "codingTempleMentee"
+            },
+            {
+                "firstName": "Jarred",
+                "lastName": "Horshaw",
+                "company": "Estudante, Coding Temple",
+                "message": "A Yessica foi essencial durante meu tempo na Coding Temple. Entre me ajudar a entender as partes mais difíceis do currículo e me apoiar em nível pessoal num período em que levei um golpe que me deixou no ponto mais baixo da minha vida, ela esteve comigo em cada passo, compartilhando experiências próprias de momentos parecidos e me ajudando a seguir em frente, com consideração e compaixão incomparáveis. O jeito que ela decompõe os problemas que você pode ter no curso de Engenharia de Software deixa tudo mais fácil de entender, e ela ensina truques que nem estão no curso. Ela é literalmente uma salva-vidas e não sei o que eu faria sem ela.",
+                "avatarSeed": "jarredHorshaw"
+            },
+            {
+                "firstName": "Ozzie",
+                "lastName": "Rivera",
+                "company": "Estudante, Coding Temple",
+                "message": "A Yessica foi extremamente acolhedora e prestativa durante toda a jornada. Ela sempre foi além para dar feedback detalhado, responder perguntas e me incentivar em cada módulo. A paciência e o cuidado genuíno dela fizeram uma grande diferença na minha experiência de aprendizado, e sou imensamente grato pela orientação dela.",
+                "avatarSeed": "ozzieRivera",
+                "avatarParams": "beardProbability=100"
+            }
+        ]
     },
-    "venusSdTeacher": {
-      "company": "VENUS SD",
-      "position": "Professor de Programação",
-      "years": "Jun 2022 - Ago 2023",
-      "location": "Híbrido",
-      "description": "Ensinou fundamentos de programação e desenvolvimento web para alunos de diversos níveis. Projetou materiais de curso envolventes incluindo Introdução à Programação, Desenvolvimento Web, Bancos de Dados e Introdução ao Machine Learning."
-    },
-    "kellerWilliams": {
-      "company": "KELLER WILLIAMS",
-      "position": "Especialista em Suporte IT",
-      "years": "Mar 2023 - Jul 2023",
-      "location": "Híbrido",
-      "description": "Forneceu suporte técnico e gerenciamento de rede para uma agência imobiliária, garantindo confiabilidade do sistema e segurança de dados. Resolveu problemas de hardware, software e conectividade de forma eficiente, reduzindo o tempo de inatividade."
-    },
-    "bigPawGames": {
-      "company": "BIG PAW GAMES",
-      "position": "Designer de Jogos",
-      "years": "Abr 2020 - Ago 2021",
-      "location": "Híbrido",
-      "description": "Projetou mecânicas de jogo imersivas, narrativas e sistemas de personagens para projetos de RPG Maker e Unity. Implementou lógica de jogo e sistemas de progressão, melhorando o engajamento do jogador e a experiência geral."
+    "footer": {
+        "name": "Yessica Maitia",
+        "title": "Engenheira de Software",
+        "quote": "Onde quer que eu vá, sempre deixo minha marca. Sempre busco meu próximo desafio!",
+        "rights": "Todos os direitos reservados."
     }
-  },
-  "linkedinProfileAlt": "Perfil do LinkedIn",
-  "projectsData": {
-    "globalpassport": {
-      "title": "GlobalPassport",
-      "description": "GlobalPassport é uma plataforma para planejar residências e cidadania globais. Ajuda a explorar quais países você pode ser elegível, compara opções de residência e cidadania entre países, estima custos e prazos, e conecta com profissionais certificados para ajudar com aplicações."
-    },
-    "codingtemple": {
-      "title": "Coding Temple",
-      "description": "Coding Temple é um bootcamp intensivo de engenharia de software que transforma aprendizes motivados em desenvolvedores prontos para o mercado laboral. Através de cursos práticos e guiados em desenvolvimento web full stack, oferece instrução imersiva, mentorias一对一, serviços de carreira e suporte para inserção laboral para ajudar os graduados a iniciar carreiras técnicas."
-    },
-    "yr": {
-      "title": "YouRewards",
-      "description": "YouRewards é uma plataforma personalizada de recompensas e lealdade que ajuda os usuários a ganhar benefícios por suas ações diárias. Permite às empresas criar programas de recompensas personalizados enquanto oferece aos usuários pontos, benefícios e incentivos exclusivos através de uma experiência simples e atraente."
-    },
-    "lavanderiadaserras": {
-      "title": "Lavanderia da Serras",
-      "description": "Lavanderia da Serras oferece serviços de lavagem e cuidado de tecido de alta qualidade na região da Serra Gaúcha. Tratamos cada peça com cuidado, desde roupas diárias até tecidos pesados, oferecendo lavagem, secagem, planchamento e recolhimento/entrega com compromisso de excelência e satisfação do cliente."
-    },
-    "onix": {
-      "title": "ONIX Serviços Digitais",
-      "description": "Onix é uma empresa de serviços digitais, desenvolvida com recursos como seleção de idioma e tema. É minimalista e sofisticada."
-    },
-    "sunrise": {
-      "title": "Sunrise Imóveis",
-      "description": "Sunrise é mais do que apenas um modelo; é uma base para futuros projetos no setor imobiliário. Nosso objetivo é melhorar e expandir continuamente nossa plataforma, integrando novos recursos e tecnologias para atender às necessidades em evolução de nossos clientes."
-    },
-    "codingBot": {
-      "title": "Coding Bot",
-      "description": "Coding Bot é um poderoso assistente de programação projetado para simplificar suas tarefas de codificação. Basta enviar uma tarefa detalhada ou uma declaração de problema, e o Coding Bot gerará o código correspondente junto com uma explicação clara. Seja você um iniciante aprendendo a programar ou um desenvolvedor experiente, o Coding Bot ajuda você a economizar tempo e focar no aprimoramento de suas ideias."
-    },
-    "venusSd": {
-      "title": "Venus SD",
-      "description": "Venus SD é uma Start Up dedicada ao design e desenvolvimento de software para negócios. Este design simples e minimalista foi o primeiro mockup para cliente LATAM."
-    },
-    "qatarCollection": {
-      "title": "Coleção Qatar",
-      "description": "A API de rastreamento de figurinhas do Qatar é uma ferramenta poderosa para fãs de futebol e colecionadores de figurinhas. Com sua interface fácil de usar, é uma escolha ideal para quem deseja manter um controle completo de sua coleção de figurinhas da Copa do Mundo."
-    },
-    "portfolioTemplate": {
-      "title": "Modelo de Portfólio",
-      "description": "Este modelo de portfólio em React é projetado para iniciantes em desenvolvimento web. Ele fornece um layout limpo e personalizável que exibe suas habilidades e projetos de forma eficaz. Com instruções fáceis de seguir e componentes reutilizáveis, você pode ajustar rapidamente o modelo para se adequar ao seu estilo pessoal e conteúdo. Ideal para construir uma presença online profissional, este modelo inclui seções para sua biografia, projetos, habilidades e informações de contato."
-    }
-  },
-  "moreProjects": "< Clique aqui para mais >",
-  "aboutMe": {
-    "title": "Sobre mim",
-    "fullStackDeveloper": "Desenvolvedor Full Stack",
-    "passionForComputers": "Paixão por computadores desde a infância",
-    "description": "Com mais de 5 anos de experiência em Engenharia de Software",
-    "description2": "Atualmente, estou cursando uma Licenciatura em Ciência da Computação e sempre tive uma grande fascinação pela tecnologia desde a infância.",
-    "journey": "Minha jornada com computadores começou quando eu era criança, e desde então, tenho estado imerso em explorar o vasto potencial da tecnologia.",
-    "journey2": "Hoje, me especializo em orientar outras pessoas, colaborando juntos para alcançar grandes resultados, assim como promovendo a educação e as melhores práticas no campo da engenharia.",
-    "hero": {
-      "headlineStart": "Oi! Sou",
-      "headlineEnd": "Onde quer que eu vá, sempre deixo minha marca. Agora estou me perguntando qual será minha próxima conquista!"
-    },
-    "skills": {
-      "fullStackDev": "Desenvolvedor Full Stack",
-      "softwareEngineer": "Engenheiro de Software",
-      "years": "5+ Anos"
-    },
-    "stats": {
-      "yearsExperience": "Anos de Experiência",
-      "projectsCompleted": "Projetos Concluídos",
-      "happyClients": "Clientes Satisfeitos"
-    },
-    "services": {
-      "webDev": {
-        "title": "Desenvolvimento Web",
-        "description": "Construção de sites e aplicações web modernas e responsivas com tecnologias de ponta."
-      },
-      "fullStackDev": {
-        "title": "Desenvolvimento Full Stack",
-        "description": "Soluções de desenvolvimento completas do frontend ao backend e gerenciamento de banco de dados."
-      },
-      "aiEngineering": {
-        "title": "Engenharia de IA e LLMs",
-        "description": "Construção de sistemas inteligentes, agentes de IA e soluções potencializadas por LLMs com engenharia avançada de prompts e integração de machine learning."
-      },
-      "mentoring": {
-        "title": "Mentoria Técnica",
-        "description": "Ensinando e orientando desenvolvedores aspirantes para alcançar seus objetivos de carreira em tecnologia."
-      },
-      "heading": "O Que Posso Fazer Para Ajudar A Construir Seu Produto",
-      "text": "Com mais de 5 anos de experiência em engenharia de software, me especializo em criar soluções escaláveis que impulsionam o crescimento dos negócios. De aplicações web a consultoria técnica, trago expertise e dedicação a cada projeto.",
-      "profileRole": "Engenheira de Software Senior",
-      "projectsDelivered": "Projetos Entregues",
-      "clientSatisfaction": "Satisfação do Cliente"
-    },
-    "testimonial": {
-      "title": "Excelência em Engenharia de Software",
-      "role": "Desenvolvedora, Arquiteta e Mentora",
-      "text": "Onde quer que eu vá, sempre deixo minha marca. Sou uma pessoa resiliente e adaptável. Aprendo rápido e sou uma jogadora de equipe. +160 CI. +30 projetos entregues. 100% satisfação do cliente. Sempre busco meu próximo desafio!"
-    },
-    "social": {
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "portfolio": "Portfólio",
-      "contact": "Contato"
-    }
-  },
-  "footer": {
-    "name": "Yessica Sosa",
-    "title": "Engenheira de Software",
-    "quote": "Onde quer que eu vá, sempre deixo minha marca. Sempre busco meu próximo desafio!",
-    "rights": "Todos os direitos reservados."
-  }
 }

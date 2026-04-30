@@ -10,10 +10,13 @@ nav {
   color: #a8a8a8;
   height: 50px;
   margin-left: -2%;
+  position: relative;
+  z-index: 2;
+  background-color: #f4f4f4;
 }
 
 .navbar.dark-theme {
-  background-color: #1d1d1d34; 
+  background-color: #070707;
   box-shadow: inset;
   color: #c9c6c6; 
 }
