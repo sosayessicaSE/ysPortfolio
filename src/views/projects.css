@@ -6,14 +6,20 @@
 }
 
 .gallery {
-  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: clamp(1rem, 4vw, 2rem) clamp(0.75rem, 4vw, 2rem);
+  padding-bottom: clamp(4rem, 14vw, 7rem);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
 }
 
 .gallery-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   font-family: 'Dream Avenue';
-  font-size: 2.5rem;
+  font-size: clamp(1.35rem, 5.5vw, 2.5rem);
   color: #222; 
   text-transform: uppercase;
 }
@@ -25,6 +31,9 @@
   row-gap: 3rem;
   margin: 0 auto;
   align-items: stretch;
+  width: 100%;
+  max-width: min(1400px, 100%);
+  box-sizing: border-box;
 }
 
 .gallery-item-projects {
@@ -40,11 +49,22 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   background-color: #fff;
+  position: relative;
+  z-index: 0;
 }
 
-.gallery-item-projects:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+/* Scale breaks layout flow and can paint over the footer on mobile; keep for mouse only */
+@media (hover: hover) and (pointer: fine) {
+  .gallery-item-projects:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .gallery-item-projects:active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
 }
 
 /* Uniform desktop-style preview: same aspect ratio on every card */
@@ -97,6 +117,10 @@
 }
 
 @media (max-width: 768px) {
+  .gallery {
+    padding-bottom: clamp(5rem, 18vw, 8rem);
+  }
+
   .gallery-container {
     grid-template-columns: 1fr;
     row-gap: 3.25rem;
@@ -107,7 +131,7 @@
   background: var(--modal-bg-color, #fff);
   border-radius: 16px; 
   padding: 2rem;
-  width: 90%;
+  width: min(600px, calc(100vw - 24px));
   position: relative;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); 
   overflow: hidden; 

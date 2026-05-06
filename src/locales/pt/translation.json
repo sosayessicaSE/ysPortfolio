@@ -6,6 +6,8 @@
     "services": "SERVIÇOS",
     "about": "SOBRE NÓS",
     "contactNav": "CONTATO",
+    "navOpenMenu": "Abrir menu de navegação",
+    "navCloseMenu": "Fechar menu de navegação",
     "webDevelopment": "Desenvolvimento Web",
     "mobileApp": "Aplicativos Móveis",
     "technicalConsulting": "Consultoria Técnica",
@@ -27,38 +29,38 @@
         "title": "EXPERIENCIA",
         "csg": {
             "company": "CSG",
-            "position": "AI & Automation DevOps",
+            "position": "Engenheira de IA e Automação",
             "years": "Out 2025 - Presente",
             "location": "Remoto",
-            "description": "Projetando e implementando soluções de automação baseadas em IA e práticas DevOps. Construindo pipelines CI/CD, infraestrutura como código e fluxos de automação inteligente para melhorar a entrega e a eficiência operacional."
+            "description": "Propriedade de sistemas de decisão orientados por IA em plataformas enterprise—dashboards, insights e fluxos de automação que reduzem análise manual e aceleram decisões baseadas em dados. Construção e escala de serviços de IA em Python para integração de modelos e pipelines de inferência; integração em nuvem com desempenho, observabilidade e segurança. Tradução de requisitos complexos em recursos de IA em produção; liderança na adoção de Atomic Design no frontend para UI reutilizável e escalável."
         },
         "applicaCorp": {
             "company": "APPLICA CORP",
             "position": "Engenheiro Full Stack",
             "years": "Jan 2025 - Nov 2025",
             "location": "Remoto",
-            "description": "Desenvolveu e manteve aplicações web full-stack usando Next.js, TypeScript e Node.js seguindo princípios de Atomic Design. Projetou APIs REST e GraphQL escaláveis, implementou pipelines CI/CD, reduzindo o tempo de implantação em 40%."
+            "description": "Responsável por aplicações web full stack com forte foco em frontend (Next.js, TypeScript); Atomic Design gerou ~40% de reutilização de componentes e entrega mais rápida e consistente. Liderou arquitetura frontend do Figma a sistemas de UI escaláveis; integrações REST e GraphQL para interfaces dinâmicas. Otimizou CI/CD com Vercel, reduzindo tempo de implantação ~70%. Colaboração próxima com produto, design e backend."
         },
         "sup": {
             "company": "SUP",
-            "position": "Engenheiro de Suporte de Parceiros",
-            "years": "Jul 2024 - Fev 2025",
+            "position": "Engenheiro de Suporte Técnico",
+            "years": "Jan 2024 - Fev 2025",
             "location": "Remoto",
-            "description": "Forneceu assistência técnica aos parceiros, garantindo integração perfeita e otimização de desempenho. Depurou problemas de API, banco de dados e serviços em nuvem para otimizar as operações dos parceiros."
+            "description": "Propriedade técnica sobre integrações com parceiros—suporte a universidades com onboarding estável e desempenho da plataforma. Diagnóstico e resolução de problemas complexos em APIs, bancos de dados e serviços em nuvem. Automação de questões recorrentes e melhoria de documentação e processos de suporte para habilitar parceiros mais rápido."
         },
         "codingTemple": {
             "company": "CODING TEMPLE",
             "position": "Líder de Engenharia de Software",
-            "years": "Nov 2023 - Presente",
+            "years": "Nov 2023 - Jan 2026",
             "location": "Remoto",
-            "description": "Instrutor líder promovendo um ambiente de aprendizado dinâmico para estudantes de engenharia de software. Desenvolveu e refinou o currículo alinhado com as práticas atuais da indústria. Orientou os alunos através de projetos de codificação, desafios de depuração e exercícios colaborativos."
+            "description": "Liderança instrucional em ambiente hands-on e baseado em projetos alinhado aos padrões da indústria. Mentoria em depuração e entrega de soluções prontas para produção. Ferramentas internas e fluxos de aprendizado; contribuição ao Prism, sistema de avaliação com IA que automatiza correções e melhora consistência do feedback em escala."
         },
         "onix": {
             "company": "ONIX",
             "position": "Desenvolvedor Full Stack",
             "years": "Abr 2021 - Set 2023",
             "location": "Remoto",
-            "description": "Projetou e desenvolveu APIs, aplicações web e bancos de dados para diversos clientes. Integrou APIs de trading (MetaTrader, Binance) e implementou componentes de machine learning usando TensorFlow para melhorar a automação e análise de dados."
+            "description": "Projeto e entrega de aplicações web e APIs escaláveis com ênfase em desempenho de frontend, usabilidade e manutenibilidade. Soluções ponta a ponta com fluxo de dados confiável; parceria com clientes para traduzir necessidades de negócio em produtos lançados. Integração das APIs MetaTrader e Binance para trading em tempo real; ML com TensorFlow para automação e análise."
         },
         "alorica": {
             "company": "ALORICA",
@@ -86,7 +88,7 @@
             "position": "Designer de Jogos",
             "years": "Abr 2020 - Ago 2021",
             "location": "Híbrido",
-            "description": "Projetou mecânicas de jogo imersivas, narrativas e sistemas de personagens para projetos de RPG Maker e Unity. Implementou lógica de jogo e sistemas de progressão, melhorando o engajamento do jogador e a experiência geral."
+            "description": "Design de sistemas centrais do jogo—mecânicas, loops de progressão e desenvolvimento de personagens—para gameplay coeso. Lógica de jogo e gerenciamento de estado em Unity e RPG Maker (Ruby quando aplicável). Narrativa e sistemas interativos; colaboração com arte e desenvolvimento para lançar recursos viáveis e performáticos."
         }
     },
     "linkedinProfileAlt": "Perfil do LinkedIn",
@@ -257,11 +259,12 @@
                 "avatarSeed": "ryanHerron"
             },
             {
-                "firstName": "Maya",
-                "lastName": "Chen",
-                "company": "Diretora de Produto, Sunrise",
-                "message": "A Yessica combinou excelente visão técnica com foco em produto. Ela melhorou a experiência do usuário e elevou a qualidade do código em toda a equipe.",
-                "avatarSeed": "mayaChen"
+                "firstName": "Reid",
+                "lastName": "Compton",
+                "company": "CTO & Co-Founder, Tropical Year",
+                "message": "A Yessica foi uma parceira confiável para a Tropical Year nos últimos meses. Ela trabalhou em uma variedade de projetos e stacks técnicas—nosso site de estúdio, builds de clientes e ferramentas internas—e lidou com o contexto-switching que vem com uma agência ocupada sem perder uma batida. Ela é rápida, comunicativa e não precisa de muita ajuda para se ajustar. Ela entende o trabalho, faz as perguntas certas e entrega. Além disso, ela é fácil de trabalhar—o que vai longe. Nós realmente gostamos de trabalhar com ela e recomendamos fortemente.",
+                "avatarSeed": "reidCompton",
+                "avatarParams": "beardProbability=100&beard=variant10,variant11,variant12"
             },
             {
                 "firstName": "Jessica",

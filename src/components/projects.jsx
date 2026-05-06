@@ -51,7 +51,7 @@ import yr3 from "../images/projects/yr_3.png";
 // Importing translations
 import { useTranslation } from "react-i18next";
 
-// Gallery order on Home should match: src/data/homeProjectGallerySlides.js
+// Hero gallery: Onix first on Home, then projects order; first image each → src/data/homeProjectGallerySlides.js
 
 // eslint-disable-next-line react/prop-types
 const Projects = ({ isDarkMode }) => {

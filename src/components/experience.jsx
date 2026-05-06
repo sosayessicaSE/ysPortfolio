@@ -93,18 +93,24 @@ const Experience = ({ isDarkMode }) => {
     }
   }, []);
 
-  // Scroll functions
-  const scrollLeft = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -400, behavior: 'smooth' });
-    }
+  const scrollExperienceSlider = (direction) => {
+    const el = sliderRef.current;
+    if (!el) return;
+    const card = el.querySelector('.experience-card');
+    const gapRaw =
+      getComputedStyle(el).gap ||
+      getComputedStyle(el).columnGap ||
+      '0';
+    const gap = Number.parseFloat(gapRaw) || 0;
+    const step = card
+      ? card.getBoundingClientRect().width + gap
+      : el.clientWidth;
+    el.scrollBy({ left: direction * step, behavior: 'smooth' });
   };
 
-  const scrollRight = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: 400, behavior: 'smooth' });
-    }
-  };
+  const scrollLeft = () => scrollExperienceSlider(-1);
+
+  const scrollRight = () => scrollExperienceSlider(1);
 
   // Gallery Images Array
   const galleryImages = [

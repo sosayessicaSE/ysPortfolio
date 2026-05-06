@@ -51,15 +51,21 @@
 
 @media (max-width: 1024px) {
   .header {
-    padding: 0px 1px;
+    padding-block: 0;
+    padding-inline: max(8px, env(safe-area-inset-left, 0px))
+      max(8px, env(safe-area-inset-right, 0px));
     height: 250px;
     width: auto;
+    box-sizing: border-box;
   }
 
   .header.dark-theme {
-    padding: 0px 1px;
+    padding-block: 0;
+    padding-inline: max(8px, env(safe-area-inset-left, 0px))
+      max(8px, env(safe-area-inset-right, 0px));
     height: 250px;
     width: auto;
+    box-sizing: border-box;
   }
 
   .header-title {
@@ -73,15 +79,21 @@
 
 @media (max-width: 480px) {
   .header {
-    padding: 0px 1px;
+    padding-block: 0;
+    padding-inline: max(8px, env(safe-area-inset-left, 0px))
+      max(8px, env(safe-area-inset-right, 0px));
     height: 140px;
     width: auto;
+    box-sizing: border-box;
   }
 
   .header.dark-theme {
-    padding: 0px 1px;
+    padding-block: 0;
+    padding-inline: max(8px, env(safe-area-inset-left, 0px))
+      max(8px, env(safe-area-inset-right, 0px));
     height: 140px;
     width: auto;
+    box-sizing: border-box;
   }
 
   .header-title {

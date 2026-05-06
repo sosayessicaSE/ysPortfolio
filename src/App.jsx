@@ -8,6 +8,8 @@ import Home from "./components/Home";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import Navbar from "./components/Navbar";
+import Book from "./components/book";
+import LanguageSelector from "./components/languageSelector";
 import Contact from "./components/contact";
 import AboutMe from "./components/aboutMe";
 import Footer from "./components/Footer";
@@ -38,6 +40,9 @@ function App() {
         <Toggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 
         <Navbar themeClass={themeClass} />
+        <LanguageSelector />
+        <Book />
+
         <Routes>
           <Route
             path="/"

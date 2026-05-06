@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import chat from '../images/chat.gif';
 import emailIcon from '../images/email.png';
 import linkedinIcon from '../images/linkedin.png';
 import phoneIcon from '../images/phone.png';
@@ -34,9 +33,6 @@ const Contact = ({ isDarkMode }) => {
         <div className="contact-hero">
           <h1 className="contact-title">{t('contact.title')}</h1>
           <p className="contact-subtitle">{t('contact.subtitle')}</p>
-          <div className="chat-animation">
-            <img src={chat} alt="Chat Animation" />
-          </div>
         </div>
 
         {/* Contact Cards Grid */}

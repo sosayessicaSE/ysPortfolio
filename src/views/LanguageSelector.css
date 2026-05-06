@@ -1,62 +1,83 @@
 .language-selector {
-    position: fixed;
-    bottom: 2.5%; 
-    left: 5%;  
-    z-index: 1000;
-  
-  }
-  
+  position: fixed;
+  bottom: max(12px, env(safe-area-inset-bottom, 0px));
+  left: max(12px, env(safe-area-inset-left, 0px));
+  z-index: 1000;
+}
+
+.globe-btn {
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-right: 0;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+}
+
+.globe-img {
+  height: 70px;
+  width: 70px;
+}
+
+.language-menu {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 0;
+  right: auto;
+  min-width: min(200px, calc(100vw - 24px));
+  max-width: min(280px, calc(100vw - 24px));
+  box-sizing: border-box;
+  background-color: #ffffffbc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.lang-option {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.lang-option:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.lang-option:focus {
+  outline: none;
+}
+
+@media (max-width: 480px) {
   .globe-btn {
-    border: none;
-    border-radius: 10%;
-    cursor: pointer;
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    margin-right: 22px;
-    width: 70px;
-    height: 70px;
-    background-color: transparent;
-    
+    width: 56px;
+    height: 56px;
+    padding: 6px;
   }
 
-  .globe-img{
-    height: 70px;
-    width: 70px;
+  .globe-img {
+    width: 56px;
+    height: 56px;
   }
-  .language-menu {
-    position: absolute;
-    bottom: 90px; 
-    right: -15%;
-    background-color: #ffffffbc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  
+}
+
+/* Lift menu slightly on very short viewports so it stays on-screen */
+@media (max-height: 520px) {
+  .language-selector {
+    bottom: max(8px, env(safe-area-inset-bottom, 0px));
   }
-  
-  .lang-option {
-    padding: 10px 20px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    text-align: left;
-    font-size: 14px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .lang-option:hover {
-    background-color: rgba(0, 123, 255, 0.1);
-  }
-  
-  .lang-option:focus {
-    outline: none;
-  }
-  
+}
