@@ -150,7 +150,11 @@
 
   .topbar__nav {
     position: fixed;
-    inset: 60px 0 0 0;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: calc(100dvh - 60px);
+    overflow-y: auto;
     background: var(--bg);
     padding: 16px 20px;
     transform: translateY(-8px);
