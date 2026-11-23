@@ -27,10 +27,24 @@
     },
     "experience": {
         "title": "Experience",
+        "cria": {
+            "company": "CRIA",
+            "position": "Founder & Engineer",
+            "years": "2026 - Present",
+            "location": "Remote",
+            "description": "Running Cria, a brand and launch studio for founders. I lead the engineering side, building brand sites and launch pages that work in English, Portuguese and Spanish, and turn brand work into sites a team can keep updating."
+        },
+        "cultiva": {
+            "company": "CULTIVA",
+            "position": "Founder & Engineer",
+            "years": "2026 - Present",
+            "location": "Remote",
+            "description": "Building Cultiva, a recognition and pulse-survey app that lives where teams already work: desktop, web and Slack. I own the product end to end, from design to the Next.js and Electron apps, the Supabase backend and the Slack and Teams integrations, in English, Portuguese and Spanish."
+        },
         "csg": {
             "company": "CSG",
             "position": "AI and Automation Engineer",
-            "years": "Oct 2025 - Present",
+            "years": "Oct 2025 - Sep 2026",
             "location": "Remote",
             "description": "Own AI-driven decision systems across enterprise platforms—dashboards, insights, and automation flows that reduce manual analysis and speed data-informed decisions. Build and scale Python-based AI services for model integration and inference pipelines; integrate AI workflows in cloud environments with strong performance, observability, and security. Translate complex requirements into production-ready AI features; led adoption of Atomic Design on the frontend for reusable, scalable UI."
         },

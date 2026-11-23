@@ -14,6 +14,8 @@ import travel from "../images/travel.jpg";
 import "../views/experience.css";
 
 const ROLES = [
+  { key: "cria", url: "https://criabrazil.com/" },
+  { key: "cultiva", url: "https://getcultiva.com/" },
   { key: "csg" },
   { key: "applicaCorp" },
   { key: "sup" },

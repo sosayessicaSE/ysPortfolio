@@ -27,10 +27,24 @@
     },
     "experience": {
         "title": "Experiência",
+        "cria": {
+            "company": "CRIA",
+            "position": "Fundadora e Engenheira",
+            "years": "2026 - Presente",
+            "location": "Remoto",
+            "description": "Toco a Cria, um estúdio de marca e lançamento para fundadores. Lidero a parte de engenharia: sites de marca e páginas de lançamento em inglês, português e espanhol, que o time consegue continuar atualizando."
+        },
+        "cultiva": {
+            "company": "CULTIVA",
+            "position": "Fundadora e Engenheira",
+            "years": "2026 - Presente",
+            "location": "Remoto",
+            "description": "Construo o Cultiva, um app de reconhecimento e pesquisas de clima que fica onde os times já trabalham: desktop, web e Slack. Cuido do produto de ponta a ponta, do design aos apps em Next.js e Electron, o backend em Supabase e as integrações com Slack e Teams, em inglês, português e espanhol."
+        },
         "csg": {
             "company": "CSG",
             "position": "Engenheira de IA e Automação",
-            "years": "Out 2025 - Presente",
+            "years": "Out 2025 - Set 2026",
             "location": "Remoto",
             "description": "Propriedade de sistemas de decisão orientados por IA em plataformas enterprise—dashboards, insights e fluxos de automação que reduzem análise manual e aceleram decisões baseadas em dados. Construção e escala de serviços de IA em Python para integração de modelos e pipelines de inferência; integração em nuvem com desempenho, observabilidade e segurança. Tradução de requisitos complexos em recursos de IA em produção; liderança na adoção de Atomic Design no frontend para UI reutilizável e escalável."
         },
