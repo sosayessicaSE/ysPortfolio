@@ -1,100 +1,58 @@
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import emailIcon from '../images/email.png';
-import linkedinIcon from '../images/linkedin.png';
-import phoneIcon from '../images/phone.png';
+import { useTranslation } from "react-i18next";
+import { FiArrowUpRight, FiCalendar } from "react-icons/fi";
 import "../views/contact.css";
 
-const contactDetails = {
-  office: {
-    phone: {
-      number: "https://wa.me/59898418611",
-      imageUrl: phoneIcon
-    },
-    email: {
-      address: "ysosamaitia@gmail.com",
-      imageUrl: emailIcon
-    },
-  }
-};
+const CALENDLY_URL =
+  "https://calendly.com/ysosamaitia/introductory-call?hide_gdpr_banner=1&primary_color=5b45d6";
 
-const socialLinks = {
-  linkedin: "https://www.linkedin.com/in/-jessica-sosa-", 
-  github: "https://github.com/sosayessicase" 
-};
-
-const Contact = ({ isDarkMode }) => {
+const Contact = () => {
   const { t } = useTranslation();
 
+  const channels = [
+    { label: t("ui.email"), value: "ysosamaitia@gmail.com", href: "mailto:ysosamaitia@gmail.com" },
+    { label: t("ui.whatsapp"), value: "+598 98 418 611", href: "https://wa.me/59898418611", external: true },
+    { label: t("ui.linkedin"), value: "in/-jessica-sosa-", href: "https://www.linkedin.com/in/-jessica-sosa-", external: true },
+    { label: t("ui.github"), value: "sosayessicase", href: "https://github.com/sosayessicase", external: true },
+  ];
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+    } else {
+      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
-    <div className={`contact-section ${isDarkMode ? 'dark-theme' : ''}`}>
-      <div className="contact-container">
-        {/* Hero Header */}
-        <div className="contact-hero">
-          <h1 className="contact-title">{t('contact.title')}</h1>
-          <p className="contact-subtitle">{t('contact.subtitle')}</p>
+    <section className="contact">
+      <div className="wrap contact__grid">
+        <div>
+          <p className="eyebrow">{t("ui.contactTitle")}</p>
+          <h1 className="page-title">{t("contact.title")}</h1>
+          <p className="page-lede">{t("contact.subtitle")}</p>
+          <button type="button" className="btn btn--primary contact__cta" onClick={openCalendly}>
+            <FiCalendar /> {t("ui.bookCall")}
+          </button>
         </div>
-
-        {/* Contact Cards Grid */}
-        <div className="contact-cards-grid">
-          <ContactCard 
-            icon={contactDetails.office.phone.imageUrl}
-            title="WhatsApp"
-            link={contactDetails.office.phone.number}
-            linkText="+598 98 418 611"
-            external={true}
-          />
-          
-          <ContactCard 
-            icon={contactDetails.office.email.imageUrl}
-            title="Email"
-            link={`mailto:${contactDetails.office.email.address}`}
-            linkText="ysosamaitia@gmail.com"
-            external={false}
-          />
-          
-          <ContactCard 
-            icon={linkedinIcon}
-            title="LinkedIn"
-            link={socialLinks.linkedin}
-            linkText="Connect on LinkedIn"
-            external={true}
-          />
-          
-        
-        </div>
-
-     
+        <ul className="channels">
+          {channels.map((c) => (
+            <li key={c.label}>
+              <a
+                href={c.href}
+                target={c.external ? "_blank" : undefined}
+                rel={c.external ? "noopener noreferrer" : undefined}
+                className="channel"
+              >
+                <span className="channel__label">{c.label}</span>
+                <span className="channel__value">{c.value}</span>
+                <FiArrowUpRight className="channel__arrow" aria-hidden />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </section>
   );
-};
-
-const ContactCard = ({ icon, title, link, linkText, external }) => (
-  <a 
-    href={link} 
-    target={external ? "_blank" : undefined}
-    rel={external ? "noopener noreferrer" : undefined}
-    className="contact-card"
-  >
-    <div className="contact-card-icon">
-      <img src={icon} alt={title} />
-    </div>
-    <h3 className="contact-card-title">{title}</h3>
-    <p className="contact-card-link">{linkText}</p>
-  </a>
-);
-
-Contact.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired
-};
-
-ContactCard.propTypes = {
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired,
-  external: PropTypes.bool.isRequired
 };
 
 export default Contact;

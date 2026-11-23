@@ -1,127 +1,119 @@
-import PropTypes from 'prop-types';
-import { useEffect, useId, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link, useLocation } from 'react-router-dom';
-import '../views/Navbar.css';
+import PropTypes from "prop-types";
+import { useEffect, useId, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import "../views/Navbar.css";
 
-const MOBILE_NAV_QUERY = '(max-width: 768px)';
+const LANGS = [
+  { code: "en", label: "EN" },
+  { code: "es", label: "ES" },
+  { code: "pt", label: "PT" },
+];
 
-const Navbar = ({ themeClass }) => {
-  const { t } = useTranslation();
+const Navbar = ({ isDarkMode, toggleTheme }) => {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const menuId = useId();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [stuck, setStuck] = useState(false);
+  const sentinel = useRef(null);
+
+  useEffect(() => setOpen(false), [location.pathname]);
 
   useEffect(() => {
-    const mq = window.matchMedia(MOBILE_NAV_QUERY);
-    const sync = () => setMobileNav(mq.matches);
-    sync();
-    mq.addEventListener('change', sync);
-    return () => mq.removeEventListener('change', sync);
+    const el = sentinel.current;
+    if (!el) return undefined;
+    const io = new IntersectionObserver(([e]) => setStuck(!e.isIntersecting));
+    io.observe(el);
+    return () => io.disconnect();
   }, []);
 
   useEffect(() => {
-    if (!mobileNav) setMenuOpen(false);
-  }, [mobileNav]);
+    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return undefined;
+    const onKey = (e) => e.key === "Escape" && setOpen(false);
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
+  const current = (i18n.resolvedLanguage || i18n.language || "en").slice(0, 2);
 
-  const menuActive = menuOpen && mobileNav;
-
-  useEffect(() => {
-    if (!menuActive) return undefined;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [menuActive]);
-
-  useEffect(() => {
-    if (!menuActive) return undefined;
-    const onKey = (e) => {
-      if (e.key === 'Escape') setMenuOpen(false);
-    };
-    document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
-  }, [menuActive]);
-
-  const toggleMenu = () => setMenuOpen((open) => !open);
-  const closeMenu = () => setMenuOpen(false);
-
-  const navLinks = (
-    <>
-      <li>
-        <Link to="/" onClick={closeMenu}>
-          {t('home')}
-        </Link>
-      </li>
-      <li>
-        <Link to="/aboutme" onClick={closeMenu}>
-          {t('aboutme')}
-        </Link>
-      </li>
-      <li>
-        <Link to="/projects" onClick={closeMenu}>
-          {t('projects')}
-        </Link>
-      </li>
-      <li>
-        <Link to="/experience" onClick={closeMenu}>
-          {t('experienceNav')}
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" onClick={closeMenu}>
-          {t('contactNav')}
-        </Link>
-      </li>
-    </>
-  );
+  const links = [
+    { to: "/", label: t("home"), end: true },
+    { to: "/aboutme", label: t("aboutme") },
+    { to: "/projects", label: t("projects") },
+    { to: "/experience", label: t("experienceNav") },
+    { to: "/contact", label: t("contactNav") },
+  ];
 
   return (
-    <div
-      className={`navbar ${themeClass}${menuActive ? ' navbar--menu-open' : ''}`}
-    >
-      {menuActive && (
-        <button
-          type="button"
-          className="navbar-backdrop"
-          aria-label={t('navCloseMenu')}
-          onClick={closeMenu}
-        />
-      )}
-      <nav className="navbar-nav" aria-label="Main">
-        <button
-          type="button"
-          className="navbar-burger"
-          aria-expanded={menuActive}
-          aria-controls={menuId}
-          aria-label={menuOpen ? t('navCloseMenu') : t('navOpenMenu')}
-          onClick={toggleMenu}
-        >
-          <span className="navbar-burger-bar" aria-hidden />
-          <span className="navbar-burger-bar" aria-hidden />
-          <span className="navbar-burger-bar" aria-hidden />
-        </button>
+    <>
+    <div ref={sentinel} aria-hidden style={{ height: 1, marginBottom: -1 }} />
+    <header className={`topbar${stuck ? " topbar--stuck" : ""}`}>
+      <div className="topbar__inner">
+        <Link to="/" className="topbar__brand">
+          Yessica Maitia
+        </Link>
 
-        <div
+        <nav
           id={menuId}
-          className={`navbar-mobile-panel${menuActive ? ' is-open' : ''}`}
-          aria-hidden={mobileNav ? !menuActive : undefined}
-          {...(mobileNav && !menuOpen ? { inert: '' } : {})}
+          className={`topbar__nav${open ? " is-open" : ""}`}
+          aria-label="Main"
         >
-          <ul className="menuList">{navLinks}</ul>
+          <ul>
+            {links.map((l) => (
+              <li key={l.to}>
+                <NavLink to={l.to} end={l.end} className="topbar__link">
+                  {l.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="topbar__tools">
+          <div className="lang" role="group" aria-label={t("ui.language")}>
+            {LANGS.map((l) => (
+              <button
+                key={l.code}
+                type="button"
+                className={`lang__btn${current === l.code ? " is-active" : ""}`}
+                aria-pressed={current === l.code}
+                onClick={() => i18n.changeLanguage(l.code)}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+          <button
+            type="button"
+            className="icon-btn"
+            onClick={toggleTheme}
+            aria-label={t("ui.theme")}
+          >
+            {isDarkMode ? <FiSun /> : <FiMoon />}
+          </button>
+          <button
+            type="button"
+            className="icon-btn topbar__burger"
+            aria-expanded={open}
+            aria-controls={menuId}
+            aria-label={open ? t("navCloseMenu") : t("navOpenMenu")}
+            onClick={() => setOpen((o) => !o)}
+          >
+            {open ? <FiX /> : <FiMenu />}
+          </button>
         </div>
-      </nav>
-    </div>
+      </div>
+    </header>
+    </>
   );
 };
 
 Navbar.propTypes = {
-  themeClass: PropTypes.string.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
 };
 
 export default Navbar;

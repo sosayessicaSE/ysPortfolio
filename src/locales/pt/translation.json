@@ -2,10 +2,10 @@
     "companies": "Empresas",
     "entrepreneurship": "Empreendedorismo",
     "individuals": "Indivíduos",
-    "home": "INÍCIO",
+    "home": "Início",
     "services": "SERVIÇOS",
     "about": "SOBRE NÓS",
-    "contactNav": "CONTATO",
+    "contactNav": "Contato",
     "navOpenMenu": "Abrir menu de navegação",
     "navCloseMenu": "Fechar menu de navegação",
     "webDevelopment": "Desenvolvimento Web",
@@ -17,16 +17,16 @@
     "technicalConsultingDescription": "Oferecemos consultoria técnica para ajudar a levar seu projeto para o próximo nível.",
     "digitalMarketingDescription": "Estratégias de marketing digital para aumentar a visibilidade da sua marca.",
     "contactUs": "Contacte-me!",
-    "projects": "PROJETOS",
-    "experienceNav": "EXPERIÊNCIA",
-    "aboutme": "SOBRE MIM",
+    "projects": "Projetos",
+    "experienceNav": "Experiência",
+    "aboutme": "Sobre mim",
     "contact": {
         "title": "Vamos Conectar!",
         "subtitle": "Estou sempre aberta para discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão. Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo.",
         "cta": "Aguardo seu contato! Vamos construir algo incrível juntos."
     },
     "experience": {
-        "title": "EXPERIENCIA",
+        "title": "Experiência",
         "csg": {
             "company": "CSG",
             "position": "Engenheira de IA e Automação",
@@ -105,55 +105,145 @@
             "navFeatures": "RECURSOS",
             "navLogin": "ENTRAR",
             "navSignUp": "Cadastrar",
-            "description": "Split Squid ajuda grupos a fechar contas compartilhadas sem planilhas: fotografe o recibo, marque quem pediu o quê e divida com justiça. O modo viagem agrupa recibos entre noites para você curtir a viagem e acertar depois. Sem cartão de crédito—convide o grupo com um link."
+            "description": "Split Squid ajuda grupos a fechar contas compartilhadas sem planilhas: fotografe o recibo, marque quem pediu o quê e divida com justiça. O modo viagem agrupa recibos entre noites para você curtir a viagem e acertar depois. Sem cartão de crédito—convide o grupo com um link.",
+            "type": "Aplicativo",
+            "summary": "Contas do grupo, acertadas sem planilha."
         },
         "websiteSprint": {
             "title": "Website Sprint",
-            "description": "Website Sprint é o serviço focado da Tropical Year Studio para entregar um site de marketing refinado em um prazo definido—estrutura, mensagens, UI responsiva e publicação—para equipes terem presença web sólida sem ciclos longos de agência."
+            "description": "Website Sprint é o serviço focado da Tropical Year Studio para entregar um site de marketing refinado em um prazo definido—estrutura, mensagens, UI responsiva e publicação—para equipes terem presença web sólida sem ciclos longos de agência.",
+            "type": "Site",
+            "summary": "A oferta de site em duas semanas, dita com clareza."
         },
         "safeHalt": {
             "title": "SafeHalt",
-            "description": "O SafeHalt parece um aplicativo comum no seu celular, mas abre um espaço privado para planejamento de segurança e apoio. Sem pressão. Sem julgamentos. Apenas as suas opções."
+            "description": "O SafeHalt parece um aplicativo comum no seu celular, mas abre um espaço privado para planejamento de segurança e apoio. Sem pressão. Sem julgamentos. Apenas as suas opções.",
+            "type": "Aplicativo",
+            "summary": "Um check-in de segurança que espera o seu ritmo."
         },
         "globalpassport": {
-            "title": "GlobalPassport",
-            "description": "GlobalPassport é uma plataforma para planejar residências e cidadania globais. Ajuda a explorar quais países você pode ser elegível, compara opções de residência e cidadania entre países, estima custos e prazos, e conecta com profissionais certificados para ajudar com aplicações."
+            "title": "Global Passport",
+            "description": "GlobalPassport é uma plataforma para planejar residências e cidadania globais. Ajuda a explorar quais países você pode ser elegível, compara opções de residência e cidadania entre países, estima custos e prazos, e conecta com profissionais certificados para ajudar com aplicações.",
+            "type": "Aplicativo",
+            "summary": "A mudança para o exterior, com países, custo e prazo à vista."
         },
         "codingtemple": {
             "title": "Coding Temple",
-            "description": "Coding Temple é um bootcamp intensivo de engenharia de software que transforma aprendizes motivados em desenvolvedores prontos para o mercado laboral. Através de cursos práticos e guiados em desenvolvimento web full stack, oferece instrução imersiva, mentorias一对一, serviços de carreira e suporte para inserção laboral para ajudar os graduados a iniciar carreiras técnicas."
+            "description": "Coding Temple é um bootcamp intensivo de engenharia de software que transforma aprendizes motivados em desenvolvedores prontos para o mercado laboral. Através de cursos práticos e guiados em desenvolvimento web full stack, oferece instrução imersiva, mentorias一对一, serviços de carreira e suporte para inserção laboral para ajudar os graduados a iniciar carreiras técnicas.",
+            "type": "Site",
+            "summary": "A oferta é o emprego, dita antes do currículo."
         },
         "yr": {
             "title": "YouRewards",
-            "description": "YouRewards é uma plataforma personalizada de recompensas e lealdade que ajuda os usuários a ganhar benefícios por suas ações diárias. Permite às empresas criar programas de recompensas personalizados enquanto oferece aos usuários pontos, benefícios e incentivos exclusivos através de uma experiência simples e atraente."
+            "description": "YouRewards é uma plataforma personalizada de recompensas e lealdade que ajuda os usuários a ganhar benefícios por suas ações diárias. Permite às empresas criar programas de recompensas personalizados enquanto oferece aos usuários pontos, benefícios e incentivos exclusivos através de uma experiência simples e atraente.",
+            "type": "Site",
+            "summary": "Um jeito mais claro de agradecer uma comunidade inteira."
         },
         "lavanderiadaserras": {
             "title": "Lavanderia da Serras",
-            "description": "Lavanderia da Serras oferece serviços de lavagem e cuidado de tecido de alta qualidade na região da Serra Gaúcha. Tratamos cada peça com cuidado, desde roupas diárias até tecidos pesados, oferecendo lavagem, secagem, planchamento e recolhimento/entrega com compromisso de excelência e satisfação do cliente."
+            "description": "Lavanderia da Serras oferece serviços de lavagem e cuidado de tecido de alta qualidade na região da Serra Gaúcha. Tratamos cada peça com cuidado, desde roupas diárias até tecidos pesados, oferecendo lavagem, secagem, planchamento e recolhimento/entrega com compromisso de excelência e satisfação do cliente.",
+            "type": "Site",
+            "summary": "Um site de lavanderia na Serra Gaúcha, com coleta e entrega em destaque."
         },
         "onix": {
-            "title": "ONIX Serviços Digitais",
-            "description": "Onix é uma empresa de serviços digitais, desenvolvida com recursos como seleção de idioma e tema. É minimalista e sofisticada."
+            "title": "Onix",
+            "description": "A Onix é o estúdio de produto que eu dirijo. Desenhamos e construímos apps, sites e ferramentas de IA para equipes nos Estados Unidos e no Brasil. Eu desenhei e construí o site, que funciona em inglês, português e espanhol.",
+            "type": "Site do estúdio",
+            "summary": "O site da Onix, o estúdio de produto que eu dirijo. Em inglês, português e espanhol."
         },
         "sunrise": {
             "title": "Sunrise Imóveis",
-            "description": "Sunrise é mais do que apenas um modelo; é uma base para futuros projetos no setor imobiliário. Nosso objetivo é melhorar e expandir continuamente nossa plataforma, integrando novos recursos e tecnologias para atender às necessidades em evolução de nossos clientes."
+            "description": "Sunrise é mais do que apenas um modelo; é uma base para futuros projetos no setor imobiliário. Nosso objetivo é melhorar e expandir continuamente nossa plataforma, integrando novos recursos e tecnologias para atender às necessidades em evolução de nossos clientes.",
+            "type": "Site",
+            "summary": "A casa vem primeiro. O catálogo vem depois."
         },
         "codingBot": {
             "title": "Coding Bot",
-            "description": "Coding Bot é um poderoso assistente de programação projetado para simplificar suas tarefas de codificação. Basta enviar uma tarefa detalhada ou uma declaração de problema, e o Coding Bot gerará o código correspondente junto com uma explicação clara. Seja você um iniciante aprendendo a programar ou um desenvolvedor experiente, o Coding Bot ajuda você a economizar tempo e focar no aprimoramento de suas ideias."
+            "description": "Coding Bot é um poderoso assistente de programação projetado para simplificar suas tarefas de codificação. Basta enviar uma tarefa detalhada ou uma declaração de problema, e o Coding Bot gerará o código correspondente junto com uma explicação clara. Seja você um iniciante aprendendo a programar ou um desenvolvedor experiente, o Coding Bot ajuda você a economizar tempo e focar no aprimoramento de suas ideias.",
+            "type": "Ferramenta de IA",
+            "summary": "Descreva uma tarefa de código e receba o código pronto com uma explicação simples."
         },
         "venusSd": {
             "title": "Venus SD",
-            "description": "Venus SD é uma Start Up dedicada ao design e desenvolvimento de software para negócios. Este design simples e minimalista foi o primeiro mockup para cliente LATAM."
+            "description": "Venus SD é uma Start Up dedicada ao design e desenvolvimento de software para negócios. Este design simples e minimalista foi o primeiro mockup para cliente LATAM.",
+            "type": "Site",
+            "summary": "Um primeiro protótipo para uma startup de software na América Latina."
         },
         "qatarCollection": {
             "title": "Coleção Qatar",
-            "description": "A API de rastreamento de figurinhas do Qatar é uma ferramenta poderosa para fãs de futebol e colecionadores de figurinhas. Com sua interface fácil de usar, é uma escolha ideal para quem deseja manter um controle completo de sua coleção de figurinhas da Copa do Mundo."
+            "description": "A API de rastreamento de figurinhas do Qatar é uma ferramenta poderosa para fãs de futebol e colecionadores de figurinhas. Com sua interface fácil de usar, é uma escolha ideal para quem deseja manter um controle completo de sua coleção de figurinhas da Copa do Mundo.",
+            "type": "App web",
+            "summary": "Acompanhe cada figurinha do álbum da Copa."
         },
         "portfolioTemplate": {
             "title": "Modelo de Portfólio",
             "description": "Este modelo de portfólio em React é projetado para iniciantes em desenvolvimento web. Ele fornece um layout limpo e personalizável que exibe suas habilidades e projetos de forma eficaz. Com instruções fáceis de seguir e componentes reutilizáveis, você pode ajustar rapidamente o modelo para se adequar ao seu estilo pessoal e conteúdo. Ideal para construir uma presença online profissional, este modelo inclui seções para sua biografia, projetos, habilidades e informações de contato."
+        },
+        "cultiva": {
+            "title": "Cultiva",
+            "description": "Reconhecimento e pesquisas de clima onde o time já trabalha.",
+            "points": [
+                "Kudos ligados aos valores da empresa, com pontos opcionais",
+                "Pesquisas de clima anônimas de verdade, respondidas em segundos",
+                "Um só hábito no desktop, na web e no Slack, em PT, EN e ES"
+            ],
+            "type": "App SaaS",
+            "summary": "Reconhecimento e pesquisas de clima onde o time já trabalha."
+        },
+        "wewash": {
+            "title": "WeWash",
+            "description": "Um marketplace de lavanderias que cabe no bolso.",
+            "points": [
+                "As pessoas encontram lavanderias perto, com horário e distância",
+                "As lojas parceiras mostram os preços antes do pedido",
+                "A coleta é pedida pelo WhatsApp, com um código para acompanhar"
+            ],
+            "type": "App mobile e site",
+            "summary": "Um marketplace de lavanderias que cabe no bolso."
+        },
+        "retailogists": {
+            "title": "Retailogists",
+            "description": "Uma vitrine que o time consegue continuar publicando.",
+            "points": [
+                "A vitrine segue rápida o bastante para o time continuar publicando",
+                "Os fluxos de varejo que a operação já usa continuam no ar",
+                "As publicações saem por um pipeline estável"
+            ],
+            "type": "Comércio",
+            "summary": "Uma vitrine que o time consegue continuar publicando."
+        },
+        "cria": {
+            "title": "Cria",
+            "description": "Um site de marca que abre como um filme e termina numa conversa.",
+            "points": [
+                "A marca se entende da abertura até a conversa",
+                "Marca, lançamento e crescimento são três caminhos para o visitante",
+                "Inglês, português e espanhol rodam no mesmo site"
+            ],
+            "type": "Site de marca",
+            "summary": "Um site de marca que abre como um filme e termina numa conversa."
+        },
+        "atlas": {
+            "title": "Atlas",
+            "description": "O Atlas reúne as ferramentas de um projeto num só lugar.",
+            "points": [
+                "Reuniões, conversas, documentos e tarefas ficam no mesmo projeto",
+                "O que chega de cada ferramenta cai no mesmo registro",
+                "O time vê o trabalho num só lugar"
+            ],
+            "type": "Aplicativo",
+            "summary": "O Atlas reúne as ferramentas de um projeto num só lugar."
+        },
+        "dreamDoctor": {
+            "title": "The Dream Doctor",
+            "description": "Um aplicativo privado para o momento depois de um pesadelo.",
+            "points": [
+                "A pessoa se acalma antes de descrever o sonho",
+                "O sonho fica nas palavras dela, num diário privado",
+                "Dá para ensaiar um final mais calmo antes de dormir"
+            ],
+            "type": "Aplicativo",
+            "summary": "Um aplicativo privado para o momento depois de um pesadelo."
         }
     },
     "moreProjects": "< Clique aqui para mais >",
@@ -233,7 +323,7 @@
         }
     },
     "homeReviews": {
-        "title": "O Que Dizem",
+        "title": "O que dizem",
         "subtitle": "Feedback de clientes, gestores e colegas.",
         "items": [
             {
@@ -323,5 +413,43 @@
         "title": "Engenheira de Software",
         "quote": "Onde quer que eu vá, sempre deixo minha marca. Sempre busco meu próximo desafio!",
         "rights": "Todos os direitos reservados."
+    },
+    "ui": {
+        "role": "Engenheira de Software Sênior",
+        "tagline": "Full-stack e IA",
+        "selectedWork": "Trabalhos selecionados",
+        "allProjects": "Todos os projetos",
+        "projectsTitle": "Projetos",
+        "projectsLede": "Apps, sites e ferramentas de IA que desenhei e construí, muitos deles pela Onix, meu estúdio de produto.",
+        "builtAtOnix": "Feito na Onix",
+        "visit": "Visitar site",
+        "close": "Fechar",
+        "experienceLede": "Onde trabalhei, do mais recente ao mais antigo.",
+        "aboutTitle": "Sobre",
+        "whatIDo": "O que eu faço",
+        "contactTitle": "Contato",
+        "bookCall": "Agendar uma conversa",
+        "email": "E-mail",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "reviewsTitle": "O que dizem",
+        "language": "Idioma",
+        "theme": "Alternar modo escuro",
+        "onixLink": "Estúdio Onix",
+        "moments": "Pelo caminho",
+        "caseStudy": "Ler o estudo de caso",
+        "yearsExp": "anos construindo software",
+        "projectsShipped": "projetos entregues",
+        "basedIn": "Remoto · clientes nos EUA e na América Latina",
+        "seeProjects": "Ver projetos",
+        "readMore": "Ler mais",
+        "showLess": "Ver menos",
+        "ctaTitle": "Tem um produto em mente?",
+        "ctaText": "Conte o que você está construindo, ou o que ainda não funciona.",
+        "filterAll": "Todos",
+        "filterOnix": "Feito na Onix",
+        "filterOwn": "Independentes",
+        "showAllReviews": "Ver todas as avaliações"
     }
 }

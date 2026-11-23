@@ -1,376 +1,80 @@
-/* ========================================
-   CONTACT SECTION - PROFESSIONAL DESIGN
-   ======================================== */
-.contact-section {
-  width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);
-  padding-block: 100px;
-  padding-inline: max(40px, env(safe-area-inset-left, 0px))
-    max(40px, env(safe-area-inset-right, 0px));
-  box-sizing: border-box;
-  overflow-x: clip;
-  transition: background-color 0.3s ease;
+.contact {
+  padding: 88px 0 112px;
 }
 
-.dark-theme.contact-section {
-  background: linear-gradient(to bottom, #0f0f0f 0%, #1a1a1a 100%);
-}
-
-.contact-container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: stretch;
-  box-sizing: border-box;
-}
-
-/* ========================================
-   HERO HEADER
-   ======================================== */
-.contact-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  gap: 25px;
-  text-align: center;
-  padding: 60px 20px 40px;
-  width: 100%;
-  max-width: 52rem;
-  box-sizing: border-box;
-}
-
-.contact-title {
-  font-size: 4.5rem;
-  font-weight: 900;
-  color: #1a1a1a;
-  margin: 0;
-  line-height: 1.1;
-  letter-spacing: -2px;
-}
-
-.dark-theme .contact-title {
-  color: #ffffff;
-}
-
-.contact-subtitle {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #4b5563;
-  margin: 0;
-  max-width: 700px;
-  line-height: 1.6;
-}
-
-.dark-theme .contact-subtitle {
-  color: #d1d5db;
-}
-
-/* ========================================
-   CONTACT CARDS GRID
-   ======================================== */
-.contact-cards-grid {
+.contact__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-  gap: 35px;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.contact__cta {
+  margin-top: 32px;
+}
+
+.channels {
+  list-style: none;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  justify-items: stretch;
+  border-top: 1px solid var(--line);
 }
 
-.contact-card {
-  width: 100%;
-  min-width: 0;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 50px 40px;
-  display: flex;
-  flex-direction: column;
+.channel {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--line);
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
+  color: var(--ink);
+  transition: padding 0.2s ease, color 0.2s ease;
 }
 
-.dark-theme .contact-card {
-  background: #262626;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border: 1px solid #404040;
+.channel__label {
+  font-size: 14px;
+  color: var(--muted);
 }
 
-.contact-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #8b5cf6 0%, #a78bfa 100%);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.contact-card:hover::before {
-  transform: scaleX(1);
-}
-
-.contact-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  border-color: #8b5cf6;
-}
-
-.dark-theme .contact-card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-  border-color: #a78bfa;
-}
-
-.contact-card-icon {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9fafb;
-  border-radius: 50%;
-  padding: 20px;
-  transition: all 0.3s ease;
-  border: 2px solid #e5e7eb;
-}
-
-.dark-theme .contact-card-icon {
-  border-color: #4b5563;
-}
-
-.contact-card:hover .contact-card-icon {
-  border-color: #8b5cf6;
-  transform: scale(1.05);
-}
-
-
-
-.contact-card-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-
-
-.contact-card-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0;
-  letter-spacing: -0.5px;
-}
-
-.dark-theme .contact-card-title {
-  color: #ffffff;
-}
-
-.contact-card-link {
-  font-size: 1.1rem;
+.channel__value {
+  font-family: var(--font-display);
+  font-size: 19px;
   font-weight: 500;
-  color: #8b5cf6;
-  margin: 0;
-  text-align: center;
-  line-height: 1.5;
-  transition: color 0.3s ease;
+  overflow-wrap: anywhere;
 }
 
-.dark-theme .contact-card-link {
-  color: #a78bfa;
+.channel__arrow {
+  font-size: 20px;
+  color: var(--muted);
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-
-
-.dark-theme .contact-card:hover .contact-card-link {
-  color: #c4b5fd;
+.channel:hover {
+  color: var(--accent);
 }
 
-
-
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
-@media (max-width: 1200px) {
-  .contact-section {
-    padding-block: 80px;
-    padding-inline: max(30px, env(safe-area-inset-left, 0px))
-      max(30px, env(safe-area-inset-right, 0px));
-  }
-
-  .contact-title {
-    font-size: 3.8rem;
-  }
-
-  .contact-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .contact-cards-grid {
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-  }
+.channel:hover .channel__arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
 }
 
-@media (max-width: 992px) {
-  .contact-section {
-    padding-block: 70px;
-    padding-inline: max(25px, env(safe-area-inset-left, 0px))
-      max(25px, env(safe-area-inset-right, 0px));
+@media (max-width: 860px) {
+  .contact {
+    padding: 48px 0 72px;
   }
-
-  .contact-hero {
-    padding: 30px 15px;
-  }
-
-  .contact-title {
-    font-size: 3.2rem;
-  }
-
-  .contact-subtitle {
-    font-size: 1.2rem;
-  }
-
-  /* Single column: avoids the 3rd card sitting alone in the left column of a 2-col grid */
-  .contact-cards-grid {
+  .contact__grid {
     grid-template-columns: 1fr;
-    gap: 25px;
-    max-width: 100%;
-    margin-inline: auto;
+    gap: 40px;
   }
-
-  .contact-card {
-    padding: 40px 30px;
+  .channel {
+    grid-template-columns: 1fr auto;
+    gap: 2px 12px;
   }
-
-  .cta-text {
-    font-size: 1.3rem;
+  .channel__label {
+    grid-column: 1 / -1;
   }
-}
-
-@media (max-width: 768px) {
-  .contact-section {
-    padding-block: 60px;
-    padding-inline: max(20px, env(safe-area-inset-left, 0px))
-      max(20px, env(safe-area-inset-right, 0px));
-  }
-
-  .contact-hero {
-    gap: 15px;
-  }
-
-  .contact-title {
-    font-size: 2.8rem;
-    letter-spacing: -1px;
-  }
-
-  .contact-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .contact-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0;
-    max-width: 100%;
-  }
-
-  .contact-card {
-    padding: 35px 25px;
-  }
-
-  .contact-card-icon {
-    width: 75px;
-    height: 75px;
-    padding: 15px;
-  }
-
-  .contact-card-title {
-    font-size: 1.5rem;
-  }
-
-  .contact-card-link {
-    font-size: 1rem;
-  }
-
-  .contact-cta {
-    padding: 35px 40px;
-  }
-
-  .cta-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-section {
-    padding-block: 50px;
-    padding-inline: max(15px, env(safe-area-inset-left, 0px))
-      max(15px, env(safe-area-inset-right, 0px));
-  }
-
-  .contact-hero {
-    padding: 20px 10px;
-  }
-
-  .contact-title {
-    font-size: 2.2rem;
-  }
-
-  .contact-subtitle {
-    font-size: 1rem;
-  }
-
-  .contact-cards-grid {
-    gap: 18px;
-  }
-
-  .contact-card {
-    padding: 30px 20px;
-    border-radius: 20px;
-  }
-
-  .contact-card-icon {
-    width: 65px;
-    height: 65px;
-    padding: 12px;
-  }
-
-  .contact-card-title {
-    font-size: 1.35rem;
-  }
-
-  .contact-card-link {
-    font-size: 0.95rem;
-  }
-
-  .contact-cta {
-    padding: 30px 25px;
-    border-radius: 20px;
-  }
-
-  .cta-text {
-    font-size: 1.1rem;
-  }
-
-  .contact-card:hover {
-    transform: translateY(-8px) scale(1.01);
+  .channel__value {
+    font-size: 17px;
   }
 }

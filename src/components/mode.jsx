@@ -1,11 +1,18 @@
 export const setTheme = (theme) => {
-  localStorage.setItem('theme', theme);
+  try {
+    localStorage.setItem("theme", theme);
+  } catch {
+    /* storage unavailable */
+  }
   document.documentElement.className = theme;
 };
 
 export const keepTheme = () => {
-  const theme = localStorage.getItem('theme');
-  if (theme) {
-    document.documentElement.className = theme;
+  let theme = null;
+  try {
+    theme = localStorage.getItem("theme");
+  } catch {
+    /* storage unavailable */
   }
+  document.documentElement.className = theme || "theme-light";
 };

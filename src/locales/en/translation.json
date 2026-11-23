@@ -2,10 +2,10 @@
     "companies": "Companies",
     "entrepreneurship": "Entrepreneurship",
     "individuals": "Individuals",
-    "home": "HOME",
+    "home": "Home",
     "services": "SERVICES",
     "about": "ABOUT US",
-    "contactNav": "CONTACT",
+    "contactNav": "Contact",
     "navOpenMenu": "Open navigation menu",
     "navCloseMenu": "Close navigation menu",
     "webDevelopment": "Web Development",
@@ -17,16 +17,16 @@
     "technicalConsultingDescription": "We offer technical consulting to help take your project to the next level.",
     "digitalMarketingDescription": "Digital marketing strategies to increase your brand's visibility.",
     "contactUs": "Contact me!",
-    "projects": "PROJECTS",
-    "experienceNav": "EXPERIENCE",
-    "aboutme": "ABOUT ME",
+    "projects": "Projects",
+    "experienceNav": "Experience",
+    "aboutme": "About",
     "contact": {
         "title": "Let's Connect!",
         "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the channels below.",
         "cta": "Looking forward to hearing from you! Let's build something amazing together."
     },
     "experience": {
-        "title": "EXPERIENCE",
+        "title": "Experience",
         "csg": {
             "company": "CSG",
             "position": "AI and Automation Engineer",
@@ -105,55 +105,145 @@
             "navFeatures": "FEATURES",
             "navLogin": "LOGIN",
             "navSignUp": "Sign up",
-            "description": "Split Squid helps groups settle shared tabs without spreadsheet math: snap a receipt, tag who ordered what, and split fairly. Trip mode rolls receipts across nights so you can focus on the moment and reconcile later. No credit card required—invite your crew with a link."
+            "description": "Split Squid helps groups settle shared tabs without spreadsheet math: snap a receipt, tag who ordered what, and split fairly. Trip mode rolls receipts across nights so you can focus on the moment and reconcile later. No credit card required—invite your crew with a link.",
+            "type": "App",
+            "summary": "Group bills, settled without the spreadsheet."
         },
         "websiteSprint": {
             "title": "Website Sprint",
-            "description": "Website Sprint is Tropical Year Studio’s focused service for shipping a polished marketing site on a clear timeline—structure, messaging, responsive UI, and deployment—so teams get a credible web presence without a long agency cycle."
+            "description": "Website Sprint is Tropical Year Studio’s focused service for shipping a polished marketing site on a clear timeline—structure, messaging, responsive UI, and deployment—so teams get a credible web presence without a long agency cycle.",
+            "type": "Website",
+            "summary": "Their two-week website offer, made obvious."
         },
         "safeHalt": {
             "title": "SafeHalt",
-            "description": "SafeHalt looks like an everyday app on your phone—but opens into a private space for safety planning and support. No pressure. No judgment. Just your options."
+            "description": "SafeHalt looks like an everyday app on your phone—but opens into a private space for safety planning and support. No pressure. No judgment. Just your options.",
+            "type": "App",
+            "summary": "A safety check-in that waits for your pace."
         },
         "globalpassport": {
-            "title": "GlobalPassport",
-            "description": "GlobalPassport is a platform for planning global residency and citizenship paths. It helps you explore which countries you may be eligible for, compare residency and citizenship options across countries, estimate costs and timelines, and connect you with vetted professionals to help with applications."
+            "title": "Global Passport",
+            "description": "GlobalPassport is a platform for planning global residency and citizenship paths. It helps you explore which countries you may be eligible for, compare residency and citizenship options across countries, estimate costs and timelines, and connect you with vetted professionals to help with applications.",
+            "type": "App",
+            "summary": "The move abroad, with countries, cost, and time in view."
         },
         "codingtemple": {
             "title": "Coding Temple",
-            "description": "Coding Temple is an intensive software engineering bootcamp that turns motivated learners into job-ready developers. Through hands-on, project-driven courses in full stack web development, it offers immersive instruction, one-on-one mentorship, career services, and job placement support to help graduates launch technical careers."
+            "description": "Coding Temple is an intensive software engineering bootcamp that turns motivated learners into job-ready developers. Through hands-on, project-driven courses in full stack web development, it offers immersive instruction, one-on-one mentorship, career services, and job placement support to help graduates launch technical careers.",
+            "type": "Website",
+            "summary": "The offer is the job, said before the curriculum."
         },
         "yr": {
             "title": "YouRewards",
-            "description": "YouRewards is a personalized rewards and loyalty platform that helps users earn benefits for their everyday actions. It enables businesses to create custom reward programs while offering users points, perks, and exclusive incentives through a simple, engaging experience."
+            "description": "YouRewards is a personalized rewards and loyalty platform that helps users earn benefits for their everyday actions. It enables businesses to create custom reward programs while offering users points, perks, and exclusive incentives through a simple, engaging experience.",
+            "type": "Website",
+            "summary": "A clearer way to thank a whole community."
         },
         "lavanderiadaserras": {
             "title": "Lavanderia da Serras",
-            "description": "Lavanderia da Serras provides high-quality laundry and textile care services across the Serra Gaúcha region. We treat each piece with care, from everyday clothes to heavy linens, offering washing, drying, ironing and home pickup/delivery with a commitment to excellence and customer satisfaction."
+            "description": "Lavanderia da Serras provides high-quality laundry and textile care services across the Serra Gaúcha region. We treat each piece with care, from everyday clothes to heavy linens, offering washing, drying, ironing and home pickup/delivery with a commitment to excellence and customer satisfaction.",
+            "type": "Website",
+            "summary": "A laundry site for the Serra Gaúcha, with pickup and delivery up front."
         },
         "onix": {
-            "title": "ONIX Digital Services",
-            "description": "Onix is a Digital Services Company, developed with features such as language and theme selection. It is minimalist and sophisticated."
+            "title": "Onix",
+            "description": "Onix is the product studio I run. We design and build apps, websites and AI tools for teams in the United States and Brazil. I designed and built the site, which runs in English, Portuguese and Spanish.",
+            "type": "Studio website",
+            "summary": "The site for Onix, the product studio I run. In English, Portuguese and Spanish."
         },
         "sunrise": {
             "title": "Sunrise Real Estate",
-            "description": "Sunrise is more than just a template; it is a foundation for future projects in the real estate sector. Our goal is to continuously improve and expand our platform, integrating new features and technologies to meet the evolving needs of our clients."
+            "description": "Sunrise is more than just a template; it is a foundation for future projects in the real estate sector. Our goal is to continuously improve and expand our platform, integrating new features and technologies to meet the evolving needs of our clients.",
+            "type": "Website",
+            "summary": "The house leads. The catalog follows."
         },
         "codingBot": {
             "title": "Coding Bot",
-            "description": "Coding Bot is a powerful programming assistant designed to simplify your coding tasks. Just submit a detailed task or problem statement, and Coding Bot will generate the corresponding code along with a clear explanation. Whether you're a beginner learning to code or an experienced developer, Coding Bot helps you save time and focus on refining your ideas."
+            "description": "Coding Bot is a powerful programming assistant designed to simplify your coding tasks. Just submit a detailed task or problem statement, and Coding Bot will generate the corresponding code along with a clear explanation. Whether you're a beginner learning to code or an experienced developer, Coding Bot helps you save time and focus on refining your ideas.",
+            "type": "AI tool",
+            "summary": "Describe a coding task, get working code and a plain explanation."
         },
         "venusSd": {
             "title": "Venus SD",
-            "description": "Venus SD is a Start Up dedicated to designing and developing software for business. This simple and minimalist design was the first mockup for LATAM client."
+            "description": "Venus SD is a Start Up dedicated to designing and developing software for business. This simple and minimalist design was the first mockup for LATAM client.",
+            "type": "Website",
+            "summary": "A first mockup for a LATAM software startup."
         },
         "qatarCollection": {
             "title": "Qatar Collection",
-            "description": "The Qatar sticker tracking API is a powerful tool for soccer fans and sticker collectors. With its easy-to-use interface, it is an ideal choice for anyone wanting to keep a complete track of their World Cup sticker collection."
+            "description": "The Qatar sticker tracking API is a powerful tool for soccer fans and sticker collectors. With its easy-to-use interface, it is an ideal choice for anyone wanting to keep a complete track of their World Cup sticker collection.",
+            "type": "Web app",
+            "summary": "Track every sticker in a World Cup album."
         },
         "portfolioTemplate": {
             "title": "Portfolio Template",
             "description": "This React portfolio template is designed for beginners in web development. It provides a clean, customizable layout that showcases your skills and projects effectively. With easy-to-follow instructions and reusable components, you can quickly adjust the template to fit your personal style and content. Ideal for building a professional online presence, this template includes sections for your bio, projects, skills, and contact information."
+        },
+        "cultiva": {
+            "title": "Cultiva",
+            "description": "Recognition and pulse surveys, right where teams already work.",
+            "points": [
+                "Kudos tied to company values, with optional points",
+                "Truly anonymous pulse surveys, answered in seconds",
+                "One habit on desktop, web and Slack, in EN, PT and ES"
+            ],
+            "type": "SaaS app",
+            "summary": "Recognition and pulse surveys, right where teams already work."
+        },
+        "wewash": {
+            "title": "WeWash",
+            "description": "A laundry marketplace that fits in a pocket.",
+            "points": [
+                "People find laundries nearby, with hours and distance",
+                "Partner stores show their prices before the order",
+                "Pickup is booked on WhatsApp, with a code to follow it"
+            ],
+            "type": "Mobile app & website",
+            "summary": "A laundry marketplace that fits in a pocket."
+        },
+        "retailogists": {
+            "title": "Retailogists",
+            "description": "A storefront their team can keep shipping.",
+            "points": [
+                "The storefront stays fast enough for the team to keep shipping",
+                "The retail workflows already in use keep running",
+                "Releases go out on a stable pipeline"
+            ],
+            "type": "Commerce",
+            "summary": "A storefront their team can keep shipping."
+        },
+        "cria": {
+            "title": "Cria",
+            "description": "A brand site that opens like a film and ends in a conversation.",
+            "points": [
+                "The brand reads clearly, from the opening through to a conversation",
+                "Brand, launch, and growth are three paths a visitor can take",
+                "English, Portuguese, and Spanish run on the same site"
+            ],
+            "type": "Brand site",
+            "summary": "A brand site that opens like a film and ends in a conversation."
+        },
+        "atlas": {
+            "title": "Atlas",
+            "description": "Atlas gathers a project's tools into one place.",
+            "points": [
+                "Meetings, conversations, documents, and tasks sit in one project",
+                "What arrives from each tool lands in the same record",
+                "The team sees the work in one place"
+            ],
+            "type": "App",
+            "summary": "Atlas gathers a project's tools into one place."
+        },
+        "dreamDoctor": {
+            "title": "The Dream Doctor",
+            "description": "A private app for the moment after a nightmare.",
+            "points": [
+                "A person can settle before they describe the dream",
+                "The dream stays in their own words, in a private journal",
+                "They can rehearse a calmer ending before they sleep"
+            ],
+            "type": "Mobile app",
+            "summary": "A private app for the moment after a nightmare."
         }
     },
     "moreProjects": "Click here for more",
@@ -233,7 +323,7 @@
         }
     },
     "homeReviews": {
-        "title": "What People Say",
+        "title": "What people say",
         "subtitle": "Feedback from clients, managers and peers",
         "items": [
             {
@@ -323,5 +413,43 @@
         "title": "Software Engineer",
         "quote": "Everywhere I go, I always make an impact. Always looking for my next challenge!",
         "rights": "All rights reserved."
+    },
+    "ui": {
+        "role": "Senior Software Engineer",
+        "tagline": "Full-stack and AI",
+        "selectedWork": "Selected work",
+        "allProjects": "All projects",
+        "projectsTitle": "Projects",
+        "projectsLede": "Apps, websites and AI tools I designed and built, many of them through Onix, my product studio.",
+        "builtAtOnix": "Built at Onix",
+        "visit": "Visit site",
+        "close": "Close",
+        "experienceLede": "Where I have worked, most recent first.",
+        "aboutTitle": "About",
+        "whatIDo": "What I do",
+        "contactTitle": "Contact",
+        "bookCall": "Book a call",
+        "email": "Email",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "reviewsTitle": "What people say",
+        "language": "Language",
+        "theme": "Toggle dark mode",
+        "onixLink": "Onix studio",
+        "moments": "Along the way",
+        "caseStudy": "Read the case study",
+        "yearsExp": "years building software",
+        "projectsShipped": "projects shipped",
+        "basedIn": "Remote · US and LATAM clients",
+        "seeProjects": "See projects",
+        "readMore": "Read more",
+        "showLess": "Show less",
+        "ctaTitle": "Have a product in mind?",
+        "ctaText": "Tell me what you're building, or what isn't working yet.",
+        "filterAll": "All",
+        "filterOnix": "Built at Onix",
+        "filterOwn": "Independent",
+        "showAllReviews": "Show all reviews"
     }
 }

@@ -1,72 +1,124 @@
-/* eslint-disable react/prop-types */
-import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FiArrowUpRight, FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 import "../views/projectsmodal.css";
 
-const ProjectDetailsModal = ({ show, onHide, data, isDarkMode }) => {
-  if (!data || !show) return null;
+const ProjectDetailsModal = ({ data, onHide }) => {
+  const { t } = useTranslation();
+  const [index, setIndex] = useState(0);
 
-  const {
-    description = "",
-    url = "",
-    technologies = [],
-    images = [],
-  } = data;
+  useEffect(() => setIndex(0), [data]);
 
-  const tech = technologies.map((icon, i) => (
-    <li className="list-inline-item mx-3" key={i}>
-      <i className={icon.class} style={{ fontSize: "2rem" }}>
-        <p className="text-center" style={{ fontSize: "0.8rem" }}>
-          {icon.name}
-        </p>
-      </i>
-    </li>
-  ));
+  useEffect(() => {
+    if (!data) return undefined;
+    const count = data.images.length;
+    const onKey = (e) => {
+      if (e.key === "Escape") onHide();
+      if (e.key === "ArrowRight") setIndex((i) => (i + 1) % count);
+      if (e.key === "ArrowLeft") setIndex((i) => (i - 1 + count) % count);
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [data, onHide]);
 
-  const handleClick = () => {
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
-  };
+  if (!data) return null;
 
-  const img = images.map((elem, i) => (
-    <div key={i} className="slider-slide" onClick={handleClick}>
-      <img
-        src={elem}
-        alt={`Slide ${i}`}
-        style={{
-          width: "100%",
-          height: "auto",
-          objectFit: "cover", // or "contain" depending on your needs
-          display: "block",
-          maxHeight: "500px", // adjust as needed
-          borderRadius: "8px", // optional
-          boxShadow:
-            "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
-        }}
-      />
-    </div>
-  ));
+  const { title, type, year, description, points, images, url, caseUrl, stack = [], fit, backdrop } = data;
+  const many = images.length > 1;
+  const go = (d) => setIndex((i) => (i + d + images.length) % images.length);
 
   return (
-    <div className="modal-overlay" onClick={onHide}>
+    <div className="pmodal" onClick={onHide} role="presentation">
       <div
-        className={`modal-content2 ${isDarkMode ? "dark-mode" : ""}`}
+        className="pmodal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label={title}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="close-btn" onClick={onHide}>
-          &times;
+        <button type="button" className="pmodal__close" onClick={onHide} aria-label={t("ui.close")}>
+          <FiX />
         </button>
 
-        <AwesomeSlider className="imageProject">{img}</AwesomeSlider>
+        <div
+          className={`pmodal__stage${fit === "contain" ? " pmodal__stage--contain" : ""}`}
+          style={fit === "contain" ? { background: backdrop } : undefined}
+        >
+          <img src={images[index]} alt={`${title} ${index + 1}`} />
+          {many && (
+            <>
+              <button type="button" className="pmodal__nav pmodal__nav--prev" onClick={() => go(-1)} aria-label="Previous image">
+                <FiChevronLeft />
+              </button>
+              <button type="button" className="pmodal__nav pmodal__nav--next" onClick={() => go(1)} aria-label="Next image">
+                <FiChevronRight />
+              </button>
+            </>
+          )}
+        </div>
 
-        <p className={`descriptionProject ${isDarkMode ? "dark-mode" : ""}`}>
-          {description}
-        </p>
-        <ul className="list-inline">{tech}</ul>
+        {many && (
+          <div className="pmodal__thumbs">
+            {images.map((src, i) => (
+              <button
+                key={src}
+                type="button"
+                className={`pmodal__thumb${i === index ? " is-active" : ""}`}
+                onClick={() => setIndex(i)}
+                aria-label={`Image ${i + 1}`}
+              >
+                <img src={src} alt="" />
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div className="pmodal__body">
+          <p className="pmodal__meta">{[type, year].filter(Boolean).join(" · ")}</p>
+          <h2 className="pmodal__title">{title}</h2>
+          <p className="pmodal__desc">{description}</p>
+          {points.length > 0 && (
+            <ul className="pmodal__points">
+              {points.map((p) => (
+                <li key={p}>{p}</li>
+              ))}
+            </ul>
+          )}
+          {stack.length > 0 && (
+            <ul className="pmodal__stack">
+              {stack.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ul>
+          )}
+          {(url || caseUrl) && (
+            <div className="pmodal__actions">
+              {url && (
+                <a className="btn btn--primary" href={url} target="_blank" rel="noopener noreferrer">
+                  {t("ui.visit")} <FiArrowUpRight />
+                </a>
+              )}
+              {caseUrl && (
+                <a className="btn btn--ghost" href={caseUrl} target="_blank" rel="noopener noreferrer">
+                  {t("ui.caseStudy")} <FiArrowUpRight />
+                </a>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
+};
+
+ProjectDetailsModal.propTypes = {
+  data: PropTypes.object,
+  onHide: PropTypes.func.isRequired,
 };
 
 export default ProjectDetailsModal;
