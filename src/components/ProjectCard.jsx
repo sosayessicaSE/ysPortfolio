@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({ project, onOpen, large = false }) => {
-  const { t } = useTranslation();
   const contain = project.fit === "contain";
   return (
     <button
@@ -22,7 +20,6 @@ const ProjectCard = ({ project, onOpen, large = false }) => {
           width={800}
           height={500}
         />
-        {project.onix && <span className="pcard__badge">{t("ui.builtAtOnix")}</span>}
       </span>
       <span className="pcard__body">
         <span className="pcard__meta">{project.type}</span>
