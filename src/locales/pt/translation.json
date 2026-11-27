@@ -493,7 +493,7 @@
         "workTitle": "Trabalhos de design selecionados",
         "focus": {
             "cultiva": "UI de produto para web, desktop e Slack, com a mesma linguagem visual em todas as superfícies.",
-            "cria": "Site de marca para um estúdio de go-to-market: abre como um filme e termina numa conversa.",
+            "cria": "Um site de marca que abre como um filme, e a plataforma de conteúdo com IA por trás dele.",
             "wewash": "App e site de um marketplace de lavanderia: fluxo de agendamento, marca e landing pages.",
             "onix": "Marca e site da Onix, o estúdio de produto que eu comando, em inglês, português e espanhol.",
             "splitSquids": "Fluxos mobile para dividir contas em grupo: foto da nota, quem pediu o quê, e pronto.",
@@ -579,12 +579,12 @@
         },
         "cria": {
             "title": "CRIA",
-            "kind": "Site de marca · Estúdio de go-to-market",
-            "tagline": "Um site de marca que abre como um filme e termina numa conversa.",
+            "kind": "Site de marca e plataforma de conteúdo com IA",
+            "tagline": "Um site de marca que abre como um filme, e a plataforma de conteúdo com IA por trás dele.",
             "meta": [
                 {
                     "label": "Produto",
-                    "value": "Site de marca e marketing"
+                    "value": "Site de marca e plataforma de conteúdo com IA"
                 },
                 {
                     "label": "Plataforma",
@@ -599,9 +599,9 @@
                     "value": "Cofundadora da CRIA Studio"
                 }
             ],
-            "problem": "A CRIA vende um único time responsável por marca, conteúdo e vendas de ponta a ponta. Um site de agência comum mostra isso como serviços separados, exatamente o problema que a CRIA resolve. O site precisava mostrar o sistema inteiro e levar o comprador B2B a um único passo: um diagnóstico de go-to-market.",
-            "design": "Uma abertura escura e cinematográfica com a marca, e depois a história em ordem: o problema, três sintomas e as doze áreas de go-to-market numa roda interativa, onde cada área mostra a métrica que a CRIA move e o que ela alimenta. Em seguida vem um plano semana a semana e um placar interativo em que o visitante muda o esforço entre canais e roda um trimestre simulado para ver os cinco números da semana mudarem. Toda seção leva à mesma chamada para ação.",
-            "result": "O site está no ar em criabrazil.com e mostra trabalhos para marcas de franquia, seguros, jurídico, crédito, saúde e venture capital, em três idiomas no mesmo site.",
+            "problem": "A CRIA vende um único time responsável por marca, conteúdo e vendas de ponta a ponta, e sustenta isso com a CRIA Studio, uma plataforma que cria conteúdo de marca com IA. Os dois precisavam funcionar para pequenas e médias empresas brasileiras: o site tinha que mostrar o sistema inteiro e levar a um único passo, um diagnóstico de go-to-market, e a plataforma tinha que entregar conteúdo real mesmo para donos sem time de marketing, sem site e sem Instagram.",
+            "design": "No site de marca, uma abertura escura e cinematográfica leva à história: o problema, três sintomas, as doze áreas de go-to-market numa roda interativa, um plano semana a semana e um placar interativo em que o visitante roda um trimestre simulado. Na plataforma, desenhei a experiência da primeira visita ao primeiro plano pago: um onboarding guiado por um copiloto, o brand kit e os primeiros posts, o cadastro de empresa self-service, planos e pacotes de créditos, e um kit de ícones próprio.",
+            "result": "O site de marca está no ar em criabrazil.com em três idiomas, e a CRIA Studio está no ar com empresas reais, em português por padrão.",
             "decisions": [
                 {
                     "title": "Mostrar o sistema, não listar",
@@ -624,10 +624,36 @@
                 "Doze áreas, um go-to-market: uma roda interativa com a métrica de cada área",
                 "O placar semanal: o visitante muda o esforço por canal e roda um trimestre simulado"
             ],
-            "extraTitle": "O produto: CRIA Studio",
-            "extra": "Também sou cofundadora da CRIA Studio, o app de conteúdo com IA por trás da marca. O onboarding é guiado por um copiloto de IA que aprende sobre o negócio e gera de graça um brand kit e os primeiros posts, mesmo quando a empresa não tem site nem Instagram. Site e Instagram são opcionais por design, para que todo dono veja conteúdo real antes de ser convidado a pagar.",
-            "role": "Cofundadora da CRIA Studio. No site de marca trabalhei no design e no front end com o time da CRIA; no produto, lidero o design e a construção do onboarding, da experiência do copiloto e da cobrança.",
-            "short": "Site de marca"
+            "role": "Cofundadora da CRIA Studio. Desenhei a experiência da plataforma (onboarding, copiloto, cadastro, planos e o kit de ícones) e trabalhei no design e no front end do site de marca com o time da CRIA.",
+            "short": "Site de marca",
+            "platformTitle": "A plataforma: CRIA Studio",
+            "platformIntro": "A CRIA Studio é a plataforma de conteúdo com IA por trás da marca. Sou cofundadora, desenhei a experiência do produto e depois construí com o time.",
+            "platformPoints": [
+                {
+                    "title": "Onboarding com copiloto",
+                    "text": "Novas empresas são guiadas por um copiloto de IA, um personagem simpático em forma de balão de fala que é claramente um assistente: limpo, nunca infantil. Ele pergunta sobre o negócio e monta a configuração junto com o dono."
+                },
+                {
+                    "title": "Valor antes do pagamento",
+                    "text": "O brand kit e os primeiros posts são grátis. O dono vê conteúdo real feito para o negócio dele antes de ser convidado a pagar."
+                },
+                {
+                    "title": "Sem site? Sem problema",
+                    "text": "Site e Instagram são opcionais por design. Quem não tem continua recebendo ótimo conteúdo, então ninguém fica travado."
+                },
+                {
+                    "title": "Nunca perguntar duas vezes",
+                    "text": "O cadastro de empresa self-service segue o mesmo fluxo do app e passa para o onboarding sem repetir nenhuma pergunta."
+                },
+                {
+                    "title": "Planos fáceis de entender",
+                    "text": "Um teste grátis com créditos de boas-vindas, planos claros e pacotes de créditos extras, para que o custo seja previsível para uma pequena empresa."
+                },
+                {
+                    "title": "Um kit de ícones próprio",
+                    "text": "Um conjunto de ícones dedicado e redesigns de páginas mantêm a plataforma consistente e fiel à marca em todas as telas."
+                }
+            ]
         },
         "wewash": {
             "title": "WeWash",

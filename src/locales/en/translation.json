@@ -493,7 +493,7 @@
         "workTitle": "Selected design work",
         "focus": {
             "cultiva": "Product UI for web, desktop and Slack, with one visual language across every surface.",
-            "cria": "Brand site for a go-to-market studio: opens like a film, ends in a conversation.",
+            "cria": "A brand site that opens like a film, and the AI content platform behind it.",
             "wewash": "Laundry marketplace app and website: booking flow, brand and landing pages.",
             "onix": "Brand and website for Onix, the product studio I run, in English, Portuguese and Spanish.",
             "splitSquids": "Mobile flows for splitting group bills: snap the receipt, tag who ordered what, settle.",
@@ -579,12 +579,12 @@
         },
         "cria": {
             "title": "CRIA",
-            "kind": "Brand site · Go-to-market studio",
-            "tagline": "A brand site that opens like a film and ends in a conversation.",
+            "kind": "Brand site and AI content platform",
+            "tagline": "A brand site that opens like a film, and the AI content platform behind it.",
             "meta": [
                 {
                     "label": "Product",
-                    "value": "Brand and marketing site"
+                    "value": "Brand site and AI content platform"
                 },
                 {
                     "label": "Platform",
@@ -599,9 +599,9 @@
                     "value": "Co-founder of CRIA Studio"
                 }
             ],
-            "problem": "CRIA sells one team that owns brand, content and sales from start to finish. A typical agency site lists those as separate services, which is exactly the problem CRIA exists to fix. The site had to show the whole system and lead a B2B buyer to one next step: a go-to-market diagnosis.",
-            "design": "A cinematic, dark opening with the brand mark, then the story in order: the problem, three symptoms, and the twelve go-to-market areas as an interactive wheel where each area shows the metric CRIA owns and what it feeds. A week-by-week plan follows, and then an interactive scoreboard where visitors move effort between channels and run a simulated quarter to watch the five weekly numbers change. Every section points to the same call to action.",
-            "result": "The site is live at criabrazil.com and presents work for brands across franchising, insurance, legal, credit, health and venture capital, in three languages on the same site.",
+            "problem": "CRIA sells one team that owns brand, content and sales from start to finish, and backs it with CRIA Studio, a platform that creates on-brand content with AI. Both had to work for small and mid-size Brazilian businesses: the site had to show the whole system and lead to one next step, a go-to-market diagnosis, and the platform had to deliver real content even to owners with no marketing team, no website and no Instagram.",
+            "design": "On the brand site, a cinematic, dark opening leads into the story: the problem, three symptoms, the twelve go-to-market areas as an interactive wheel, a week-by-week plan and an interactive scoreboard where visitors run a simulated quarter. In the platform, I designed the experience from the first visit to the first paid plan: a copilot-guided onboarding, the brand kit and first posts, the self-serve company signup, plans and credit packs, and a custom icon kit.",
+            "result": "The brand site is live at criabrazil.com in three languages, and CRIA Studio is live with real companies, in Portuguese by default.",
             "decisions": [
                 {
                     "title": "Show the system, don't list it",
@@ -624,10 +624,36 @@
                 "Twelve areas, one go-to-market: an interactive wheel with the metric each area owns",
                 "The weekly scoreboard: visitors move channel effort and run a simulated quarter"
             ],
-            "extraTitle": "The product: CRIA Studio",
-            "extra": "I also co-founded CRIA Studio, the AI content app behind the brand. Its onboarding is guided by an AI copilot that learns about the business and generates a brand kit and first posts for free, even when a company has no website or Instagram. Website and Instagram are optional by design, so every owner reaches real content before being asked to pay.",
-            "role": "Co-founder of CRIA Studio. On the brand site I worked on the design and front end with the CRIA team; on the product I lead the design and build of onboarding, the copilot experience and billing.",
-            "short": "Brand site"
+            "role": "Co-founder of CRIA Studio. I designed the platform experience (onboarding, copilot, signup, plans and the icon kit) and worked on the brand site's design and front end with the CRIA team.",
+            "short": "Brand site",
+            "platformTitle": "The platform: CRIA Studio",
+            "platformIntro": "CRIA Studio is the AI content platform behind the brand. I co-founded it and designed the product experience, then built it with the team.",
+            "platformPoints": [
+                {
+                    "title": "Onboarding with a copilot",
+                    "text": "New companies are guided by an AI copilot, a friendly speech-bubble character that is clearly an assistant: clean, never childish. It asks about the business and builds the setup with the owner."
+                },
+                {
+                    "title": "Value before payment",
+                    "text": "The brand kit and first posts are free. Owners see real content made for their business before anyone asks them to pay."
+                },
+                {
+                    "title": "No website? No problem",
+                    "text": "Website and Instagram are optional by design. Owners without them still get great content, so nobody hits a dead end."
+                },
+                {
+                    "title": "Never ask twice",
+                    "text": "The self-serve company signup matches the in-app flow and hands off to onboarding without repeating a single question."
+                },
+                {
+                    "title": "Plans people understand",
+                    "text": "A free trial with welcome credits, clear plans and extra credit packs, so costs stay predictable for small businesses."
+                },
+                {
+                    "title": "A custom icon kit",
+                    "text": "A dedicated icon set and page redesigns keep the platform consistent and on brand across every screen."
+                }
+            ]
         },
         "wewash": {
             "title": "WeWash",

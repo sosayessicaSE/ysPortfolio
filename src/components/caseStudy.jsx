@@ -96,11 +96,21 @@ const CaseStudy = () => {
         ))}
       </section>
 
-      {c.extra && (
-        <section className="case__extra">
-          <div className="wrap case__story-grid">
-            <h2 className="case__h">{c.extraTitle}</h2>
-            <p className="case__p">{c.extra}</p>
+      {c.platformTitle && (
+        <section className="case__platform">
+          <div className="wrap">
+            <div className="case__story-grid">
+              <h2 className="case__h case__h--lg">{c.platformTitle}</h2>
+              <p className="case__p">{c.platformIntro}</p>
+            </div>
+            <dl className="case__decisions-list case__platform-list">
+              {(Array.isArray(c.platformPoints) ? c.platformPoints : []).map((d) => (
+                <div className="case__decision" key={d.title}>
+                  <dt>{d.title}</dt>
+                  <dd>{d.text}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
       )}
