@@ -1,75 +1,144 @@
 /* ---------- Design page ---------- */
 
 .dhero {
-  padding: 96px 0 72px;
+  padding: 72px 0 88px;
+  overflow: hidden;
+}
+
+.dhero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+  gap: 56px;
+  align-items: center;
 }
 
 .dhero__title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 9vw, 128px);
+  font-size: clamp(48px, 6.6vw, 96px);
   font-weight: 600;
-  line-height: 0.95;
+  line-height: 0.98;
   letter-spacing: -0.045em;
-  max-width: 11ch;
   text-wrap: balance;
 }
 
-.dhero__row {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: end;
-  margin-top: 48px;
-}
-
 .dhero__lede {
-  margin: 0;
-  max-width: 52ch;
+  margin: 28px 0 0;
+  max-width: 44ch;
   font-size: 19px;
   line-height: 1.6;
   color: var(--ink-2);
 }
 
-.dhero__index {
+.dhero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+/* Fanned deck of the three case studies, each on its brand color */
+.dhero__deck {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--line);
+  height: 540px;
 }
 
-.dhero__index a {
-  display: grid;
-  grid-template-columns: 14px auto 1fr;
-  align-items: center;
-  gap: 14px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line);
+.dhero__card {
+  position: absolute;
+  width: 62%;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.dhero__card a {
+  display: block;
+  padding: 10px 10px 0;
+  border-radius: 20px;
+  background: var(--c-bg);
+  color: var(--c-ink);
   text-decoration: none;
-  color: var(--ink);
+  box-shadow: 0 2px 4px rgba(23, 22, 27, 0.08), 0 24px 60px rgba(23, 22, 27, 0.18);
 }
 
-.dhero__swatch {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--swatch);
+.dhero__card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
 }
 
-.dhero__name {
+.dhero__card-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 6px 14px;
+}
+
+.dhero__card-name {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
-.dhero__kind {
-  justify-self: end;
-  font-size: 14px;
-  color: var(--muted);
+.dhero__card-kind {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--c-ink) 65%, transparent);
 }
 
-.dhero__index a:hover .dhero__name {
-  color: var(--accent);
+.dhero__card a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.dhero__card--1 {
+  top: 0;
+  left: 0;
+  transform: rotate(-4deg);
+  z-index: 1;
+}
+
+.dhero__card--2 {
+  top: 36px;
+  right: 0;
+  transform: rotate(4deg);
+  z-index: 2;
+}
+
+.dhero__card--3 {
+  top: 262px;
+  left: 19%;
+  transform: rotate(-1.5deg);
+  z-index: 3;
+}
+
+.dhero__card:hover {
+  z-index: 4;
+  transform: rotate(0deg) translateY(-10px) scale(1.02);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dhero__card {
+    animation: deal 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  }
+  .dhero__card--2 {
+    animation-delay: 0.08s;
+  }
+  .dhero__card--3 {
+    animation-delay: 0.16s;
+  }
+}
+
+@keyframes deal {
+  from {
+    opacity: 0;
+    transform: translateY(40px) rotate(0deg);
+  }
 }
 
 /* Chapters: one per case study, each in its brand's colors */
@@ -540,9 +609,9 @@
 
 @media (max-width: 900px) {
   .dhero {
-    padding: 56px 0 48px;
+    padding: 48px 0 72px;
   }
-  .dhero__row,
+  .dhero__grid,
   .dchapter__grid,
   .dprinciples-grid,
   .case__story-grid {
@@ -588,8 +657,31 @@
   .dmore__grid {
     grid-template-columns: 1fr;
   }
-  .dhero__kind {
-    display: none;
+  .dhero__deck {
+    height: 370px;
+  }
+  .dhero__card {
+    width: 66%;
+  }
+  .dhero__card a {
+    padding: 6px 6px 0;
+    border-radius: 14px;
+  }
+  .dhero__card-label {
+    padding: 9px 4px;
+  }
+  .dhero__card-name {
+    font-size: 15px;
+  }
+  .dhero__card-kind {
+    font-size: 11px;
+  }
+  .dhero__card--2 {
+    top: 24px;
+  }
+  .dhero__card--3 {
+    top: 176px;
+    left: 16%;
   }
 }
 

@@ -510,7 +510,8 @@
         "ctaButton": "Hablemos",
         "casesTitle": "Casos de estudio",
         "readCase": "Leer el caso de estudio",
-        "heroTitle": "Lo diseño y después lo lanzo."
+        "heroTitle": "Lo diseño y después lo lanzo.",
+        "casesCta": "Ver los casos de estudio"
     },
     "caseStudyUi": {
         "back": "Todo el trabajo de diseño",

@@ -45,25 +45,39 @@ const Design = () => {
   return (
     <div className="dpage">
       <header className="dhero">
-        <div className="wrap">
-          <h1 className="dhero__title">{page.heroTitle}</h1>
-          <div className="dhero__row">
+        <div className="wrap dhero__grid">
+          <div className="dhero__copy">
+            <h1 className="dhero__title">{page.heroTitle}</h1>
             <p className="dhero__lede">{page.lede}</p>
-            <ul className="dhero__index" aria-label={page.casesTitle}>
-              {CASE_STUDIES.map((c) => {
-                const text = t(`caseStudies.${c.slug}`, { returnObjects: true }) || {};
-                return (
-                  <li key={c.slug}>
-                    <Link to={`/design/${c.slug}`} style={{ "--swatch": c.theme.accent }}>
-                      <span className="dhero__swatch" aria-hidden />
-                      <span className="dhero__name">{text.title}</span>
-                      <span className="dhero__kind">{text.short}</span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="dhero__actions">
+              <a href="#case-studies" className="btn btn--primary">
+                {page.casesCta}
+              </a>
+              <Link to="/contact" className="btn btn--ghost">
+                {page.ctaButton}
+              </Link>
+            </div>
           </div>
+          <ul className="dhero__deck" aria-label={page.casesTitle}>
+            {CASE_STUDIES.map((c, i) => {
+              const text = t(`caseStudies.${c.slug}`, { returnObjects: true }) || {};
+              return (
+                <li
+                  key={c.slug}
+                  className={`dhero__card dhero__card--${i + 1}`}
+                  style={{ "--c-bg": c.theme.bg, "--c-ink": c.theme.ink, "--c-accent": c.theme.accent }}
+                >
+                  <Link to={`/design/${c.slug}`}>
+                    <img src={c.cover} alt="" width={1568} height={772} />
+                    <span className="dhero__card-label">
+                      <span className="dhero__card-name">{text.title}</span>
+                      <span className="dhero__card-kind">{text.short}</span>
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </header>
 
@@ -72,6 +86,7 @@ const Design = () => {
         const meta = Array.isArray(text.meta) ? text.meta.slice(0, 3) : [];
         return (
           <section
+            id={i === 0 ? "case-studies" : undefined}
             key={c.slug}
             className={`dchapter${i % 2 ? " dchapter--flip" : ""}`}
             style={{ "--c-bg": c.theme.bg, "--c-ink": c.theme.ink, "--c-accent": c.theme.accent }}

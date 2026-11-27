@@ -510,7 +510,8 @@
         "ctaButton": "Fale comigo",
         "casesTitle": "Estudos de caso",
         "readCase": "Ler o estudo de caso",
-        "heroTitle": "Eu desenho e depois eu lanço."
+        "heroTitle": "Eu desenho e depois eu lanço.",
+        "casesCta": "Ver os estudos de caso"
     },
     "caseStudyUi": {
         "back": "Todos os trabalhos de design",

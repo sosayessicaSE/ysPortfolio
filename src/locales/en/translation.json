@@ -510,7 +510,8 @@
         "ctaButton": "Get in touch",
         "casesTitle": "Case studies",
         "readCase": "Read the case study",
-        "heroTitle": "I design it, then I ship it."
+        "heroTitle": "I design it, then I ship it.",
+        "casesCta": "See the case studies"
     },
     "caseStudyUi": {
         "back": "All design work",
