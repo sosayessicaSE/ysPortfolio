@@ -43,6 +43,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
     { to: "/", label: t("home"), end: true },
     { to: "/aboutme", label: t("aboutme") },
     { to: "/projects", label: t("projects") },
+    { to: "/design", label: t("designNav") },
     { to: "/experience", label: t("experienceNav") },
     { to: "/contact", label: t("contactNav") },
   ];

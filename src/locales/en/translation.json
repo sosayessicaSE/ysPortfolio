@@ -465,5 +465,48 @@
         "filterOnix": "Built at Onix",
         "filterOwn": "Independent",
         "showAllReviews": "Show all reviews"
+    },
+    "designNav": "Design",
+    "designPage": {
+        "eyebrow": "Design · Brand, web and product",
+        "title": "Design",
+        "lede": "Brands, websites and product interfaces I designed for founders and teams in the US and Brazil. I also build what I design, so most of this work is live, not just in Figma.",
+        "principlesTitle": "How I design",
+        "principles": [
+            {
+                "title": "Brand first",
+                "text": "Every project starts from the brand: voice, color and type, so each page, email and screen feels like the same product."
+            },
+            {
+                "title": "Systems, not one-offs",
+                "text": "I design with reusable components and styles (Atomic Design), so new pages are faster to make and stay consistent."
+            },
+            {
+                "title": "Mobile first, real content",
+                "text": "I design for the phone first and with real copy, then check the flows in a working prototype instead of static mockups."
+            },
+            {
+                "title": "AI in the workflow",
+                "text": "I use Figma, Claude and Cursor to explore directions fast and turn designs into code-backed prototypes. Taste and final calls stay with me."
+            }
+        ],
+        "workTitle": "Selected design work",
+        "focus": {
+            "cultiva": "Product UI for web, desktop and Slack, with one visual language across every surface.",
+            "cria": "Brand site for an AI content studio: opens like a film, ends in a conversation.",
+            "wewash": "Laundry marketplace app and website: booking flow, brand and landing pages.",
+            "onix": "Brand and website for Onix, the product studio I run, in English, Portuguese and Spanish.",
+            "splitSquids": "Mobile flows for splitting group bills: snap the receipt, tag who ordered what, settle.",
+            "safeHalt": "A discreet interface that looks like an everyday app and opens into a private, calm space.",
+            "websiteSprint": "Landing page that makes a two-week website offer obvious at a glance.",
+            "globalpassport": "Planning interface that puts countries, costs and timelines side by side.",
+            "lavanderiadaserras": "Local brand site with pickup and delivery up front.",
+            "dreamDoctor": "Calm, private mobile UI for the moment after a nightmare.",
+            "sunrise": "Real estate site where the house leads and the catalog follows.",
+            "venusSd": "A first minimalist mockup for a LATAM software startup."
+        },
+        "ctaTitle": "Need a designer who also ships?",
+        "ctaText": "Brand, landing pages, product UI or a full design system. Tell me what you're working on.",
+        "ctaButton": "Get in touch"
     }
 }

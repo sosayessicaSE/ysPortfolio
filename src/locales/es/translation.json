@@ -465,5 +465,48 @@
         "filterOnix": "Hecho en Onix",
         "filterOwn": "Independientes",
         "showAllReviews": "Ver todas las reseñas"
+    },
+    "designNav": "Diseño",
+    "designPage": {
+        "eyebrow": "Diseño · Marca, web y producto",
+        "title": "Diseño",
+        "lede": "Marcas, sitios web e interfaces de producto que diseñé para fundadores y equipos en Estados Unidos y Brasil. También construyo lo que diseño, así que la mayor parte de este trabajo está en vivo, no solo en Figma.",
+        "principlesTitle": "Cómo diseño",
+        "principles": [
+            {
+                "title": "Primero la marca",
+                "text": "Cada proyecto empieza por la marca: voz, color y tipografía, para que cada página, email y pantalla se sienta parte del mismo producto."
+            },
+            {
+                "title": "Sistemas, no piezas sueltas",
+                "text": "Diseño con componentes y estilos reutilizables (Atomic Design), así las nuevas páginas salen más rápido y se mantienen consistentes."
+            },
+            {
+                "title": "Mobile first, contenido real",
+                "text": "Diseño primero para el teléfono y con textos reales, y valido los flujos en un prototipo funcional en lugar de mockups estáticos."
+            },
+            {
+                "title": "IA en el proceso",
+                "text": "Uso Figma, Claude y Cursor para explorar direcciones rápido y convertir diseños en prototipos con código. El criterio y las decisiones finales son míos."
+            }
+        ],
+        "workTitle": "Trabajo de diseño seleccionado",
+        "focus": {
+            "cultiva": "UI de producto para web, escritorio y Slack, con un mismo lenguaje visual en todas las superficies.",
+            "cria": "Sitio de marca para un estudio de contenido con IA: abre como una película y termina en una conversación.",
+            "wewash": "App y sitio de un marketplace de lavandería: flujo de reserva, marca y landing pages.",
+            "onix": "Marca y sitio de Onix, el estudio de producto que dirijo, en inglés, portugués y español.",
+            "splitSquids": "Flujos móviles para dividir cuentas en grupo: foto del ticket, quién pidió qué, y listo.",
+            "safeHalt": "Una interfaz discreta que parece una app cotidiana y se abre a un espacio privado y tranquilo.",
+            "websiteSprint": "Landing page que hace obvia, de un vistazo, una oferta de sitio web en dos semanas.",
+            "globalpassport": "Interfaz de planificación que pone países, costos y plazos lado a lado.",
+            "lavanderiadaserras": "Sitio de marca local con retiro y entrega al frente.",
+            "dreamDoctor": "UI móvil tranquila y privada para el momento después de una pesadilla.",
+            "sunrise": "Sitio inmobiliario donde la casa lidera y el catálogo acompaña.",
+            "venusSd": "Un primer mockup minimalista para una startup de software en LATAM."
+        },
+        "ctaTitle": "¿Necesitas una diseñadora que también entrega producto?",
+        "ctaText": "Marca, landing pages, UI de producto o un design system completo. Cuéntame en qué estás trabajando.",
+        "ctaButton": "Hablemos"
     }
 }
