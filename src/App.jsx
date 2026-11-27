@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HashRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import AboutMe from "./components/aboutMe";
 import Contact from "./components/contact";
 import Design from "./components/design";
