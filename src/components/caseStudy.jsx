@@ -111,6 +111,19 @@ const CaseStudy = () => {
                 </div>
               ))}
             </dl>
+            {study.platformGallery && (
+              <div className="case__gallery case__gallery--platform">
+                {study.platformGallery.map((src, i) => {
+                  const caps = Array.isArray(c.platformCaptions) ? c.platformCaptions : [];
+                  return (
+                    <figure className="case__shot" key={src}>
+                      <img src={src} alt={caps[i] || `CRIA Studio ${i + 1}`} loading="lazy" decoding="async" />
+                      {caps[i] && <figcaption>{caps[i]}</figcaption>}
+                    </figure>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </section>
       )}

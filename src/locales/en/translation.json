@@ -622,11 +622,7 @@
             ],
             "captions": [
                 "Twelve areas, one go-to-market: an interactive wheel with the metric each area owns",
-                "The weekly scoreboard: visitors move channel effort and run a simulated quarter",
-                "CRIA Studio content gallery: ready-to-publish posts generated on brand, filterable by network, format and status",
-                "Professional Studio: pick a theme from the brand's idea bank and move through theme, visual reference, briefing and review",
-                "Calendar: every scheduled post by network, with approval status at a glance",
-                "Home: what is next, recent activity and performance across every channel in one view"
+                "The weekly scoreboard: visitors move channel effort and run a simulated quarter"
             ],
             "role": "Co-founder of CRIA Studio. I designed the platform experience (onboarding, copilot, signup, plans and the icon kit) and worked on the brand site's design and front end with the CRIA team.",
             "short": "Brand site",
@@ -657,6 +653,12 @@
                     "title": "A custom icon kit",
                     "text": "A dedicated icon set and page redesigns keep the platform consistent and on brand across every screen."
                 }
+            ],
+            "platformCaptions": [
+                "CRIA Studio content gallery: ready-to-publish posts generated on brand, filterable by network, format and status",
+                "Professional Studio: pick a theme from the brand's idea bank and move through theme, visual reference, briefing and review",
+                "Calendar: every scheduled post by network, with approval status at a glance",
+                "Home: what is next, recent activity and performance across every channel in one view"
             ]
         },
         "wewash": {

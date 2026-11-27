@@ -605,6 +605,10 @@
   margin-top: 72px;
 }
 
+.case__gallery--platform {
+  padding: 56px 0 0;
+}
+
 .case__h--lg {
   font-size: clamp(28px, 3.4vw, 40px);
   letter-spacing: -0.03em;

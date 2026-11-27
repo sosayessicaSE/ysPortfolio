@@ -622,11 +622,7 @@
             ],
             "captions": [
                 "Doze áreas, um go-to-market: uma roda interativa com a métrica de cada área",
-                "O placar semanal: o visitante muda o esforço por canal e roda um trimestre simulado",
-                "Galeria de conteúdo da CRIA Studio: posts prontos para publicar gerados na identidade da marca, filtráveis por rede, formato e status",
-                "Estúdio Profissional: escolher um tema do banco de ideias da marca e avançar por tema, referência visual, briefing e revisão",
-                "Calendário: cada post agendado por rede, com o status de aprovação num olhar",
-                "Início: o que vem a seguir, a atividade recente e o desempenho de todos os canais numa só tela"
+                "O placar semanal: o visitante muda o esforço por canal e roda um trimestre simulado"
             ],
             "role": "Cofundadora da CRIA Studio. Desenhei a experiência da plataforma (onboarding, copiloto, cadastro, planos e o kit de ícones) e trabalhei no design e no front end do site de marca com o time da CRIA.",
             "short": "Site de marca",
@@ -657,6 +653,12 @@
                     "title": "Um kit de ícones próprio",
                     "text": "Um conjunto de ícones dedicado e redesigns de páginas mantêm a plataforma consistente e fiel à marca em todas as telas."
                 }
+            ],
+            "platformCaptions": [
+                "Galeria de conteúdo da CRIA Studio: posts prontos para publicar gerados na identidade da marca, filtráveis por rede, formato e status",
+                "Estúdio Profissional: escolher um tema do banco de ideias da marca e avançar por tema, referência visual, briefing e revisão",
+                "Calendário: cada post agendado por rede, com o status de aprovação num olhar",
+                "Início: o que vem a seguir, a atividade recente e o desempenho de todos os canais numa só tela"
             ]
         },
         "wewash": {

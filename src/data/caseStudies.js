@@ -33,7 +33,8 @@ export const CASE_STUDIES = [
     cover: criaHero,
     inset: criaScoreboard,
     theme: { bg: "#071a22", ink: "#f3ede6", accent: "#ff5f1f" },
-    gallery: [criaAreas, criaScoreboard, criaStudioGallery, criaStudioPro, criaStudioCalendar, criaStudioHome],
+    gallery: [criaAreas, criaScoreboard],
+    platformGallery: [criaStudioGallery, criaStudioPro, criaStudioCalendar, criaStudioHome],
     stack: ["Next.js", "React", "TypeScript", "Vercel"],
   },
   {
