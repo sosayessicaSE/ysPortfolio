@@ -9,11 +9,8 @@ import "../views/design.css";
 import ProjectCard from "./ProjectCard";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 
-/** Projects shown on the design page, in order. */
-const DESIGN_KEYS = [
-  "cultiva",
-  "cria",
-  "wewash",
+/** Other projects shown under the case studies, in order. */
+const MORE_KEYS = [
   "onix",
   "splitSquids",
   "safeHalt",
@@ -33,9 +30,9 @@ const Design = () => {
   const principles = Array.isArray(page.principles) ? page.principles : [];
   const focus = page.focus || {};
 
-  const projects = useMemo(
+  const more = useMemo(
     () =>
-      DESIGN_KEYS.map((k) => PROJECTS.find((p) => p.key === k))
+      MORE_KEYS.map((k) => PROJECTS.find((p) => p.key === k))
         .filter(Boolean)
         .map((p) => {
           const localized = localizeProject(p, t);
@@ -46,78 +43,107 @@ const Design = () => {
   );
 
   return (
-    <>
-      <header className="page-header">
+    <div className="dpage">
+      <header className="dhero">
         <div className="wrap">
-          <p className="eyebrow">{page.eyebrow}</p>
-          <h1 className="page-title">{page.title}</h1>
-          <p className="page-lede">{page.lede}</p>
+          <h1 className="dhero__title">{page.heroTitle}</h1>
+          <div className="dhero__row">
+            <p className="dhero__lede">{page.lede}</p>
+            <ul className="dhero__index" aria-label={page.casesTitle}>
+              {CASE_STUDIES.map((c) => {
+                const text = t(`caseStudies.${c.slug}`, { returnObjects: true }) || {};
+                return (
+                  <li key={c.slug}>
+                    <Link to={`/design/${c.slug}`} style={{ "--swatch": c.theme.accent }}>
+                      <span className="dhero__swatch" aria-hidden />
+                      <span className="dhero__name">{text.title}</span>
+                      <span className="dhero__kind">{text.short}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </header>
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <h2 className="section-title">{page.casesTitle}</h2>
-          <div className="dcases">
-            {CASE_STUDIES.map((c) => {
-              const text = t(`caseStudies.${c.slug}`, { returnObjects: true }) || {};
-              return (
-                <Link to={`/design/${c.slug}`} className="dcase" key={c.slug}>
-                  <span className="dcase__media">
-                    <img src={c.cover} alt="" loading="lazy" decoding="async" width={1568} height={772} />
-                  </span>
-                  <span className="dcase__body">
-                    <span className="pcard__meta">{text.kind}</span>
-                    <span className="dcase__title">{text.title}</span>
-                    <span className="pcard__summary">{text.tagline}</span>
-                    <span className="text-link">
-                      {page.readCase} <FiArrowRight />
-                    </span>
-                  </span>
+      {CASE_STUDIES.map((c, i) => {
+        const text = t(`caseStudies.${c.slug}`, { returnObjects: true }) || {};
+        const meta = Array.isArray(text.meta) ? text.meta.slice(0, 3) : [];
+        return (
+          <section
+            key={c.slug}
+            className={`dchapter${i % 2 ? " dchapter--flip" : ""}`}
+            style={{ "--c-bg": c.theme.bg, "--c-ink": c.theme.ink, "--c-accent": c.theme.accent }}
+          >
+            <div className="wrap dchapter__grid">
+              <div className="dchapter__copy">
+                <h2 className="dchapter__title">{text.title}</h2>
+                <p className="dchapter__tagline">{text.tagline}</p>
+                <dl className="dchapter__facts">
+                  {meta.map((m) => (
+                    <div key={m.label}>
+                      <dt>{m.label}</dt>
+                      <dd>{m.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <Link to={`/design/${c.slug}`} className="dchapter__cta">
+                  {page.readCase}
+                  <FiArrowRight aria-hidden />
                 </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+              </div>
+              <Link to={`/design/${c.slug}`} className="dchapter__media" tabIndex={-1} aria-hidden>
+                <img
+                  className="dchapter__cover"
+                  src={c.cover}
+                  alt=""
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  width={1568}
+                  height={772}
+                />
+                {c.inset && <img className="dchapter__inset" src={c.inset} alt="" loading="lazy" decoding="async" />}
+              </Link>
+            </div>
+          </section>
+        );
+      })}
 
       {principles.length > 0 && (
-        <section className="section section--tight design-principles" style={{ paddingTop: 0 }}>
-          <div className="wrap">
-            <h2 className="section-title">{page.principlesTitle}</h2>
-            <ol className="dprinciples">
-              {principles.map((p, i) => (
-                <li className="dprinciple" key={p.title}>
-                  <span className="dprinciple__num">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="dprinciple__title">{p.title}</h3>
-                  <p className="dprinciple__text">{p.text}</p>
-                </li>
+        <section className="dprinciples-wrap">
+          <div className="wrap dprinciples-grid">
+            <h2 className="dsection-title">{page.principlesTitle}</h2>
+            <dl className="dprinciples">
+              {principles.map((p) => (
+                <div className="dprinciple" key={p.title}>
+                  <dt>{p.title}</dt>
+                  <dd>{p.text}</dd>
+                </div>
               ))}
-            </ol>
+            </dl>
           </div>
         </section>
       )}
 
-      <section className="section section--tight">
+      <section className="dmore">
         <div className="wrap">
-          <div className="section-head">
-            <h2 className="section-title">{page.workTitle}</h2>
-          </div>
-          <div className="pgrid">
-            {projects.map((p) => (
+          <h2 className="dsection-title">{page.workTitle}</h2>
+          <div className="pgrid dmore__grid">
+            {more.map((p) => (
               <ProjectCard key={p.key} project={p} onOpen={setSelected} />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section section--alt">
-        <div className="wrap design-cta">
-          <h2 className="section-title">{page.ctaTitle}</h2>
-          <p className="section-sub">{page.ctaText}</p>
-          <div className="design-cta__actions">
+      <section className="dcta">
+        <div className="wrap dcta__inner">
+          <h2 className="dcta__title">{page.ctaTitle}</h2>
+          <p className="dcta__text">{page.ctaText}</p>
+          <div className="dcta__actions">
             <Link to="/contact" className="btn btn--primary">
-              {page.ctaButton} <FiArrowRight />
+              {page.ctaButton}
             </Link>
             <Link to="/projects" className="btn btn--ghost">
               {t("ui.allProjects")}
@@ -127,7 +153,7 @@ const Design = () => {
       </section>
 
       <ProjectDetailsModal data={selected} onHide={() => setSelected(null)} />
-    </>
+    </div>
   );
 };
 

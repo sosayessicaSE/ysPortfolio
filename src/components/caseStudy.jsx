@@ -4,6 +4,12 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { CASE_STUDIES, getCaseStudy } from "../data/caseStudies";
 import "../views/design.css";
 
+const themeVars = (theme, prefix) => ({
+  [`--${prefix}-bg`]: theme.bg,
+  [`--${prefix}-ink`]: theme.ink,
+  [`--${prefix}-accent`]: theme.accent,
+});
+
 const CaseStudy = () => {
   const { slug } = useParams();
   const { t } = useTranslation();
@@ -20,17 +26,23 @@ const CaseStudy = () => {
   const index = CASE_STUDIES.findIndex((s) => s.slug === slug);
   const next = CASE_STUDIES[(index + 1) % CASE_STUDIES.length];
   const nextText = t(`caseStudies.${next.slug}`, { returnObjects: true }) || {};
+  const host = study.url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+
+  const story = [
+    [labels.problem, c.problem],
+    [labels.design, c.design],
+    [labels.result, c.result],
+  ];
 
   return (
-    <article className="case">
-      <header className="page-header case__header">
+    <article className="case" style={themeVars(study.theme, "c")}>
+      <header className="case__band">
         <div className="wrap">
-          <Link to="/design" className="text-link case__back">
-            <FiArrowLeft /> {labels.back}
+          <Link to="/design" className="case__back">
+            <FiArrowLeft aria-hidden /> {labels.back}
           </Link>
-          <p className="eyebrow">{labels.eyebrow}</p>
-          <h1 className="page-title">{c.title}</h1>
-          <p className="page-lede">{c.tagline}</p>
+          <h1 className="case__title">{c.title}</h1>
+          <p className="case__tagline">{c.tagline}</p>
           <dl className="case__meta">
             {meta.map((m) => (
               <div key={m.label}>
@@ -39,97 +51,85 @@ const CaseStudy = () => {
               </div>
             ))}
           </dl>
-          <a href={study.url} target="_blank" rel="noopener noreferrer" className="btn btn--ghost case__visit">
-            {labels.visit} {study.url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")} <FiArrowUpRight />
+          <a href={study.url} target="_blank" rel="noopener noreferrer" className="case__visit">
+            {labels.visit} {host} <FiArrowUpRight aria-hidden />
           </a>
+          <figure className="case__cover">
+            <img src={study.cover} alt={c.title} width={1568} height={772} />
+          </figure>
         </div>
       </header>
 
-      <div className="wrap">
-        <figure className="case__cover">
-          <img src={study.cover} alt={c.title} width={1568} height={772} />
-        </figure>
-      </div>
-
-      <section className="section section--tight">
-        <div className="wrap case__story">
-          {[
-            ["01", labels.problem, c.problem],
-            ["02", labels.design, c.design],
-            ["03", labels.result, c.result],
-          ].map(([num, title, text]) => (
-            <div className="case__block" key={num}>
-              <span className="dprinciple__num">{num}</span>
-              <h2 className="case__block-title">{title}</h2>
-              <p>{text}</p>
+      <section className="case__story">
+        <div className="wrap">
+          {story.map(([title, text]) => (
+            <div className="case__story-grid" key={title}>
+              <h2 className="case__h">{title}</h2>
+              <p className="case__p">{text}</p>
             </div>
           ))}
         </div>
       </section>
 
       {decisions.length > 0 && (
-        <section className="section section--alt">
+        <section className="case__decisions">
           <div className="wrap">
-            <h2 className="section-title">{labels.decisions}</h2>
-            <ol className="dprinciples case__decisions">
-              {decisions.map((d, i) => (
-                <li className="dprinciple" key={d.title}>
-                  <span className="dprinciple__num">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="dprinciple__title">{d.title}</h3>
-                  <p className="dprinciple__text">{d.text}</p>
-                </li>
+            <h2 className="dsection-title">{labels.decisions}</h2>
+            <dl className="case__decisions-list">
+              {decisions.map((d) => (
+                <div className="case__decision" key={d.title}>
+                  <dt>{d.title}</dt>
+                  <dd>{d.text}</dd>
+                </div>
               ))}
-            </ol>
+            </dl>
           </div>
         </section>
       )}
 
-      <section className="section section--tight">
-        <div className="wrap case__gallery">
-          {study.gallery.map((src, i) => (
-            <figure className="case__shot" key={src}>
-              <img src={src} alt={captions[i] || `${c.title} ${i + 1}`} loading="lazy" decoding="async" />
-              {captions[i] && <figcaption>{captions[i]}</figcaption>}
-            </figure>
-          ))}
-        </div>
+      <section className="wrap case__gallery">
+        {study.gallery.map((src, i) => (
+          <figure className="case__shot" key={src}>
+            <img src={src} alt={captions[i] || `${c.title} ${i + 1}`} loading="lazy" decoding="async" />
+            {captions[i] && <figcaption>{captions[i]}</figcaption>}
+          </figure>
+        ))}
       </section>
 
       {c.extra && (
-        <section className="section section--tight" style={{ paddingTop: 0 }}>
-          <div className="wrap case__story">
-            <div className="case__block case__block--wide">
-              <h2 className="case__block-title">{c.extraTitle}</h2>
-              <p>{c.extra}</p>
-            </div>
+        <section className="case__extra">
+          <div className="wrap case__story-grid">
+            <h2 className="case__h">{c.extraTitle}</h2>
+            <p className="case__p">{c.extra}</p>
           </div>
         </section>
       )}
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <h2 className="case__block-title">{labels.role}</h2>
-          <p className="case__role">{c.role}</p>
-          <ul className="case__stack">
-            {study.stack.map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ul>
+      <section className="case__role">
+        <div className="wrap case__story-grid">
+          <h2 className="case__h">{labels.role}</h2>
+          <div>
+            <p className="case__p">{c.role}</p>
+            <ul className="case__stack">
+              {study.stack.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section className="section section--alt">
-        <div className="wrap case__next">
-          <span className="eyebrow">{labels.next}</span>
-          <Link to={`/design/${next.slug}`} className="case__next-link">
-            <span className="section-title">{nextText.title}</span>
-            <span className="section-sub">{nextText.tagline}</span>
-            <span className="text-link">
-              {labels.read} <FiArrowRight />
-            </span>
-          </Link>
-        </div>
-      </section>
+      <Link to={`/design/${next.slug}`} className="case__next" style={themeVars(next.theme, "n")}>
+        <span className="wrap" style={{ display: "block" }}>
+          <span className="case__next-label">{labels.next}</span>
+          <span className="case__next-title">
+            {nextText.title} <FiArrowRight aria-hidden />
+          </span>
+          <span className="case__next-tagline" style={{ display: "block" }}>
+            {nextText.tagline}
+          </span>
+        </span>
+      </Link>
     </article>
   );
 };

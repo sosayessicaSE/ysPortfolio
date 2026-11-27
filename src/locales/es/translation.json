@@ -509,7 +509,8 @@
         "ctaText": "Marca, landing pages, UI de producto o un design system completo. Cuéntame en qué estás trabajando.",
         "ctaButton": "Hablemos",
         "casesTitle": "Casos de estudio",
-        "readCase": "Leer el caso de estudio"
+        "readCase": "Leer el caso de estudio",
+        "heroTitle": "Lo diseño y después lo lanzo."
     },
     "caseStudyUi": {
         "back": "Todo el trabajo de diseño",
@@ -572,7 +573,8 @@
                 "Sitio: primero la promesa del producto, después dónde vive",
                 "Vista del miembro: enviar kudos ligados a un valor, ver puntos, rachas e insignias"
             ],
-            "role": "Fundadora. Me encargo de producto, diseño e ingeniería: investigación, flujos, diseño visual, el design system y el código en escritorio, web y apps de chat."
+            "role": "Fundadora. Me encargo de producto, diseño e ingeniería: investigación, flujos, diseño visual, el design system y el código en escritorio, web y apps de chat.",
+            "short": "Producto SaaS"
         },
         "cria": {
             "title": "CRIA",
@@ -623,7 +625,8 @@
             ],
             "extraTitle": "El producto: CRIA Studio",
             "extra": "También cofundé CRIA Studio, la app de contenido con IA detrás de la marca. Su onboarding lo guía un copiloto de IA que aprende sobre el negocio y genera gratis un brand kit y los primeros posts, incluso si la empresa no tiene sitio web ni Instagram. Sitio e Instagram son opcionales por diseño, para que cada dueño vea contenido real antes de que se le pida pagar.",
-            "role": "Cofundadora de CRIA Studio. En el sitio de marca trabajé en el diseño y el front end con el equipo de CRIA; en el producto lidero el diseño y la construcción del onboarding, la experiencia del copiloto y la facturación."
+            "role": "Cofundadora de CRIA Studio. En el sitio de marca trabajé en el diseño y el front end con el equipo de CRIA; en el producto lidero el diseño y la construcción del onboarding, la experiencia del copiloto y la facturación.",
+            "short": "Sitio de marca"
         },
         "wewash": {
             "title": "WeWash",
@@ -673,7 +676,8 @@
                 "Cómo funciona: encontrar, comparar, pedir",
                 "El logotipo de WeWash"
             ],
-            "role": "Diseño y desarrollo con mi estudio, Onix: dirección de marca, flujos de la app, diseño visual y el código de la app y el sitio."
+            "role": "Diseño y desarrollo con mi estudio, Onix: dirección de marca, flujos de la app, diseño visual y el código de la app y el sitio.",
+            "short": "App móvil"
         }
     }
 }

@@ -509,7 +509,8 @@
         "ctaText": "Marca, landing pages, UI de produto ou um design system completo. Me conta no que você está trabalhando.",
         "ctaButton": "Fale comigo",
         "casesTitle": "Estudos de caso",
-        "readCase": "Ler o estudo de caso"
+        "readCase": "Ler o estudo de caso",
+        "heroTitle": "Eu desenho e depois eu lanço."
     },
     "caseStudyUi": {
         "back": "Todos os trabalhos de design",
@@ -572,7 +573,8 @@
                 "Site: primeiro a promessa do produto, depois onde ele vive",
                 "Visão do membro: enviar kudos ligados a um valor, ver pontos, sequência e medalhas"
             ],
-            "role": "Fundadora. Cuido de produto, design e engenharia: pesquisa, fluxos, design visual, o design system e o código no desktop, na web e nos apps de chat."
+            "role": "Fundadora. Cuido de produto, design e engenharia: pesquisa, fluxos, design visual, o design system e o código no desktop, na web e nos apps de chat.",
+            "short": "Produto SaaS"
         },
         "cria": {
             "title": "CRIA",
@@ -623,7 +625,8 @@
             ],
             "extraTitle": "O produto: CRIA Studio",
             "extra": "Também sou cofundadora da CRIA Studio, o app de conteúdo com IA por trás da marca. O onboarding é guiado por um copiloto de IA que aprende sobre o negócio e gera de graça um brand kit e os primeiros posts, mesmo quando a empresa não tem site nem Instagram. Site e Instagram são opcionais por design, para que todo dono veja conteúdo real antes de ser convidado a pagar.",
-            "role": "Cofundadora da CRIA Studio. No site de marca trabalhei no design e no front end com o time da CRIA; no produto, lidero o design e a construção do onboarding, da experiência do copiloto e da cobrança."
+            "role": "Cofundadora da CRIA Studio. No site de marca trabalhei no design e no front end com o time da CRIA; no produto, lidero o design e a construção do onboarding, da experiência do copiloto e da cobrança.",
+            "short": "Site de marca"
         },
         "wewash": {
             "title": "WeWash",
@@ -673,7 +676,8 @@
                 "Como funciona: encontre, compare, peça",
                 "O logotipo da WeWash"
             ],
-            "role": "Design e desenvolvimento pelo meu estúdio, a Onix: direção de marca, fluxos do app, design visual e o código do app e do site."
+            "role": "Design e desenvolvimento pelo meu estúdio, a Onix: direção de marca, fluxos do app, design visual e o código do app e do site.",
+            "short": "App mobile"
         }
     }
 }

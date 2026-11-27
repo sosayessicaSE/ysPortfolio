@@ -509,7 +509,8 @@
         "ctaText": "Brand, landing pages, product UI or a full design system. Tell me what you're working on.",
         "ctaButton": "Get in touch",
         "casesTitle": "Case studies",
-        "readCase": "Read the case study"
+        "readCase": "Read the case study",
+        "heroTitle": "I design it, then I ship it."
     },
     "caseStudyUi": {
         "back": "All design work",
@@ -572,7 +573,8 @@
                 "Marketing site: the product promise first, then where it lives",
                 "Member view: send kudos tied to a value, track points, streaks and badges"
             ],
-            "role": "Founder. I own product, design and engineering: research, flows, visual design, the design system and the code across desktop, web and chat apps."
+            "role": "Founder. I own product, design and engineering: research, flows, visual design, the design system and the code across desktop, web and chat apps.",
+            "short": "SaaS product"
         },
         "cria": {
             "title": "CRIA",
@@ -623,7 +625,8 @@
             ],
             "extraTitle": "The product: CRIA Studio",
             "extra": "I also co-founded CRIA Studio, the AI content app behind the brand. Its onboarding is guided by an AI copilot that learns about the business and generates a brand kit and first posts for free, even when a company has no website or Instagram. Website and Instagram are optional by design, so every owner reaches real content before being asked to pay.",
-            "role": "Co-founder of CRIA Studio. On the brand site I worked on the design and front end with the CRIA team; on the product I lead the design and build of onboarding, the copilot experience and billing."
+            "role": "Co-founder of CRIA Studio. On the brand site I worked on the design and front end with the CRIA team; on the product I lead the design and build of onboarding, the copilot experience and billing.",
+            "short": "Brand site"
         },
         "wewash": {
             "title": "WeWash",
@@ -673,7 +676,8 @@
                 "How it works: find, compare, order",
                 "The WeWash wordmark"
             ],
-            "role": "Design and build through my studio, Onix: brand direction, app flows, visual design and the code for the app and website."
+            "role": "Design and build through my studio, Onix: brand direction, app flows, visual design and the code for the app and website.",
+            "short": "Mobile app"
         }
     }
 }
