@@ -59,3 +59,179 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Case study cards on /design */
+.dcases {
+  display: grid;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.dcase {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dcase__media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dcase__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.dcase:hover .dcase__media {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.dcase__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.dcase__title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.dcase:hover .dcase__title {
+  color: var(--accent);
+}
+
+/* Case study page */
+.case__back {
+  margin-bottom: 28px;
+}
+
+.case__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  margin: 32px 0 28px;
+}
+
+.case__meta dt {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.case__meta dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.case__cover {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.case__cover img,
+.case__shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case__story {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.case__block p,
+.case__role {
+  color: var(--ink-2);
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 720px;
+}
+
+.case__block--wide {
+  grid-column: 1 / -1;
+}
+
+.case__block-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.case__gallery {
+  display: grid;
+  gap: 32px;
+}
+
+.case__shot {
+  margin: 0;
+}
+
+.case__shot img {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.case__shot figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.case__stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.case__stack li {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+}
+
+.case__next-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 900px) {
+  .dcase,
+  .case__story {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case__header .eyebrow {
+  display: block;
+}

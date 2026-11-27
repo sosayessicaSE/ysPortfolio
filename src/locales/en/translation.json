@@ -493,7 +493,7 @@
         "workTitle": "Selected design work",
         "focus": {
             "cultiva": "Product UI for web, desktop and Slack, with one visual language across every surface.",
-            "cria": "Brand site for an AI content studio: opens like a film, ends in a conversation.",
+            "cria": "Brand site for a go-to-market studio: opens like a film, ends in a conversation.",
             "wewash": "Laundry marketplace app and website: booking flow, brand and landing pages.",
             "onix": "Brand and website for Onix, the product studio I run, in English, Portuguese and Spanish.",
             "splitSquids": "Mobile flows for splitting group bills: snap the receipt, tag who ordered what, settle.",
@@ -507,6 +507,173 @@
         },
         "ctaTitle": "Need a designer who also ships?",
         "ctaText": "Brand, landing pages, product UI or a full design system. Tell me what you're working on.",
-        "ctaButton": "Get in touch"
+        "ctaButton": "Get in touch",
+        "casesTitle": "Case studies",
+        "readCase": "Read the case study"
+    },
+    "caseStudyUi": {
+        "back": "All design work",
+        "eyebrow": "Case study",
+        "visit": "Visit",
+        "problem": "The problem",
+        "design": "What I designed",
+        "result": "The result",
+        "decisions": "Design decisions",
+        "role": "My role",
+        "next": "Next case study",
+        "read": "Read the case study"
+    },
+    "caseStudies": {
+        "cultiva": {
+            "title": "Cultiva",
+            "kind": "SaaS product · Desktop, web, Slack, Teams",
+            "tagline": "Recognition and pulse surveys that live where teams already work.",
+            "meta": [
+                {
+                    "label": "Product",
+                    "value": "SaaS for teams"
+                },
+                {
+                    "label": "Platforms",
+                    "value": "Desktop, web, Slack, Teams"
+                },
+                {
+                    "label": "Languages",
+                    "value": "English, Portuguese, Spanish"
+                },
+                {
+                    "label": "Role",
+                    "value": "Founder"
+                }
+            ],
+            "problem": "Most recognition tools live in a tab nobody opens. And when a survey asks how people are really doing, they hold back unless they trust it is anonymous.",
+            "design": "I designed and built Cultiva end to end: a small pill on the desktop for kudos and check-ins, a web dashboard for admins and managers, and Slack and Teams apps so nobody has to switch tools. One visual language, warm and calm, carries across every surface.",
+            "result": "Cultiva is live at getcultiva.com in three languages. Companies sign up and start a trial on their own, and every app follows the same rules.",
+            "decisions": [
+                {
+                    "title": "Kudos tied to values",
+                    "text": "Every thank-you is tagged with a company value, with optional points people can trade for rewards."
+                },
+                {
+                    "title": "Anonymity you can see",
+                    "text": "Answers are stored with no link to the person, and results only show once at least three people reply."
+                },
+                {
+                    "title": "Points nobody can edit",
+                    "text": "Each point change is a new line in a ledger, so balances stay fair and easy to trace."
+                },
+                {
+                    "title": "Works where people are",
+                    "text": "The desktop pill, web, Slack and Teams share one set of rules, so each place looks and behaves the same."
+                }
+            ],
+            "captions": [
+                "Manager dashboard: participation, pulse score and recent kudos at a glance",
+                "Marketing site: the product promise first, then where it lives",
+                "Member view: send kudos tied to a value, track points, streaks and badges"
+            ],
+            "role": "Founder. I own product, design and engineering: research, flows, visual design, the design system and the code across desktop, web and chat apps."
+        },
+        "cria": {
+            "title": "CRIA",
+            "kind": "Brand site · Go-to-market studio",
+            "tagline": "A brand site that opens like a film and ends in a conversation.",
+            "meta": [
+                {
+                    "label": "Product",
+                    "value": "Brand and marketing site"
+                },
+                {
+                    "label": "Platform",
+                    "value": "Web"
+                },
+                {
+                    "label": "Languages",
+                    "value": "Portuguese, English, Spanish"
+                },
+                {
+                    "label": "Role",
+                    "value": "Co-founder of CRIA Studio"
+                }
+            ],
+            "problem": "CRIA sells one team that owns brand, content and sales from start to finish. A typical agency site lists those as separate services, which is exactly the problem CRIA exists to fix. The site had to show the whole system and lead a B2B buyer to one next step: a go-to-market diagnosis.",
+            "design": "A cinematic, dark opening with the brand mark, then the story in order: the problem, three symptoms, and the twelve go-to-market areas as an interactive wheel where each area shows the metric CRIA owns and what it feeds. A week-by-week plan follows, and then an interactive scoreboard where visitors move effort between channels and run a simulated quarter to watch the five weekly numbers change. Every section points to the same call to action.",
+            "result": "The site is live at criabrazil.com and presents work for brands across franchising, insurance, legal, credit, health and venture capital, in three languages on the same site.",
+            "decisions": [
+                {
+                    "title": "Show the system, don't list it",
+                    "text": "The wheel and the scoreboard let visitors explore how the pieces connect instead of reading a list of services."
+                },
+                {
+                    "title": "Honest numbers",
+                    "text": "The scoreboard is clearly labeled as a simulated example, not client results, which keeps trust high with B2B buyers."
+                },
+                {
+                    "title": "One next step",
+                    "text": "Brand, launch and growth are three paths, but every one ends in the same conversation."
+                },
+                {
+                    "title": "Dark and warm",
+                    "text": "A deep navy base with the brand's orange as the only accent keeps the page premium and makes calls to action easy to spot."
+                }
+            ],
+            "captions": [
+                "Twelve areas, one go-to-market: an interactive wheel with the metric each area owns",
+                "The weekly scoreboard: visitors move channel effort and run a simulated quarter"
+            ],
+            "extraTitle": "The product: CRIA Studio",
+            "extra": "I also co-founded CRIA Studio, the AI content app behind the brand. Its onboarding is guided by an AI copilot that learns about the business and generates a brand kit and first posts for free, even when a company has no website or Instagram. Website and Instagram are optional by design, so every owner reaches real content before being asked to pay.",
+            "role": "Co-founder of CRIA Studio. On the brand site I worked on the design and front end with the CRIA team; on the product I lead the design and build of onboarding, the copilot experience and billing."
+        },
+        "wewash": {
+            "title": "WeWash",
+            "kind": "Mobile app and website · Brazil",
+            "tagline": "A laundry marketplace for Brazil that fits in a pocket.",
+            "meta": [
+                {
+                    "label": "Product",
+                    "value": "Mobile app and website"
+                },
+                {
+                    "label": "Platforms",
+                    "value": "iPhone, Android, web"
+                },
+                {
+                    "label": "Market",
+                    "value": "Brazil, in Portuguese"
+                },
+                {
+                    "label": "Role",
+                    "value": "Design and build, through Onix"
+                }
+            ],
+            "problem": "Finding a good laundry usually means calling around. Prices show up at the end, and pickup gets arranged in a long chat.",
+            "design": "I designed and built the WeWash app and website. People find laundries near them, see prices before ordering and book a pickup in a few taps. Laundries get their own mode to receive orders and update them. The brand is friendly and local, with a warm illustrated world and a clear blue interface.",
+            "result": "WeWash is live at wewashbr.com and on the App Store. It is free for customers, works in any city on a phone or in the browser, and partner laundries pay no commission.",
+            "decisions": [
+                {
+                    "title": "Every laundry nearby",
+                    "text": "All the laundries in the area on a map, with address, hours and walking distance, not only partners."
+                },
+                {
+                    "title": "Prices before the order",
+                    "text": "Partner stores list services and prices per kilo or per item, so there are no surprises at the end."
+                },
+                {
+                    "title": "Pickup in three taps",
+                    "text": "Pick a day, time and services. The order reaches the store on WhatsApp with a code like #WW4821 to follow."
+                },
+                {
+                    "title": "A mode for laundries",
+                    "text": "Stores sign up, appear with a seal and update each step, so customers get a notice right away."
+                }
+            ],
+            "captions": [
+                "App screens: choose the service, find laundries open now, request a pickup",
+                "How it works: find, compare, order",
+                "The WeWash wordmark"
+            ],
+            "role": "Design and build through my studio, Onix: brand direction, app flows, visual design and the code for the app and website."
+        }
     }
 }

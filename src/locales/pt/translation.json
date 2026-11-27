@@ -493,7 +493,7 @@
         "workTitle": "Trabalhos de design selecionados",
         "focus": {
             "cultiva": "UI de produto para web, desktop e Slack, com a mesma linguagem visual em todas as superfícies.",
-            "cria": "Site de marca para um estúdio de conteúdo com IA: abre como um filme e termina numa conversa.",
+            "cria": "Site de marca para um estúdio de go-to-market: abre como um filme e termina numa conversa.",
             "wewash": "App e site de um marketplace de lavanderia: fluxo de agendamento, marca e landing pages.",
             "onix": "Marca e site da Onix, o estúdio de produto que eu comando, em inglês, português e espanhol.",
             "splitSquids": "Fluxos mobile para dividir contas em grupo: foto da nota, quem pediu o quê, e pronto.",
@@ -507,6 +507,173 @@
         },
         "ctaTitle": "Precisa de uma designer que também entrega?",
         "ctaText": "Marca, landing pages, UI de produto ou um design system completo. Me conta no que você está trabalhando.",
-        "ctaButton": "Fale comigo"
+        "ctaButton": "Fale comigo",
+        "casesTitle": "Estudos de caso",
+        "readCase": "Ler o estudo de caso"
+    },
+    "caseStudyUi": {
+        "back": "Todos os trabalhos de design",
+        "eyebrow": "Estudo de caso",
+        "visit": "Visitar",
+        "problem": "O problema",
+        "design": "O que eu desenhei",
+        "result": "O resultado",
+        "decisions": "Decisões de design",
+        "role": "Meu papel",
+        "next": "Próximo estudo de caso",
+        "read": "Ler o estudo de caso"
+    },
+    "caseStudies": {
+        "cultiva": {
+            "title": "Cultiva",
+            "kind": "Produto SaaS · Desktop, web, Slack, Teams",
+            "tagline": "Reconhecimento e pesquisas de clima onde o time já trabalha.",
+            "meta": [
+                {
+                    "label": "Produto",
+                    "value": "SaaS para equipes"
+                },
+                {
+                    "label": "Plataformas",
+                    "value": "Desktop, web, Slack, Teams"
+                },
+                {
+                    "label": "Idiomas",
+                    "value": "Inglês, português, espanhol"
+                },
+                {
+                    "label": "Papel",
+                    "value": "Fundadora"
+                }
+            ],
+            "problem": "A maioria das ferramentas de reconhecimento vive numa aba que ninguém abre. E quando uma pesquisa pergunta como as pessoas estão de verdade, elas se seguram se não confiam no anonimato.",
+            "design": "Desenhei e construí a Cultiva de ponta a ponta: uma pílula pequena no desktop para kudos e check-ins, um painel web para admins e gestores, e apps para Slack e Teams, para ninguém precisar trocar de ferramenta. Uma mesma linguagem visual, calorosa e calma, atravessa todas as superfícies.",
+            "result": "A Cultiva está no ar em getcultiva.com, em três idiomas. As empresas se cadastram e começam um teste sozinhas, e todos os apps seguem as mesmas regras.",
+            "decisions": [
+                {
+                    "title": "Kudos ligados a valores",
+                    "text": "Cada agradecimento leva um valor da empresa, com pontos opcionais que viram recompensas."
+                },
+                {
+                    "title": "Anonimato visível",
+                    "text": "As respostas ficam sem ligação com a pessoa, e o resultado só aparece com pelo menos três respostas."
+                },
+                {
+                    "title": "Pontos que ninguém edita",
+                    "text": "Cada mudança de pontos é uma nova linha num registro, então o saldo é justo e fácil de rastrear."
+                },
+                {
+                    "title": "Funciona onde as pessoas estão",
+                    "text": "Pílula no desktop, web, Slack e Teams seguem as mesmas regras, então tudo parece e se comporta igual."
+                }
+            ],
+            "captions": [
+                "Painel do gestor: participação, clima e kudos recentes num olhar",
+                "Site: primeiro a promessa do produto, depois onde ele vive",
+                "Visão do membro: enviar kudos ligados a um valor, ver pontos, sequência e medalhas"
+            ],
+            "role": "Fundadora. Cuido de produto, design e engenharia: pesquisa, fluxos, design visual, o design system e o código no desktop, na web e nos apps de chat."
+        },
+        "cria": {
+            "title": "CRIA",
+            "kind": "Site de marca · Estúdio de go-to-market",
+            "tagline": "Um site de marca que abre como um filme e termina numa conversa.",
+            "meta": [
+                {
+                    "label": "Produto",
+                    "value": "Site de marca e marketing"
+                },
+                {
+                    "label": "Plataforma",
+                    "value": "Web"
+                },
+                {
+                    "label": "Idiomas",
+                    "value": "Português, inglês, espanhol"
+                },
+                {
+                    "label": "Papel",
+                    "value": "Cofundadora da CRIA Studio"
+                }
+            ],
+            "problem": "A CRIA vende um único time responsável por marca, conteúdo e vendas de ponta a ponta. Um site de agência comum mostra isso como serviços separados, exatamente o problema que a CRIA resolve. O site precisava mostrar o sistema inteiro e levar o comprador B2B a um único passo: um diagnóstico de go-to-market.",
+            "design": "Uma abertura escura e cinematográfica com a marca, e depois a história em ordem: o problema, três sintomas e as doze áreas de go-to-market numa roda interativa, onde cada área mostra a métrica que a CRIA move e o que ela alimenta. Em seguida vem um plano semana a semana e um placar interativo em que o visitante muda o esforço entre canais e roda um trimestre simulado para ver os cinco números da semana mudarem. Toda seção leva à mesma chamada para ação.",
+            "result": "O site está no ar em criabrazil.com e mostra trabalhos para marcas de franquia, seguros, jurídico, crédito, saúde e venture capital, em três idiomas no mesmo site.",
+            "decisions": [
+                {
+                    "title": "Mostrar o sistema, não listar",
+                    "text": "A roda e o placar deixam o visitante explorar como as peças se conectam, em vez de ler uma lista de serviços."
+                },
+                {
+                    "title": "Números honestos",
+                    "text": "O placar é claramente marcado como exemplo simulado, não resultado de cliente, o que mantém a confiança do comprador B2B."
+                },
+                {
+                    "title": "Um único próximo passo",
+                    "text": "Marca, lançamento e crescimento são três caminhos, mas todos terminam na mesma conversa."
+                },
+                {
+                    "title": "Escuro e quente",
+                    "text": "Uma base azul profundo com o laranja da marca como único destaque deixa a página premium e as chamadas para ação fáceis de ver."
+                }
+            ],
+            "captions": [
+                "Doze áreas, um go-to-market: uma roda interativa com a métrica de cada área",
+                "O placar semanal: o visitante muda o esforço por canal e roda um trimestre simulado"
+            ],
+            "extraTitle": "O produto: CRIA Studio",
+            "extra": "Também sou cofundadora da CRIA Studio, o app de conteúdo com IA por trás da marca. O onboarding é guiado por um copiloto de IA que aprende sobre o negócio e gera de graça um brand kit e os primeiros posts, mesmo quando a empresa não tem site nem Instagram. Site e Instagram são opcionais por design, para que todo dono veja conteúdo real antes de ser convidado a pagar.",
+            "role": "Cofundadora da CRIA Studio. No site de marca trabalhei no design e no front end com o time da CRIA; no produto, lidero o design e a construção do onboarding, da experiência do copiloto e da cobrança."
+        },
+        "wewash": {
+            "title": "WeWash",
+            "kind": "App e site · Brasil",
+            "tagline": "Um marketplace de lavanderias que cabe no bolso.",
+            "meta": [
+                {
+                    "label": "Produto",
+                    "value": "App e site"
+                },
+                {
+                    "label": "Plataformas",
+                    "value": "iPhone, Android, web"
+                },
+                {
+                    "label": "Mercado",
+                    "value": "Brasil, em português"
+                },
+                {
+                    "label": "Papel",
+                    "value": "Design e desenvolvimento, pela Onix"
+                }
+            ],
+            "problem": "Achar uma boa lavanderia normalmente significa ligar para várias. O preço só aparece no fim, e a coleta é combinada numa conversa longa.",
+            "design": "Desenhei e construí o app e o site da WeWash. As pessoas encontram lavanderias perto, veem o preço antes de pedir e agendam a coleta em poucos toques. As lavanderias têm um modo próprio para receber e atualizar pedidos. A marca é próxima e local, com um mundo ilustrado acolhedor e uma interface azul e clara.",
+            "result": "A WeWash está no ar em wewashbr.com e na App Store. É grátis para o cliente, funciona em qualquer cidade no celular ou no navegador, e as parceiras não pagam comissão.",
+            "decisions": [
+                {
+                    "title": "Todas as lavanderias perto",
+                    "text": "Todas as lavanderias da região no mapa, com endereço, horário e distância a pé, não só as parceiras."
+                },
+                {
+                    "title": "Preço antes do pedido",
+                    "text": "As parceiras mostram serviços e valores por quilo ou por peça. Sem surpresa no fim."
+                },
+                {
+                    "title": "Coleta em três toques",
+                    "text": "Escolha dia, horário e serviços. O pedido chega à loja pelo WhatsApp com um código como #WW4821."
+                },
+                {
+                    "title": "Um modo para lavanderias",
+                    "text": "A loja se cadastra, aparece com selo e atualiza cada etapa, e o cliente recebe o aviso na hora."
+                }
+            ],
+            "captions": [
+                "Telas do app: escolher o serviço, ver lavanderias abertas, pedir a coleta",
+                "Como funciona: encontre, compare, peça",
+                "O logotipo da WeWash"
+            ],
+            "role": "Design e desenvolvimento pelo meu estúdio, a Onix: direção de marca, fluxos do app, design visual e o código do app e do site."
+        }
     }
 }
